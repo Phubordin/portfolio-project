@@ -17,3 +17,9 @@ def hello():
 ```
 
 11. P mini : Extracting Public API Data with Python: Air Quality Analytics
+    
+| ชื่อ | อายุ | อาชีพ |
+|------|----|------|
+| Alice | 25 | Developer |
+| Bob   | 30 | Designer |
+| Charlie | 28 | Data Scientist |
