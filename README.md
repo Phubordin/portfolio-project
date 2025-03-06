@@ -1,5 +1,7 @@
 # Portfolio-project
-## P 1 : Data Exploration and Transformation with Google Sheets
+This is Project Code ทั้งหมดที่อยู่ใน [Website](https://phubordin.github.io/My-Portfolio-Website/) ของผม
+
+1.  [P 1 : Data Exploration and Transformation with Google Sheets](Update and rename P.md to P 1 : Data Exploration and Transformation with Google Sheets.md)
 #### 🔥 Project Documentation
 
 ##### 📌 Table of Contents
