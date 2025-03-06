@@ -1,13 +1,4 @@
-## 📂 รายชื่อไฟล์ใน Repo
-
-| File Name | Description |
-|-----------|------------|
-| `P1-Data-Exploration.md` | วิเคราะห์ข้อมูลใน Google Sheets 📊 |
-| `P6-EDA-Visualization.md` | การแสดงผลข้อมูลเพชรด้วย Python 📉 |
-| `README.md` | คำอธิบายโครงการนี้ 📖 |
-
-
-# Portfolio-project
+# Projects
 This is Project Code into the [My Profolio Website](https://phubordin.github.io/My-Portfolio-Website/) Thank you for your watching.
 
 ## Markdown .md (เน้นอ่าน เน้นแสดงผล ⊞ Table, 📊 Chart)
