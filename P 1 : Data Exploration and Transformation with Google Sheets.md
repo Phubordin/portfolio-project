@@ -1,4 +1,4 @@
-# P 1 : Data Exploration and Transformation with Google Sheets
+# P1-:-Data-Exploration-and-Transformation-with-Google-Sheets
 
 1. test
 2. test2
