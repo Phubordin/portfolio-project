@@ -11,6 +11,10 @@
 ## 🔹 Overview
 This is an overview of our project...
 
+[GitHub Profile](https://github.com/Phubordin)  
+[ไฟล์ใน Repo](./README.md)  
+
+
 ```python
 def hello():
     print("Hello, GitHub!")
