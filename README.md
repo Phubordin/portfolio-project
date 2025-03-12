@@ -13,8 +13,9 @@ This is Project Code into the [My Profolio Website](https://phubordin.github.io/
 - [P9 : Chatbot Development for a Pizza Business Using R Programming](P9-Chatbot-Development-for-a-Pizza-Business-Using-Programming.md)
 - [P10 : Object-Oriented ATM System: Financial Transactions with Python OOP](P10-Object-Oriented-ATM-System-Financial-Transactions-with-Python-OOP.md)
 - [P11 mini : Extracting Public API Data with Python: Air Quality Analytics](P11-mini-Extracting-Public-API-Data-with-Python-Air-Quality-Analytics.md)
+- [P12 mini : Cafe Menu Data Structure with XML](P12-Cafe-Menu-Data-Structure-with-XML.md)
 
-## Only Code .r .py .sql .txt etc. (เน้นเอาไปทดสอบ code ✅)
+## Only Code .r .py .sql .txt .xml etc. (เน้นเอาไปทดสอบ code ✅)
 - [P1 : Data Exploration and Transformation with Google Sheets](P1-Data-Exploration-and-Transformation-with-Google-Sheets.txt)
 - [P2 : Building a Café Restaurant Database Using R and SQL](P2-Building-a-Café-Restaurant-Database-Using-R-and-SQL.sql)(SQL)
 - [P2 : Building a Café Restaurant Database Using R and SQL](P2-Building-a-Café-Restaurant-Database-Using-R-and-SQL.r)(R)
@@ -29,6 +30,8 @@ This is Project Code into the [My Profolio Website](https://phubordin.github.io/
 - [P9 : Chatbot Development for a Pizza Business Using R Programming](P9-Chatbot-Development-for-a-Pizza-Business-Using-Programming.r)
 - [P10 : Object-Oriented ATM System: Financial Transactions with Python OOP](P10-Object-Oriented-ATM-System-Financial-Transactions-with-Python-OOP.py)
 - [P11 mini : Extracting Public API Data with Python: Air Quality Analytics](P11-mini-Extracting-Public-API-Data-with-Python-Air-Quality-Analytics.py)
+- [P12 mini : Cafe Menu Data Structure with XML](P12-Cafe-Menu-Data-Structure-with-XML.xml)
+
 
 
 
