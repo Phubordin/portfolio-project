@@ -2,7 +2,7 @@
 This is Project Code into the [My Profolio Website](https://phubordin.github.io/My-Portfolio-Website/) Thank you for your watching.
 
 ## Markdown.md (เน้นอ่าน เน้นแสดงผล ⊞ Table, 📊 Chart)
-- [P1 : Data Exploration and Transformation with Google Sheets](P1-Data-Exploration-and-Transformation-with-Google-Sheets.md)
+- [P1 : Data Exploration and Transformation with Google Sheets](portfolio-project/P1-Data-Exploration-and-Transformation-with-Google-Sheets.md)
 - [P2 : Building a Café Restaurant Database Using R and SQL](P2-Building-a-Café-Restaurant-Database-Using-R-and-SQL.md)
 - [P3 : Customer Segmentation and RFM Analysis Using Python and R for Strategic Business Insight](P3-Customer-Segmentation-and-RFM-Analysis-Using-Python-and-R-for-Strategic-Business-Insight.md)
 - [P4 : Creating a Multi-Round Rock-Paper-Scissors Game in Python and R](P4-Creating-a-Multi-Round-Rock-Paper-Scissors-Game-in-Python-and-R.md)
