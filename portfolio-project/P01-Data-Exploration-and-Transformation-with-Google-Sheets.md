@@ -4,7 +4,7 @@
 - [1. Filter & Sort Dynamic](#Filter-&-Sort-Dynamic)
 ---
 
-## Filter & Sort Dynamic
+## Filter-&-Sort-Dynamic
 ```excel
 =IFERROR(SORT(FILTER(EMPLOYEE, (GENDER = B2) * (PERFORMANCE = B3)), 5, Not(D2)),"NO DATA")
 ```
