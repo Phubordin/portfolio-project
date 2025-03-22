@@ -1,10 +1,10 @@
 # P1 : Data Exploration and Transformation with Google Sheets
 
 ## 📌 Table of Contents
-- [Filter & Sort Dynamic](#filter-&-sort-dynamic)
+- [Filter & Sort Dynamic](#filter-and-sort-dynamic)
 ---
 
-## Filter-&-Sort-Dynamic
+## Filter and Sort Dynamic
 ```excel
 =IFERROR(SORT(FILTER(EMPLOYEE, (GENDER = B2) * (PERFORMANCE = B3)), 5, Not(D2)),"NO DATA")
 ```
