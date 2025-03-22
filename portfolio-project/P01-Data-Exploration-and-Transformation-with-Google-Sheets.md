@@ -1,12 +1,12 @@
 # P1 : Data Exploration and Transformation with Google Sheets
 
 ## 📌 Table of Contents
-- [Installation Guide](#🔹Overview)
+- [Installation Guide](#🔹-overview)
 - [Usage](usage.md)
 - [Contributing](contributing.md)
 
 ---
-## 🔹Overview
+## 🔹 Overview
 This is an overview of our project...
 
 [GitHub Profile](https://github.com/Phubordin)  
