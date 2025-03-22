@@ -1,7 +1,7 @@
 # P1 : Data Exploration and Transformation with Google Sheets
 
 ## 📌 Table of Contents
-- [Filter & Sort Dynamic](#Filter-&-Sort-Dynamic)
+- [Filter & Sort Dynamic](#filter-&-sort-dynamic)
 ---
 
 ## Filter-&-Sort-Dynamic
