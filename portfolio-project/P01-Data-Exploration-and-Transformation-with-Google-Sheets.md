@@ -1,7 +1,7 @@
 # P1 : Data Exploration and Transformation with Google Sheets
 
 ## 📌 Table of Contents
-- [Installation Guide](installation.md)
+- [Installation Guide](#overview)
 - [Usage](usage.md)
 - [Contributing](contributing.md)
 
