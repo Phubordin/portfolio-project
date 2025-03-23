@@ -1,6 +1,6 @@
-# P2 : Data Exploration and Transformation with Google Sheets
+# P2 : Building a Café Restaurant Database Using R and SQL
 
-##### 📌 Table of Contents
+## 📌 Table of Contents
 - [Installation Guide](installation.md)
 - [Usage](usage.md)
 - [Contributing](contributing.md)
