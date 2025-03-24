@@ -3,10 +3,10 @@
 ## 📌 Table of Contents
 1. [Filter & Sort Dynamic](#filter-and-sort-dynamic)
 2. [Conditional Formatting: Highlight Row](#conditional-formatting-highlight-row)
-     - [2.1 Highlight Data Point เฉพาะ Perfomance ที่ Users กรองข้อมูล](#highlight-data-point-เฉพาะ-perfomance-ที่-users-กรองข้อมูล)
-     - [2.2 Highlight Variable Gender Column แบ่งตามสี](#highlight–variable-gender-column-แบ่งตามสี)
-     - [2.3 Highlight Variable Salary Column ไล่สเกลสูงไปต่ำ](#highlight-variable-salary-column-ไล่สเกลสูงไปต่ำ)
-     - [2.4 Highlight Variable 2 Column ชื่อพนักงานที่มีตัวเลข SNN นำหน้าตามเงื่อนไขที่กำหนด](#highlight-variable-2-column-ชื่อพนักงานที่มีตัวเลข-SNN-นำหน้าตามเงื่อนไขที่กำหนด)
+     - 2.1 [Highlight Data Point เฉพาะ Perfomance ที่ Users กรองข้อมูล](#highlight-data-point-เฉพาะ-perfomance-ที่-users-กรองข้อมูล)
+     - 2.2 [Highlight Variable Gender Column แบ่งตามสี](#highlight-variable-gender-column-แบ่งตามสี)
+     - 2.3 [Highlight Variable Salary Column ไล่สเกลสูงไปต่ำ](#highlight-variable-salary-column-ไล่สเกลสูงไปต่ำ)
+     - 2.4 [Highlight Variable 2 Column ชื่อพนักงานที่มีตัวเลข SNN นำหน้าตามเงื่อนไขที่กำหนด](#highlight-variable-2-column-ชื่อพนักงานที่มีตัวเลข-SNN-นำหน้าตามเงื่อนไขที่กำหนด)
 
 ---
 
