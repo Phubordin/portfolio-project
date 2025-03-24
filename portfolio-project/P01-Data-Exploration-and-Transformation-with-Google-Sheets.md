@@ -44,7 +44,7 @@
 ---
 
 ## Conditional Formatting: Highlight Row
-### 2.1 Highlight Data Point เฉพาะ Perfomance ที่ Users กรองข้อมูล
+### Highlight Data Point เฉพาะ Perfomance ที่ Users กรองข้อมูล
 
 ```excel
 =IFERROR(SORT(FILTER(EMPLOYEE, (GENDER = B2) * (PERFORMANCE = B3)), 5, Not(D2)),"NO DATA")
