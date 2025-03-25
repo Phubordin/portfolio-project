@@ -35,7 +35,7 @@
    - ถ้าหาก Formula ข้อ 1 หรือ 2 ส่งผลลัพธ์ Error จะให้แสดง `NO DATA` แต่แน่นอนว่าในตาราง `EMPLOYEE` จะต้องมีการ filter ที่ไม่ match กัน
      นั้นหมายความว่าไม่มีค่า filter ที่ต้องการดังนั้นผลลัพธ์จึงแสดง `NO DATA` นั่นเอง !
 
-📌 **ตัวอย่าง:**
+📌 **ตัวอย่าง:** [แนะนำให้ลองดูใน Sheet: Click](https://docs.google.com/spreadsheets/d/1a3l_9Lgr_G6m5DkfvEdUg4a3fpwKmLog1oEyewA8Zg4/edit?usp=sharing)
 
 ![Highlight Row](https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-1-6.gif)
 ![Highlight Row](https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-1-6.png)
