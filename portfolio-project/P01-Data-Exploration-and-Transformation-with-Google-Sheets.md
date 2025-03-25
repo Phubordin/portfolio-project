@@ -10,7 +10,7 @@
 3. [Dynamic Query](#dynamic-query)
 4. [Vlookup](#vlookup)
 5. [Convert Date](#convert-date)
-6. [Regular Expression](#regular-xpression)
+6. [Regular Expression](#regular-expression)
 
 ---
 
