@@ -40,7 +40,6 @@
 ![Highlight Row](https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-1-6.gif)
 ![Highlight Row](https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-1-6.png)
 
-
 ---
 
 ## Conditional Formatting: Highlight Row
