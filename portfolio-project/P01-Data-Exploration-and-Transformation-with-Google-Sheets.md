@@ -166,8 +166,24 @@ IF(B2="All","1=1","N='" & B2 & "'") &
     
 3. `IF(B2="All","1=1","N='" & B2 & "'") &`
    สูตร `IF(เงื่อนไข,1,0)` คือ ถ้าเงื่อนไขเป็นจริงจะแสดงผลลัพธ์ 1 ถ้าไม่จริงะแสดงผลลัพธ์ 0 ดังนั้น
-     - ถ้า users เลือก Dropdown List เป็น `All` จะแสดงผล 1=1 ซึ่ง
-     - ถ้า users เลือก Dropdown List ไม่เป็น `All` เงือนไขก็จะเป็นจริง (เงื่อนไขที่บอกว่าเป็นจริงคือ 1=1)
+     - ถ้า users เลือก Dropdown List เป็น `All` จะแสดงผล 1=1 ซึ่ง 1=1 จะคืนค่าความจริงจะทำให้ คำสั่ง `"select * where 1=1"` แสดงอัติโนมัติ
+     - ถ้า users เลือก Dropdown List ไม่เป็น `All` จะแสดงผล `"N='" & B2 & "'"`
+          - ถ้าหาก `B2` ถูกเลือกเป็น `male` จะแสดงเป็น `"select * where N = 'male'"` ตามตารางด้านล่าง
+            | SSN         | LASTNAME  | FIRST NAME | HIREDATE   | SALARY   | *GENDER* | PERFORMANCE |
+            |-------------|-----------|------------|------------|----------|--------|-------------|
+            | 109-87-6544 | Foster    | Harold     | 2005-08-14 | $55,000  | Male   | Good        |
+            | 222-23-2222 | Marlin    | Bill       | 1977-03-28 | $125,000 | Male   |             |
+            | 333-43-4444 | Smith     | Frank      | 1991-01-29 | $65,000  | Male   | Good        |
+            | 432-19-8765 | Bronson   | Paul       | 2003-11-20 | $58,000  | Male   | Good        |
+            | 444-45-4444 | Frank     | Vernon     | 1985-04-10 | $75,000  | Male   | Good        |
+            | 464-64-4466 | Webster   | David      | 1991-01-29 | $58,500  | Male   | Excellent   |
+            | 500-50-0505 | Rodriguez | Jose       | 1998-07-16 | $150,000 | Male   | Good        |
+            | 555-56-5555 | Charles   | Kenneth    | 1998-06-18 | $40,000  | Male   | Excellent   |
+            | 767-74-7373 | Martin    | William    | 2006-08-26 | $23,000  | Male   | Good        |
+            | 776-67-6666 | Adamson   | David      | 2002-10-04 | $52,000  | Male   | Excellent   |
+            | 925-45-7116 | Whitehead | David      | 1980-07-25 | $175,000 | Male   | Good        |
+          
+          - ถ้าหาก `B2` ถูกเลือกเป็น `female` จะแสดงเป็น `select * where N = 'female'` ตามตารางด้านล่าง
      
    
 5. `"And " &`
