@@ -89,7 +89,7 @@ female
 
 ถ้าเข้าเงื่อนไขใด เงื่อนไขนึงจะแสดงตามรูปตัวอย่าง
 
-📌 **ตัวอย่าง:**
+📌 **ตัวอย่าง:** [แนะนำให้ลองดูใน Sheet: Click](https://docs.google.com/spreadsheets/d/1a3l_9Lgr_G6m5DkfvEdUg4a3fpwKmLog1oEyewA8Zg4/edit?usp=sharing)
 
 ![Highlight Row](https://github.com/Phubordin/My-Portfolio-Website/raw/main/hcf-filter1.gif)
 ![Highlight Row](https://github.com/Phubordin/My-Portfolio-Website/raw/main/hcf-filter1.png)
@@ -104,7 +104,7 @@ female
 จากนั้นเลือก color scale ระบบก็จะทำการ default setting ให้เลยอัตโนมัติ
 หรือเราก็อาจจะปรับตามสีที่เราต้องการ เพื่อให้เหมาะสมกับความเข้าใจของ users
 
-📌 **ตัวอย่าง:**
+📌 **ตัวอย่าง:** [แนะนำให้ลองดูใน Sheet: Click](https://docs.google.com/spreadsheets/d/1a3l_9Lgr_G6m5DkfvEdUg4a3fpwKmLog1oEyewA8Zg4/edit?usp=sharing)
 
 ![Highlight Row](https://github.com/Phubordin/My-Portfolio-Website/raw/main/hcf-filter2.gif)
 ![Highlight Row](https://github.com/Phubordin/My-Portfolio-Website/raw/main/hcf-filter2.png)
@@ -284,7 +284,7 @@ IF(B2="All","1=1","N='" & B2 & "'") &
   "And " & IF(B4="All","1=1","L <= date'"& Text(B4,"yyyy-mm-dd") & "'"))
   ```
   
-📌 **ตัวอย่าง:**
+📌 **ตัวอย่าง:** [แนะนำให้ลองดูใน Sheet: Click](https://docs.google.com/spreadsheets/d/1a3l_9Lgr_G6m5DkfvEdUg4a3fpwKmLog1oEyewA8Zg4/edit?usp=sharing)
 
 ![Highlight Row](https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-3-6.gif)
 ![Highlight Row](https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-3-6.png)
@@ -324,20 +324,20 @@ IF(B2="All","1=1","N='" & B2 & "'") &
    คล้ายกับข้อ 1 แค่เปลี่ยน parameter 1 กับ 2 และช่วงที่อยากได้ค่านั้นว่าอยู่ที่คอลัมน์ 2, 3, 4, 5 การทำให้เป็น FALSE หรือ 0 บ่งบอกถึงคืนค่านั้นตรงๆ ไม่ต้องไปเอา
    ค่าที่รองลงมาจากแถว หรือค่าที่ถัดไปจากแถว return กลับมา
     
-📌 **ตัวอย่าง:**
+📌 **ตัวอย่าง:** [แนะนำให้ลองดูใน Sheet: Click](https://docs.google.com/spreadsheets/d/1a3l_9Lgr_G6m5DkfvEdUg4a3fpwKmLog1oEyewA8Zg4/edit?usp=sharing)
 
 ![Highlight Row](https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-4-6.gif)
 
 ## Convert Date
 
-📌 **ตัวอย่าง:**
+📌 **ตัวอย่าง:** [แนะนำให้ลองดูใน Sheet: Click](https://docs.google.com/spreadsheets/d/1a3l_9Lgr_G6m5DkfvEdUg4a3fpwKmLog1oEyewA8Zg4/edit?usp=sharing)
 
 ![Highlight Row](https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-5-6.gif)
 ![Highlight Row](https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-5-6.png)
 
 ## Regular Expression
 
-📌 **ตัวอย่าง:**
+📌 **ตัวอย่าง:** [แนะนำให้ลองดูใน Sheet: Click](https://docs.google.com/spreadsheets/d/1a3l_9Lgr_G6m5DkfvEdUg4a3fpwKmLog1oEyewA8Zg4/edit?usp=sharing)
 
 ![Highlight Row](https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-6-6.gif)
 ![Highlight Row](https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-6-6.png)
