@@ -64,7 +64,7 @@
           ไล่เช็คทุก cell ที่อยู่ในเฉพาะคอลัมน์ G สำหรับแถวที่อยู่ในช่วง แถวที่ 1 - แถวที่ 26 ในคอลัมน์ ถ้าหากเจอค่าที่ตรงกับค่าเฉพาะใน `$H$1`
           ให้ Highlight เฉพาะ data point นั้นๆ
 
-📌 **ตัวอย่าง:**
+📌 **ตัวอย่าง:** [แนะนำให้ลองดูใน Sheet: Click](https://docs.google.com/spreadsheets/d/1a3l_9Lgr_G6m5DkfvEdUg4a3fpwKmLog1oEyewA8Zg4/edit?usp=sharing)
 
 ![Highlight Row](https://github.com/Phubordin/My-Portfolio-Website/raw/main/hcf-filter.gif)
 ![Highlight Row](https://github.com/Phubordin/My-Portfolio-Website/raw/main/hcf-filter.png)
