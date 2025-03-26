@@ -326,6 +326,10 @@ IF(B2="All","1=1","N='" & B2 & "'") &
 
 ## Vlookup
 
+<p align="center">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-4-6.png" alt="Highlight Row">
+</p>
+
 ```excel
 =ArrayFormula(VLOOKUP(I4:I28,A32:F39,{2 ,3 ,4 ,5 ,6},FALSE))
 ```
@@ -333,10 +337,6 @@ IF(B2="All","1=1","N='" & B2 & "'") &
 ```excel
 =ArrayFormula(VLOOKUP(H4:H28,A43:E46, {2, 3 ,4, 5},FALSE))
 ```
-
-<p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-4-6.png" alt="Highlight Row">
-</p>
 
 📌 **อธิบายสูตร:**
 
@@ -369,17 +369,11 @@ IF(B2="All","1=1","N='" & B2 & "'") &
 
 ## Convert Date
 
-```excel
-=ArrayFormula(SPLIT(A4:A9," "))
-```
-
-```excel
-=ArrayFormula(DATE(D4:D9-543,VLOOKUP(C4:C9,$A$13:$B$24,2,0),B4:B9))
-```
-
 <p align="center">
   <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-5-6.png" alt="Highlight Row">
 </p>
+
+📌 **อธิบายสูตร:**
 
 จากภาพ จะเป็นการแปลงจากวันที่ภาษาไทย ให้กลายเป็นวันที่มาตฐาณ ISO โดยใช้ 2 สูตรหลักคือ `SPLIT()`, `DATE` และ `VLOOKUP`
 ก่อนอื่นผมขออธิบายช่วงต่างๆที่มีในสูตร
@@ -490,39 +484,65 @@ IF(B2="All","1=1","N='" & B2 & "'") &
      - `"\d-\d{4}-\d{5}-\d{2}-\d"` ให้หา pattern ตัวเลข (เลข1ตัว-เลข4ตัว-เลช5ตัว-เลข2ตัว-เลข1ตัว)  โดยเลขก็คือ 0 ถึง 9
        เมื่อพบให้ดึงออกมาซึ่งผลลัพธ์อาจเป็นแบบไหนก็ได้ เช่น `1-1078-00555-99-1`, `3-5522-87666-87-2`, `1-2222-03874-23-6`, `1-1078-00555-99-1`, `1-1078-00555-99-1` เป็นต้น
 
-3. `Gender` ใช้ `==ArrayFormula(REGEXEXTRACT(B3:B7,"M[a-z]+."))`
+3. `Gender` ใช้
+   ```excel
+   =ArrayFormula(REGEXEXTRACT(B3:B7,"M[a-z]+."))`
+   ```
 
 
 
-4. `FirstName` ใช้ `=ArrayFormula(REGEXEXTRACT(B3:B7,".+" & D3:D7 & ".(" & "[A-Z][a-z]+" & ")"))`
+5. `FirstName` ใช้
+   ```excel
+   =ArrayFormula(REGEXEXTRACT(B3:B7,".+" & D3:D7 & ".(" & "[A-Z][a-z]+" & ")"))`
+   ```
+
+
+7. `LastName` ใช้
+   ```excel
+   =ArrayFormula(REGEXEXTRACT(B3:B7,".+" & E3:E7 & ".(" & "[A-Z][a-z]+" & ")"))`
+   ```
 
 
 
-5. `LastName` ใช้ `=ArrayFormula(REGEXEXTRACT(B3:B7,".+" & E3:E7 & ".(" & "[A-Z][a-z]+" & ")"))`
+10. `DOB` ใช้
+    ```excel
+    =ArrayFormula(REGEXEXTRACT(B3:B7,"Date of Birth (\d{2}.[A-z]+.\d{4})"))
+    ```
 
 
 
-6. `DOB` ใช้ `=ArrayFormula(REGEXEXTRACT(B3:B7,"Date of Birth (\d{2}.[A-z]+.\d{4})"))`
+12. `Age` ใช้
+    ```excel
+    =ArrayFormula(DATEDIF(G3:G7,TODAY(),"Y"))
+    ```
 
 
 
-7. `Age` ใช้ `=ArrayFormula(DATEDIF(G3:G7,TODAY(),"Y"))`
+14. `Address` ใช้
+    ```excel
+    =ArrayFormula(REGEXEXTRACT(B3:B7,"Address (\d+ [A-z]+ [A-z]+..+ )"))
+    ```
 
 
 
-8. `Address` ใช้ `=ArrayFormula(REGEXEXTRACT(B3:B7,"Address (\d+ [A-z]+ [A-z]+..+ )"))`
+16. `Zipcode` ใช้
+    ```excel
+    =ArrayFormula(REGEXEXTRACT(B3:B7," \d{5}"))
+    ```
 
 
 
-9. `Zipcode` ใช้ `=ArrayFormula(REGEXEXTRACT(B3:B7," \d{5}"))`
+18. `Expired Date` ใช้
+    ```excel
+    =ArrayFormula(REGEXEXTRACT(B3:B7,"Expired Date (\d{2}.[A-z]+.\d{4})"))
+    ```
 
 
 
-10. `Expired Date` ใช้ `=ArrayFormula(REGEXEXTRACT(B3:B7,"Expired Date (\d{2}.[A-z]+.\d{4})"))`
-
-
-
-11. `Expired 2024` ใช้ `=ArrayFormula(REGEXMATCH(K3:K7,"2024"))`
+21. `Expired 2024` ใช้
+    ```excel
+    =ArrayFormula(REGEXMATCH(K3:K7,"2024"))
+    ```
 
 
 
