@@ -477,47 +477,50 @@ IF(B2="All","1=1","N='" & B2 & "'") &
 
 ```ID เพศ ชื่อ นามสกุล วันเกิด อายุ ที่อยู่ เลขไปรษณีย์ วันหมดอายุ```
 
-ซึ่งผมจะสกัดหรือดึง ออกมาเป็นแต่ละคอลัมน์ตั้งแต่ C ถึง L ตามรูปโดยใช้สูตร `REGEXEXTRACT()` และ `REGEXMATCH()`
-จากนั้นผมจะใช้สูตรจากภาพวงกลมเลข 2 ไปใส่แต่ละคอลัมน์ ที่แสดงในวงกลส่วนของเลข 3 เป็นการทดสอบว่าเงื่อนไขเป็นจริงไหมโดยใช้ `REGEXMATCH()`
+ซึ่งผมจะสกัดหรือดึง ออกมาเป็นแต่ละคอลัมน์ตั้งแต่ C ถึง L ตามรูป โดยใช้สูตร `REGEXEXTRACT()` และ `REGEXMATCH()`
+จากนั้นผมจะใช้สูตรจากภาพวงกลมเลข 2 ไปใส่แต่ละคอลัมน์ ที่แสดงในวงกลส่วนของเลข 3 เป็นการทดสอบว่ามีไหม โดยใช้ `REGEXMATCH()`
 ดังนั้นผมขอแบ่งเป็น 10 ส่วน ดังต่อไปนี้ (ผมขอข้ามส่วน `ArrayFomula ไปเลยนะครับ เพราะตัวอย่างที่ผ่านมาๆอธิบายไปแล้ว)
 
 1. `ID` ใช้ `=ArrayFormula(REGEXEXTRACT(B3:B7, "\d-\d{4}-\d{5}-\d{2}-\d"))`
+     รับอยู่ 2 parameter คือ `B3:B7` และ `"\d-\d{4}-\d{5}-\d{2}-\d"`
+     ผมขออธิบายส่วน `"\d-\d{4}-\d{5}-\d{2}-\d"`
 
-     
+     - `"\d-\d{4}-\d{5}-\d{2}-\d"` ให้หา pattern ตัวเลข (เลข1ตัว-เลข4ตัว-เลช5ตัว-เลข2ตัว-เลข1ตัว)  โดยเลขก็คือ 0 ถึง 9
+       เมื่อพบให้ดึงออกมาซึ่งผลลัพธ์อาจเป็นแบบไหนก็ได้ เช่น `1-1078-00555-99-1`, `3-5522-87666-87-2`, `1-2222-03874-23-6`, `1-1078-00555-99-1`, `1-1078-00555-99-1` เป็นต้น
 
-2. `Gender` ใช้ `==ArrayFormula(REGEXEXTRACT(B3:B7,"M[a-z]+."))`
-
-
-
-3. `FirstName` ใช้ `=ArrayFormula(REGEXEXTRACT(B3:B7,".+" & D3:D7 & ".(" & "[A-Z][a-z]+" & ")"))`
-
-
-
-4. `LastName` ใช้ `=ArrayFormula(REGEXEXTRACT(B3:B7,".+" & E3:E7 & ".(" & "[A-Z][a-z]+" & ")"))`
+3. `Gender` ใช้ `==ArrayFormula(REGEXEXTRACT(B3:B7,"M[a-z]+."))`
 
 
 
-5. `DOB` ใช้ `=ArrayFormula(REGEXEXTRACT(B3:B7,"Date of Birth (\d{2}.[A-z]+.\d{4})"))`
+4. `FirstName` ใช้ `=ArrayFormula(REGEXEXTRACT(B3:B7,".+" & D3:D7 & ".(" & "[A-Z][a-z]+" & ")"))`
 
 
 
-6. `Age` ใช้ `=ArrayFormula(DATEDIF(G3:G7,TODAY(),"Y"))`
+5. `LastName` ใช้ `=ArrayFormula(REGEXEXTRACT(B3:B7,".+" & E3:E7 & ".(" & "[A-Z][a-z]+" & ")"))`
 
 
 
-7. `Address` ใช้ `=ArrayFormula(REGEXEXTRACT(B3:B7,"Address (\d+ [A-z]+ [A-z]+..+ )"))`
+6. `DOB` ใช้ `=ArrayFormula(REGEXEXTRACT(B3:B7,"Date of Birth (\d{2}.[A-z]+.\d{4})"))`
 
 
 
-8. `Zipcode` ใช้ `=ArrayFormula(REGEXEXTRACT(B3:B7," \d{5}"))`
+7. `Age` ใช้ `=ArrayFormula(DATEDIF(G3:G7,TODAY(),"Y"))`
 
 
 
-9. `Expired Date` ใช้ `=ArrayFormula(REGEXEXTRACT(B3:B7,"Expired Date (\d{2}.[A-z]+.\d{4})"))`
+8. `Address` ใช้ `=ArrayFormula(REGEXEXTRACT(B3:B7,"Address (\d+ [A-z]+ [A-z]+..+ )"))`
 
 
 
-10. `Expired 2024` ใช้ `=ArrayFormula(REGEXMATCH(K3:K7,"2024"))`
+9. `Zipcode` ใช้ `=ArrayFormula(REGEXEXTRACT(B3:B7," \d{5}"))`
+
+
+
+10. `Expired Date` ใช้ `=ArrayFormula(REGEXEXTRACT(B3:B7,"Expired Date (\d{2}.[A-z]+.\d{4})"))`
+
+
+
+11. `Expired 2024` ใช้ `=ArrayFormula(REGEXMATCH(K3:K7,"2024"))`
 
 
 
