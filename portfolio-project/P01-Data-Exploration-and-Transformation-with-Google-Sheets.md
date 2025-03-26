@@ -41,7 +41,6 @@
   <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-1-6.gif" alt="Highlight Row">
 </p>
 
-![Highlight Row](https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-1-6.gif)
 <p align="center">
   <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-1-6.png" alt="Highlight Row">
 </p>
@@ -72,8 +71,14 @@
 
 📌 **ตัวอย่าง:** [แนะนำให้ลองดูใน Sheet: Click](https://docs.google.com/spreadsheets/d/1a3l_9Lgr_G6m5DkfvEdUg4a3fpwKmLog1oEyewA8Zg4/edit?usp=sharing)
 
-![Highlight Row](https://github.com/Phubordin/My-Portfolio-Website/raw/main/hcf-filter.gif)
-![Highlight Row](https://github.com/Phubordin/My-Portfolio-Website/raw/main/hcf-filter.png)
+
+<p align="center">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/hcf-filter.gif" alt="Highlight Row">
+</p>
+
+<p align="center">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/hcf-filter.png" alt="Highlight Row">
+</p>
 
 ---
 
@@ -97,8 +102,13 @@ female
 
 📌 **ตัวอย่าง:** [แนะนำให้ลองดูใน Sheet: Click](https://docs.google.com/spreadsheets/d/1a3l_9Lgr_G6m5DkfvEdUg4a3fpwKmLog1oEyewA8Zg4/edit?usp=sharing)
 
-![Highlight Row](https://github.com/Phubordin/My-Portfolio-Website/raw/main/hcf-filter1.gif)
-![Highlight Row](https://github.com/Phubordin/My-Portfolio-Website/raw/main/hcf-filter1.png)
+<p align="center">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/hcf-filter1.gif" alt="Highlight Row">
+</p>
+
+<p align="center">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/hcf-filter1.png" alt="Highlight Row">
+</p>
 
 ---
 
@@ -112,8 +122,13 @@ female
 
 📌 **ตัวอย่าง:** [แนะนำให้ลองดูใน Sheet: Click](https://docs.google.com/spreadsheets/d/1a3l_9Lgr_G6m5DkfvEdUg4a3fpwKmLog1oEyewA8Zg4/edit?usp=sharing)
 
-![Highlight Row](https://github.com/Phubordin/My-Portfolio-Website/raw/main/hcf-filter2.gif)
-![Highlight Row](https://github.com/Phubordin/My-Portfolio-Website/raw/main/hcf-filter2.png)
+<p align="center">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/hcf-filter2.png" alt="Highlight Row">
+</p>
+
+<p align="center">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/hcf-filter2.png" alt="Highlight Row">
+</p>
 
 ---
 
@@ -137,8 +152,14 @@ female
 
 📌 **ตัวอย่าง:**
 
-![Highlight Row](https://github.com/Phubordin/My-Portfolio-Website/raw/main/hcf-filter3.gif)
-![Highlight Row](https://github.com/Phubordin/My-Portfolio-Website/raw/main/hcf-filter3.png)
+
+<p align="center">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/hcf-filter3.png" alt="Highlight Row">
+</p>
+
+<p align="center">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/hcf-filter3.png" alt="Highlight Row">
+</p>
 
 ---
 
@@ -151,7 +172,9 @@ IF(B2="All","1=1","N='" & B2 & "'") &
 "And " & IF(B4="All","1=1","L <= date'"& Text(B4,"yyyy-mm-dd") & "'"))
 ```
 
-![Highlight Row](https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-3-6-0.png)
+<p align="center">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-3-6-0.png" alt="Highlight Row">
+</p>
 
 📌 **อธิบายสูตร:**
 - `EMPLOYEE1` แทนด้วยช่วงข้อมูล ตามรูปครับ
@@ -292,8 +315,13 @@ IF(B2="All","1=1","N='" & B2 & "'") &
   
 📌 **ตัวอย่าง:** [แนะนำให้ลองดูใน Sheet: Click](https://docs.google.com/spreadsheets/d/1a3l_9Lgr_G6m5DkfvEdUg4a3fpwKmLog1oEyewA8Zg4/edit?usp=sharing)
 
-![Highlight Row](https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-3-6.gif)
-![Highlight Row](https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-3-6.png)
+<p align="center">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-3-6.gif" alt="Highlight Row">
+</p>
+
+<p align="center">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-3-6.png" alt="Highlight Row">
+</p>
 
 ## Vlookup
 
@@ -305,7 +333,9 @@ IF(B2="All","1=1","N='" & B2 & "'") &
 =ArrayFormula(VLOOKUP(H4:H28,A43:E46, {2, 3 ,4, 5},FALSE))
 ```
 
-![Highlight Row](https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-4-6.png)
+<p align="center">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-4-6.png" alt="Highlight Row">
+</p>
 
 📌 **อธิบายสูตร:**
 
@@ -332,7 +362,9 @@ IF(B2="All","1=1","N='" & B2 & "'") &
     
 📌 **ตัวอย่าง:** [แนะนำให้ลองดูใน Sheet: Click](https://docs.google.com/spreadsheets/d/1a3l_9Lgr_G6m5DkfvEdUg4a3fpwKmLog1oEyewA8Zg4/edit?usp=sharing)
 
-![Highlight Row](https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-4-6.gif)
+<p align="center">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-4-6.gif" alt="Highlight Row">
+</p>
 
 ## Convert Date
 
@@ -344,7 +376,9 @@ IF(B2="All","1=1","N='" & B2 & "'") &
 =ArrayFormula(DATE(D4:D9-543,VLOOKUP(C4:C9,$A$13:$B$24,2,0),B4:B9))
 ```
 
-![Highlight Row](https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-5-6.png)
+<p align="center">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-5-6.png" alt="Highlight Row">
+</p>
 
 จากภาพ จะเป็นการแปลงจากวันที่ภาษาไทย ให้กลายเป็นวันที่มาตฐาณ ISO โดยใช้ 2 สูตรหลักคือ `SPLIT()`, `DATE` และ `VLOOKUP`
 ก่อนอื่นผมขออธิบายช่วงต่างๆที่มีในสูตร
@@ -393,15 +427,113 @@ IF(B2="All","1=1","N='" & B2 & "'") &
 
 📌 **ตัวอย่าง:** [แนะนำให้ลองดูใน Sheet: Click](https://docs.google.com/spreadsheets/d/1a3l_9Lgr_G6m5DkfvEdUg4a3fpwKmLog1oEyewA8Zg4/edit?usp=sharing)
 
-![Highlight Row](https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-5-6.gif)
+<p align="center">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-5-6.gif" alt="Highlight Row">
+</p>
 
 ## Regular Expression
 
+```excel
+=ArrayFormula(REGEXEXTRACT(B3:B7, "\d-\d{4}-\d{5}-\d{2}-\d"))
+```
+```excel
+=ArrayFormula(REGEXEXTRACT(B3:B7,"M[a-z]+."))
+```
+```excel
+=ArrayFormula(REGEXEXTRACT(B3:B7,".+" & D3:D7 & ".(" & "[A-Z][a-z]+" & ")"))
+```
+```excel
+=ArrayFormula(REGEXEXTRACT(B3:B7,".+" & E3:E7 & ".(" & "[A-Z][a-z]+" & ")"))
+```
+```excel
+=ArrayFormula(REGEXEXTRACT(B3:B7,"Date of Birth (\d{2}.[A-z]+.\d{4})"))
+```
+```excel
+=ArrayFormula(DATEDIF(G3:G7,TODAY(),"Y"))
+```
+```excel
+=ArrayFormula(REGEXEXTRACT(B3:B7,"Address (\d+ [A-z]+ [A-z]+..+ )"))
+```
+```excel
+=ArrayFormula(REGEXEXTRACT(B3:B7," \d{5}"))
+```
+```excel
+=ArrayFormula(REGEXEXTRACT(B3:B7,"Expired Date (\d{2}.[A-z]+.\d{4})"))
+```
+```excel
+=ArrayFormula(REGEXMATCH(K3:K7,"2024"))
+```
+
+<p align="center">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-6-6.gif" alt="Highlight Row">
+</p>
+
+สำหรับตัวอย่างนี้คือการใช้งานสูตรตระกูล Regular Expression ซึ่งในตัวอย่างนี้ผมจะใช้อยู่ 2 สูตร คือ
+
+- `REGEXEXTRACT` คืนค่าที่ดึงข้อมูลตามต้องการออกมาจาก pattern บางอย่าง
+- `REGEXMATCH` คืนที่ `TRUE` หรือ `FALSE` ตามเงื่อนไขที่กำหนดว่าจริงหรือไม่จริง
+
+จากรูปตัวอย่างคอลัมน์ B(วงกลมสีแดงเลข 1) คุณจะเห็นข้อมูลของลูกค้า ซึ่งเป็นข้อมูลบัตรประชาชนที่ demo ขึ้นมาที่มี pattern การเขียนเหมือนกันทุกแถว คือ
+
+```ID เพศ ชื่อ นามสกุล วันเกิด อายุ ที่อยู่ เลขไปรษณีย์ วันหมดอายุ```
+
+ซึ่งผมจะสกัดหรือดึง ออกมาเป็นแต่ละคอลัมน์ตั้งแต่ C ถึง L ตามรูปโดยใช้สูตร `REGEXEXTRACT()` และ `REGEXMATCH()`
+ซึ่งผมจะใช้สูตรจากเลข 2 ไปใส่แต่ละคอลัมน์ ส่วนเลข 3 เป็นการทดสอบว่าเงื่อนไขเป็นจริงไหมโดยใช้ `REGEXMATCH()`
+ดังนั้นผมขอแบ่งเป็น 10 ส่วน ดังต่อไปนี้
+
+1. `ID` ใช้ `=ArrayFormula(REGEXEXTRACT(B3:B7, "\d-\d{4}-\d{5}-\d{2}-\d"))`
+
+
+
+2. `Gender` ใช้ `==ArrayFormula(REGEXEXTRACT(B3:B7,"M[a-z]+."))`
+
+
+
+3. `FirstName` ใช้ `=ArrayFormula(REGEXEXTRACT(B3:B7,".+" & D3:D7 & ".(" & "[A-Z][a-z]+" & ")"))`
+
+
+
+4. `LastName` ใช้ `=ArrayFormula(REGEXEXTRACT(B3:B7,".+" & E3:E7 & ".(" & "[A-Z][a-z]+" & ")"))`
+
+
+
+5. `DOB` ใช้ `=ArrayFormula(REGEXEXTRACT(B3:B7,"Date of Birth (\d{2}.[A-z]+.\d{4})"))`
+
+
+
+6. `Age` ใช้ `=ArrayFormula(DATEDIF(G3:G7,TODAY(),"Y"))`
+
+
+
+7. `Address` ใช้ `=ArrayFormula(REGEXEXTRACT(B3:B7,"Address (\d+ [A-z]+ [A-z]+..+ )"))`
+
+
+
+8. `Zipcode` ใช้ `=ArrayFormula(REGEXEXTRACT(B3:B7," \d{5}"))`
+
+
+
+9. `Expired Date` ใช้ `=ArrayFormula(REGEXEXTRACT(B3:B7,"Expired Date (\d{2}.[A-z]+.\d{4})"))`
+
+
+
+10. `Expired 2024` ใช้ `=ArrayFormula(REGEXMATCH(K3:K7,"2024"))`
+
+
+
+
+
+
+
+
+
+
+
 📌 **ตัวอย่าง:** [แนะนำให้ลองดูใน Sheet: Click](https://docs.google.com/spreadsheets/d/1a3l_9Lgr_G6m5DkfvEdUg4a3fpwKmLog1oEyewA8Zg4/edit?usp=sharing)
 
-![Highlight Row](https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-6-6.gif)
-![Highlight Row](https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-6-6.png)
-
+<p align="center">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-6-6.png" alt="Highlight Row">
+</p>
 
 
 
