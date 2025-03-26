@@ -37,6 +37,10 @@
 
 📌 **ตัวอย่าง:** [แนะนำให้ลองดูใน Sheet: Click](https://docs.google.com/spreadsheets/d/1a3l_9Lgr_G6m5DkfvEdUg4a3fpwKmLog1oEyewA8Zg4/edit?usp=sharing)
 
+<p align="center">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-1-6.gif" alt="Highlight Row">
+</p>
+
 ![Highlight Row](https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-1-6.gif)
 <p align="center">
   <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-1-6.png" alt="Highlight Row">
