@@ -505,15 +505,6 @@ IF(B2="All","1=1","N='" & B2 & "'") &
    แทน white space 1 อัน จากนั้นจัดกลุ่ม โดยการใช้วงเล็บเปิดถ้าเจอตัวอักษรตัวใหญ่ A-Z 1 ตัวและตามด้วยตัวอักษรเล็ก 1 ตัวกี่ตัวก็ได้จากนั้นปิดการจัดกลุ่มด้วยวงเล็บปิด
    ผลลัพธ์ที่เป็นไปได้่คือ
 
-   | P1 : 6/6                                                                                                                                      | C                 | D      | E         |
-|-----------------------------------------------------------------------------------------------------------------------------------------------|-------------------|--------|-----------|
-| Customer Information                                                                                                                          | ID                | Gender | Firstname |
-| ID 1-1078-00555-99-1 Mr. John David <br>Date of Birth 20 Sep 1988<br>Address 67 Bangkok Thailand 10560<br>Expired Date 31 Dec 2023            | 1-1078-00555-99-1 | Mr.    | John      |
-| ID 3-5522-87666-87-2 Miss. Carry Anna <br>Date of Birth 18 Jan 1995<br>Address 967 Tokyo Japan 10880<br>Expired Date 25 Apr 2025              | 3-5522-87666-87-2 | Miss.  | Carry     |
-| ID 1-2222-03874-23-6 Mr. Kevin Demio <br>Date of Birth 14 Feb 1992<br>Address 7878 Washington United States 11155<br>Expired Date 31 Oct 2020 | 1-2222-03874-23-6 | Mr.    | Kevin     |
-| ID 1-1078-00555-99-1 Mr. Stuart Lonely <br>Date of Birth 20 Sep 1982<br>Address 554 Seoul Korea 89237<br>Expired Date 31 Mar 2024             | 1-1078-00555-99-1 | Mr.    | Stuart    |
-| ID 1-1078-00555-99-1 Miss. Anya Tayloy <br>Date of Birth 05 May 1985<br>Address 998 London United Kingdom 55387<br>Expired Date 15 Nov 2025   | 1-1078-00555-99-1 | Miss.  | Anya      |
-     
 7. `LastName` ใช้
    ```excel
    =ArrayFormula(REGEXEXTRACT(B3:B7,".+" & E3:E7 & ".(" & "[A-Z][a-z]+" & ")"))`
