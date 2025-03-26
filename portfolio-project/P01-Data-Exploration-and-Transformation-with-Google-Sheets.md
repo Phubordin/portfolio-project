@@ -164,6 +164,11 @@ female
 ---
 
 ## Dynamic Query
+
+<p align="center">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-3-6-0.png" alt="Highlight Row">
+</p>
+
 ```excel
 =QUERY(EMPLOYEE1, 
 "select * where " &
@@ -171,10 +176,6 @@ IF(B2="All","1=1","N='" & B2 & "'") &
 "And " & IF(B3="all","1=1","O = '" & B3 & "'")  &
 "And " & IF(B4="All","1=1","L <= date'"& Text(B4,"yyyy-mm-dd") & "'"))
 ```
-
-<p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-3-6-0.png" alt="Highlight Row">
-</p>
 
 📌 **อธิบายสูตร:**
 - `EMPLOYEE1` แทนด้วยช่วงข้อมูล ตามรูปครับ
