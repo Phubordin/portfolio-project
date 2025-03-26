@@ -428,34 +428,6 @@ IF(B2="All","1=1","N='" & B2 & "'") &
 
 ## Regular Expression
 
-```excel
-=ArrayFormula(REGEXEXTRACT(B3:B7,"M[a-z]+."))
-```
-```excel
-=ArrayFormula(REGEXEXTRACT(B3:B7,".+" & D3:D7 & ".(" & "[A-Z][a-z]+" & ")"))
-```
-```excel
-=ArrayFormula(REGEXEXTRACT(B3:B7,".+" & E3:E7 & ".(" & "[A-Z][a-z]+" & ")"))
-```
-```excel
-=ArrayFormula(REGEXEXTRACT(B3:B7,"Date of Birth (\d{2}.[A-z]+.\d{4})"))
-```
-```excel
-=ArrayFormula(DATEDIF(G3:G7,TODAY(),"Y"))
-```
-```excel
-=ArrayFormula(REGEXEXTRACT(B3:B7,"Address (\d+ [A-z]+ [A-z]+..+ )"))
-```
-```excel
-=ArrayFormula(REGEXEXTRACT(B3:B7," \d{5}"))
-```
-```excel
-=ArrayFormula(REGEXEXTRACT(B3:B7,"Expired Date (\d{2}.[A-z]+.\d{4})"))
-```
-```excel
-=ArrayFormula(REGEXMATCH(K3:K7,"2024"))
-```
-
 <p align="center">
   <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-6-6.png" alt="Highlight Row">
 </p>
@@ -474,6 +446,7 @@ IF(B2="All","1=1","N='" & B2 & "'") &
 ดังนั้นผมขอแบ่งเป็น 10 ส่วน ดังต่อไปนี้ (ผมขอข้ามส่วน `ArrayFomula ไปเลยนะครับ เพราะตัวอย่างที่ผ่านมาๆอธิบายไปแล้ว)
 
 1. `ID` ใช้
+   
    ```excel
      =ArrayFormula(REGEXEXTRACT(B3:B7, "\d-\d{4}-\d{5}-\d{2}-\d"))
      ```
@@ -481,22 +454,66 @@ IF(B2="All","1=1","N='" & B2 & "'") &
    รับอยู่ 2 parameter คือ `B3:B7` และ `"\d-\d{4}-\d{5}-\d{2}-\d"`
    ผมขออธิบายส่วน `"\d-\d{4}-\d{5}-\d{2}-\d"`
 
-     - `"\d-\d{4}-\d{5}-\d{2}-\d"` ให้หา pattern ตัวเลข (เลข1ตัว-เลข4ตัว-เลช5ตัว-เลข2ตัว-เลข1ตัว)  โดยเลขก็คือ 0 ถึง 9
+     - `"\d-\d{4}-\d{5}-\d{2}-\d"`
+
+       ให้หา pattern ตัวเลข (เลข1ตัว-เลข4ตัว-เลช5ตัว-เลข2ตัว-เลข1ตัว)  โดยเลขก็คือ 0 ถึง 9
        เมื่อพบให้ดึงออกมาซึ่งผลลัพธ์อาจเป็นแบบไหนก็ได้ เช่น `1-1078-00555-99-1`, `3-5522-87666-87-2`, `1-2222-03874-23-6`, `1-1078-00555-99-1`, `1-1078-00555-99-1` เป็นต้น
 
-3. `Gender` ใช้
+2. `Gender` ใช้
+   
    ```excel
    =ArrayFormula(REGEXEXTRACT(B3:B7,"M[a-z]+."))`
    ```
 
+   `"M[a-z]+."`
 
-
-5. `FirstName` ใช้
+   ให้หา pattern ขึ้นต้้วย `M` ตามด้วยตัวอักษรกี่ตัวก้ได้ a ถึง z ตัวเล็ก(`[a-z)`) และเมื่อเจอ `.` ให้หยุด
+   และดึงผลลัพธ์ออกมา ซึ่งผลลัพธ์ที่เป็นไปได้คือ `Mr.`, `Miss.`, `Mpass.`, `Mg.`, `Mrs.`
+  
+3. `FirstName` ใช้
    ```excel
    =ArrayFormula(REGEXEXTRACT(B3:B7,".+" & D3:D7 & ".(" & "[A-Z][a-z]+" & ")"))`
    ```
 
+   ข้อนี้จะทได้ก็ต่อเมื่อทำข้อ 2 มาก่อน เพราะเราจะอ้างอิงถึงผลลัพธ์ที่อยู่ใน `D3:D7`
 
+   `".+" & D3:D7 & ".(" & "[A-Z][a-z]+" & ")"`
+
+   จากสูตรเช่นเดิมจะต้องการรับค่า parameter 2 ตัวตัวแรกจะเป็น cell ที่เราต้องการดึง
+   ตัวที่ 2 ผมขอแบ่งเป็น 3 ส่วน
+
+   - `".+"`
+
+     เอาทุกตัวเลขหรือทุกตัวอักษร(รวม white space ด้วย) กี่ตัวก็ได้ที่ ..
+
+   - `D3:D7`
+
+     อยู่ข้างหน้าของช่วง cell `D3:D7` (ที่เราดึงมาจากข้อ 2)
+
+   - `".(" & "[A-Z][a-z]+" & ""`
+
+     - จากนั้นตัวอะไรก็ได้ 1 ตัว (white space, ตัวเลข, ตัวอักษร) และเติมวงเว็บเปิดให้ ด้วย `.(`
+     - จากนั้นเอาตัวอักษรตัวใหญ่ มา 1 ตัว A-Z ตามด้วยตัวเล็ก 1 ตัว a-z ตามด้วยกี่ตัวก็ได้ `[A-Z][a-z]+`
+     - จากนั้นวงเล็กปิด `)`
+
+     ดังนั้น ภาพรวมคือ .([A-Z][a-z]+) เอาทุกตัวเลขหรือทุกตัวอักษร(รวม white space ด้วย)
+     หลังจากนั้นจัดกลุ่มให้อยู่ในวงเล็บ กลุ่มที่ว่าคือ เริ่มต้นด้วยตัวใหญ่ 1 ตัวตามด้วยตัวเล็กกี่ตัวก็ได้จากนั้นวงเล็บปิด เพื่อบอกให้รู้ว่าการจัดกลุ่มจบเเล้ว
+
+   `".+" & D3:D7 & ".(" & "[A-Z][a-z]+" & ")"`
+
+   หมายถึง เอาทุกตัวเลข ทุกตัวอักษร รวมถึงอัขระพิเศษ(white space เป็นต้น) ตามด้วยคำนำหน้าที่ดึงมาจากข้อ 2 จากนั้นใช้ `.` เพื่อ
+   แทน white space 1 อัน จากนั้นจัดกลุ่ม โดยการใช้วงเล็บเปิดถ้าเจอตัวอักษรตัวใหญ่ A-Z 1 ตัวและตามด้วยตัวอักษรเล็ก 1 ตัวกี่ตัวก็ได้จากนั้นปิดการจัดกลุ่มด้วยวงเล็บปิด
+   ผลลัพธ์ที่เป็นไปได้่คือ
+
+   | P1 : 6/6                                                                                                                                      | C                 | D      | E         |
+|-----------------------------------------------------------------------------------------------------------------------------------------------|-------------------|--------|-----------|
+| Customer Information                                                                                                                          | ID                | Gender | Firstname |
+| ID 1-1078-00555-99-1 Mr. John David <br>Date of Birth 20 Sep 1988<br>Address 67 Bangkok Thailand 10560<br>Expired Date 31 Dec 2023            | 1-1078-00555-99-1 | Mr.    | John      |
+| ID 3-5522-87666-87-2 Miss. Carry Anna <br>Date of Birth 18 Jan 1995<br>Address 967 Tokyo Japan 10880<br>Expired Date 25 Apr 2025              | 3-5522-87666-87-2 | Miss.  | Carry     |
+| ID 1-2222-03874-23-6 Mr. Kevin Demio <br>Date of Birth 14 Feb 1992<br>Address 7878 Washington United States 11155<br>Expired Date 31 Oct 2020 | 1-2222-03874-23-6 | Mr.    | Kevin     |
+| ID 1-1078-00555-99-1 Mr. Stuart Lonely <br>Date of Birth 20 Sep 1982<br>Address 554 Seoul Korea 89237<br>Expired Date 31 Mar 2024             | 1-1078-00555-99-1 | Mr.    | Stuart    |
+| ID 1-1078-00555-99-1 Miss. Anya Tayloy <br>Date of Birth 05 May 1985<br>Address 998 London United Kingdom 55387<br>Expired Date 15 Nov 2025   | 1-1078-00555-99-1 | Miss.  | Anya      |
+     
 7. `LastName` ใช้
    ```excel
    =ArrayFormula(REGEXEXTRACT(B3:B7,".+" & E3:E7 & ".(" & "[A-Z][a-z]+" & ")"))`
@@ -543,13 +560,6 @@ IF(B2="All","1=1","N='" & B2 & "'") &
     ```excel
     =ArrayFormula(REGEXMATCH(K3:K7,"2024"))
     ```
-
-
-
-
-
-
-
 
 
 
