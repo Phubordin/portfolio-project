@@ -563,7 +563,7 @@ IF(B2="All","1=1","N='" & B2 & "'") &
    
    ก็จะได้ นามสกุลออกมา `David`, `Anna`, `Demio`. `Lonely`, `Tayloy`
 
-### 65 `DOB` ใช้สูตร
+### 65 `Date of Birth` ใช้สูตร
 
    ```excel
    =ArrayFormula(REGEXEXTRACT(B3:B7,"Date of Birth (\d{2}.[A-z]+.\d{4})"))
