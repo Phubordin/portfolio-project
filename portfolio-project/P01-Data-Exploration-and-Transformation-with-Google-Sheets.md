@@ -265,19 +265,12 @@ IF(B2="All","1=1","N='" & B2 & "'") &
    ในส่วนนี้จะคล้ายข้อ 2 ที่ผ่านมาแค่เปลี่ยนจาก `B2` เป็น `B3` นั่นคือเลือก `Performance` ผมขอข้ามประเด็นเรื่อง `IF()` และ `1=1` ไปสามารถทบทวนข้อ 2 ใหม่ได้
    แต่ถ้า users เลือกอันอื่นที่ไม่ใช่ `All` ซึ่งเป็นไปได้ 3 แบบคือ Good, Average, Excellent
      - `select * where N = 'female' And O = 'Good'`
-        | SSN         | LASTNAME  | FIRST NAME | HIREDATE   | SALARY   | GENDER | **PERFORMANCE** |
-        |-------------|-----------|------------|------------|----------|--------|-----------------|
-        | 109-87-6544 | Foster    | Harold     | 2005-08-14 | $55,000  | Male   | **Good**        |
-        | 111-12-1111 | Johnson   | James      | 1996-05-03 | $47,500  | Female | **Good**        |
-        | 123-45-6789 | Coulter   | Tracy      | 1993-02-14 | $100,000 |        | **Good**        |
-        | 333-43-4444 | Smith     | Frank      | 1991-01-29 | $65,000  | Male   | **Good**        |
-        | 335-55-5533 | Jones     | Holly      | 1986-04-08 | $65,000  | Female | **Good**        |
-        | 432-19-8765 | Bronson   | Paul       | 2003-11-20 | $58,000  | Male   | **Good**        |
-        | 444-45-4444 | Frank     | Vernon     | 1985-04-10 | $75,000  | Male   | **Good**        |
-        | 500-50-0505 | Rodriguez | Jose       | 1998-07-16 | $150,000 | Male   | **Good**        |
-        | 612-99-1111 | Roberts   | Melissa    | 1984-05-14 | $79,000  | Female | **Good**        |
-        | 767-74-7373 | Martin    | William    | 2006-08-26 | $23,000  | Male   | **Good**        |
-        | 925-45-7116 | Whitehead | David      | 1980-07-25 | $175,000 | Male   | **Good**        |
+        | SSN         | LASTNAME | FIRST NAME | HIREDATE   | SALARY  | GENDER | PERFORMANCE |
+        |-------------|----------|------------|------------|---------|--------|-------------|
+        | 111-12-1111 | Johnson  | James      | 1996-05-03 | $47,500 | Female | Good        |
+        | 335-55-5533 | Jones    | Holly      | 1986-04-08 | $65,000 | Female | Good        |
+        | 612-99-1111 | Roberts  | Melissa    | 1984-05-14 | $79,000 | Female | Good        |
+
        
      - `select * where N = 'female' And O = 'Average'`
        | SSN         | LASTNAME | FIRST NAME | HIREDATE   | SALARY  | GENDER | **PERFORMANCE** |
@@ -290,14 +283,11 @@ IF(B2="All","1=1","N='" & B2 & "'") &
        | 777-78-7777 | Marder   | Kelly      | 1997-09-25 | $38,500 | Female | **Average**     |
      
      - `select * where N = 'female' And O = 'Excellent'`
-       | SSN         | LASTNAME | FIRST NAME | HIREDATE   | SALARY  | GENDER | **PERFORMANCE** |
-       |-------------|----------|------------|------------|---------|--------|-----------------|
-       | 000-02-2222 | Adams    | Sandy      | 2001-01-15 | $19,500 | Female | **Excellent**   |
-       | 109-87-6543 | Wood     | Emily      | 1997-03-12 | $69,000 | Female | **Excellent**   |
-       | 333-66-1234 | Brown    | Marietta   | 2001-03-07 | $18,500 | Female | **Excellent**   |
-       | 464-64-4466 | Webster  | David      | 1991-01-29 | $58,500 | Male   | **Excellent**   |
-       | 555-56-5555 | Charles  | Kenneth    | 1998-06-18 | $40,000 | Male   | **Excellent**   |
-       | 776-67-6666 | Adamson  | David      | 2002-10-04 | $52,000 | Male   | **Excellent**   |
+       | SSN         | LASTNAME | FIRST NAME | HIREDATE   | SALARY  | GENDER | PERFORMANCE |
+       |-------------|----------|------------|------------|---------|--------|-------------|
+       | 000-02-2222 | Adams    | Sandy      | 2001-01-15 | $19,500 | Female | Excellent   |
+       | 109-87-6543 | Wood     | Emily      | 1997-03-12 | $69,000 | Female | Excellent   |
+       | 333-66-1234 | Brown    | Marietta   | 2001-03-07 | $18,500 | Female | Excellent   |
 
 6. `"And " &`
 
