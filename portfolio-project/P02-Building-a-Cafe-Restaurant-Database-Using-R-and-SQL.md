@@ -29,7 +29,7 @@ CREATE TABLE Transactions (
 CREATE TABLE Menus (
   MenuId INT PRIMARY KEY, -- สร้างคอลัมน์ MenuId เป็น Primary Key
   Name TEXT, -- สร้างคอลัมน์ Name เป็น TEXT
-  Categories TEXT CHECK (Categories IN ('Rice,' 'Pasta,' 'Drinks,' 'Dessert')) -- สร้างคอลัมน์ Categories เป็น TEXT และกำหนดให้มีเฉพาะค่า 'Rice,' 'Pasta,' 'Drinks,' 'Dessert' เท่านั้น
+  Categories TEXT CHECK (Categories IN ('Rice', 'Pasta', 'Drinks', 'Dessert')) -- สร้างคอลัมน์ Categories เป็น TEXT และกำหนดให้มีเฉพาะค่า 'Rice', 'Pasta', 'Drinks', 'Dessert' เท่านั้น
 );
 
 -- Creating Branch Table
@@ -104,6 +104,14 @@ INSERT INTO Menus (MenuId, Name, Categories) VALUES
 (7, 'Water'     , 'Drinks'),
 (8, 'Ice Cream' , 'Dessert');
 
+```
+
+📌 **RESULT:**
+
+
+
+
+```sql
 -------------------- เริ่มเขียน Query ดึงข้อมูลจาก Table ที่เราสร้างไว้ด้านบน --------------------
 ------------------- โจทย์อยากทราบว่าลูกค้าที่เป็น member มีความคิดเห็นอย่างไรกับร้านอาหารของเรา------------
 
@@ -219,51 +227,56 @@ invoicedate <- as.Date(c('2023-05-01', '2023-06-02', '2023-08-03', '2023-12-04',
 quantity <- c(4, 3, 4, 2, 1, 3, 3, 2, 3, 5) # สร้างคอลัมน์ quantity เพื่อดูว่าบิลที่ลูกค้าซื้อมีกี่รายการ
 total_sales <- c(100.00, 200.00, 300.00, 400.00, 500.00, 600.00, 700.00, 800.00, 900.00, 1000.00) # สร้าง total_sales ดูมูลค่าของบิลทั้งหมด
 
+# นำ 9 คอลัมน์ทั้งหมดมารวมเป็น 1 ตารางด้วยการใช้คำสั่ง data.frame() ชื่อ transactions_table
+transactions_table <- data.frame(invoiceid, branchid1, customerid1, menuid1, commentid1, invoicedate, quantity, total_sales) 
 
-transactions <- data.frame(invoiceid, branchid1, customerid1, menuid1, commentid1, invoicedate, quantity, total_sales) # นำ 9 คอลัมน์
-ทั้งหมดมารวมเป็น 1 ตารางด้วยการใช้คำสั่ง data.frame() 
-
-# สร้าง 3 คอลัมน์ ใน Transactions Table Menus Table
+# สร้าง 3 คอลัมน์ ใน Menus Table
 menuid2 <- c(1, 2, 3, 4, 5, 6, 7, 8) # สร้างคอลัมน์นี้เป็น Primary Key ชื่อ menuid2
-name_menu <- c('Pad Thai', 'Spaghetti', 'Coke', 'Cake', 'Fried Rice', 'Lasagna', 'Water', 'Ice Cream') # สร้างคอลัมน์นี้เป็น Primary Key ชื่อ menuid2
-categories <- c('Rice', 'Pasta', 'Drinks', 'Dessert', 'Rice', 'Pasta', 'Drinks', 'Dessert')
+menu_name <- c('Pad Thai', 'Spaghetti', 'Coke', 'Cake', 'Fried Rice', 'Lasagna', 'Water', 'Ice Cream') # สร้างคอลัมน์ menu_name แสดงถึง
+รายชื่ออาหาร
+categories <- c('Rice', 'Pasta', 'Drinks', 'Dessert', 'Rice', 'Pasta', 'Drinks', 'Dessert') # สร้างคอลัมน์ categories เพื่อแบ่งหมวดหมู่ของอาหาร
 
-menus <- data.frame(menuid2, name_menu, categories)
+# นำ 3 คอลัมน์ทั้งหมดมารวมเป็น 1 ตารางด้วยการใช้คำสั่ง data.frame() ชื่อ menus_table
+menus_table <- data.frame(menuid2, name_menu, categories)
 
-# Branch Table
-branchid2 <- c(1, 2, 3)
-name_branch <- c('Ratchayothin', 'Rama 7', 'ChokChai 4')
-address <- c('Chatuchak', 'BangSue', 'Latphrao')
-branch <- data.frame(branchid2, name_branch, address)
+# สร้าง 3 คอลัมน์ ใน Branch Table
+branchid2 <- c(1, 2, 3) # สร้างคอลัมน์นี้เป็น Primary Key ชื่อ branchid2
+branch_name <- c('Ratchayothin', 'Rama 7', 'ChokChai 4') # สร้างคอลัมน์ branch_name แสดงรายชื่อสาขาทั้งหมด
+address <- c('Chatuchak', 'BangSue', 'Latphrao') # สร้างคอลัมน์ address แสดงที่อยู่สาขาเหล่านั้น
 
-# Customers Table
-customerid2 <- c(1, 2, 3, 4, 5)
-name_customer <- c('John', 'Jane', 'Alex', 'Sara', 'Tom')
-gender <- c('Male', 'Female', 'LGBTQ+', 'Female', 'Male')
-status <- c('Member', 'Guest', 'Member', 'Guest', 'Member')
-customers <- data.frame(customerid2, name_customer, gender, status)
+# นำ 3 คอลัมน์ทั้งหมดมารวมเป็น 1 ตารางด้วยการใช้คำสั่ง data.frame() ชื่อ branch_table
+branch_table <- data.frame(branchid2, name_branch, address)
 
-# Feedback Table
-commentid2 <- c(1, 2, 3, 4, 5, 6)
-comment <- c('รสจัดเกิน', 'คุ้มราคา', 'เเพง', 'กลมกล่อม', 'บอกต่อ', 'เค็มเกิน')
-emotional <- c('Negative', 'Positive', 'Negative', 'Positive', 'Positive', 'Negative')
-feedback <- data.frame(commentid2, comment, emotional)
+# สร้าง 4 คอลัมน์ ใน Customers Table
+customerid2 <- c(1, 2, 3, 4, 5) # สร้างคอลัมน์นี้เป็น Primary Key ชื่อ customerid2
+cusotmer_name <- c('John', 'Jane', 'Alex', 'Sara', 'Tom') # สร้างคอลัมน์ cusotmer_name แสดงรายชื่อลูกค้าทั้งหมด
+gender <- c('Male', 'Female', 'LGBTQ+', 'Female', 'Male') # สร้างคอลัมน์ gender แสดงเพศของลูกต้า
+status <- c('Member', 'Guest', 'Member', 'Guest', 'Member') # สร้างคอลัมน์ status เพื่อบอกสถานะลูกค้าแต่ละคน
 
-# Now all 5 data frames are defined and ready to be used.
+# นำ 4 คอลัมน์ทั้งหมดมารวมเป็น 1 ตารางด้วยการใช้คำสั่ง data.frame() ชื่อ customers_table
+customers_table <- data.frame(customerid2, name_customer, gender, status)
 
-con <- dbConnect(SQLite(), "HW3-restaurant.db") # create new file
+# สร้าง 4 คอลัมน์ ใน Feedback Table
+commentid2 <- c(1, 2, 3, 4, 5, 6) # สร้างคอลัมน์นี้เป็น Primary Key ชื่อ commentid2
+comment <- c('รสจัดเกิน', 'คุ้มราคา', 'เเพง', 'กลมกล่อม', 'บอกต่อ', 'เค็มเกิน') # สร้างคอลัมน์ comment แสดงข้อความที่ลูกค้าแสดงความคิดเห็นทั้งหมด
+emotional <- c('Negative', 'Positive', 'Negative', 'Positive', 'Positive', 'Negative') # สร้างคอลัมน์ emotional เป็นเหมือนกับการติด tag ว่าความคิดเห็นลูกค้านั้นดีหรือไม่ดี
 
-# Writing Tables to SQLite Database using dbWriteTable()
-# Assuming `con` is already connected to an SQLite database
+# นำ 3 คอลัมน์ทั้งหมดมารวมเป็น 1 ตารางด้วยการใช้คำสั่ง data.frame() ชื่อ feedback_table
+feedback_table <- data.frame(commentid2, comment, emotional)
 
-dbWriteTable(con, "transactions", transactions)
-dbWriteTable(con, "menus", menus)
-dbWriteTable(con, "branch", branch)
-dbWriteTable(con, "customers", customers)
-dbWriteTable(con, "feedback", feedback) 
+# ตอนนี้เราก็มี 5 table ใน R ที่พร้อมจะนำไปสร้างเป็น SQLite Database ด้วยการใช้ 2 คำสั่งนี้
+# 1) dbConnect() เชื่อมต่อกับ database
+# 2) dbWriteTable() เขียน table เข้าไปใน database นั้นๆ
 
-# Closing connection
-dbDisconnect(con)
+con <- dbConnect(SQLite(), "cafe-restaurant.db") # สร้างไฟล์ใหม่เป็น database ชื่อ cafe-restaurant.db ประเภท SQLite Database เก็บไว้ในตัวแปร con
+
+dbWriteTable(con, "transactions", transactions_table) # นำ transactions_table เขียนเข้าไปอยู่ใน SQLite Database
+dbWriteTable(con, "menus", menus_table) # นำ menus_table เขียนเข้าไปอยู่ใน SQLite Database
+dbWriteTable(con, "branch", branch_table) # นำ branch_table เขียนเข้าไปอยู่ใน SQLite Database
+dbWriteTable(con, "customers", customers_table) # นำ customers_table เขียนเข้าไปอยู่ใน SQLite Database
+dbWriteTable(con, "feedback", feedback_table) # นำ feedback_table เขียนเข้าไปอยู่ใน SQLite Database
+
+dbDisconnect(con) # สำคัญใช้แล้วต้องยกเลิกการเชื่อมต่อกับ Database ด้วย
 
 ```
 
