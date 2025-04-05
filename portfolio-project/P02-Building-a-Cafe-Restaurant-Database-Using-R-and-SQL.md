@@ -1,158 +1,127 @@
 # P2 : Building a Café Restaurant Database Using R and SQL
 
 ## 📌 Table of Contents
-- [Installation Guide](installation.md)
-- [Usage](usage.md)
-- [Contributing](contributing.md)
+1. [Create ER Diagram](#1-create-er-diagram)
+2. [Create Tables and Perform SQL INSERT with Basic Queries and Aggregation](#2-create-tables-and-perform-sql-insert-with-basic-queries-and-aggregation)
+3. [Create Tables and Perform INSERT Using R](#3-create-tables-and-perform-insert-using-r)
+
+[Project Summary](#project-summary)
 
 ---
-## 🔹 Overview
-This is an overview of our project...
 
-[GitHub Profile](https://github.com/Phubordin)  
-[ไฟล์ใน Repo](./README.md)  
+## 1 Create ER Diagram
+## 2 Create Tables and Perform SQL INSERT with Basic Queries and Aggregation
+## 3 Create Tables and Perform INSERT Using R
 
+```dbml
+// Use DBML to define your database structure
+// Docs: https://dbml.dbdiagram.io/docs
 
-```python
-def hello():
-    print("Hello, GitHub!")
+Table Transactions {
+  InvoiceId integer [primary key]
+  BranchId integer
+  CustomerId integer
+  MenuId integer
+  CommentId integer 
+  InvoiceDate timestamp
+  Quantity integer
+  Total_Sales real 
+  
+}
+
+Table Menus {
+  MenuId integer [primary key]
+  Name varchar
+  Categories varchar
+}
+
+Table Branch {
+  BranchId integer [primary key]
+  Name varchar
+  Address varchar
+}
+
+Table Customers {
+  CustomerId integer [primary key]
+  Name varchar
+  Gendar varchar
+  Status varchar
+}
+
+Table Feedback {
+  CommentId integer [primary key]
+  Comment varchar
+  Emotional varchar
+}
+
+Ref: Customers.CustomerId < Transactions.CustomerId // one-to-many
+
+Ref: Branch.BranchId < Transactions.BranchId
+
+Ref: Menus.MenuId < Transactions.MenuId
+
+Ref: Feedback.CommentId < Transactions.CommentId
+
 ```
+📌 **อธิบายสูตร:**
+
+ผมขออนุญาตแบ่งเป็น 3 ส่วนดังนี้
+
+1. `FILTER(EMPLOYEE, (GENDER = B2) * (PERFORMANCE = B3))`
+
+   - ผมตั้งชื่อ range ต่างๆที่มีชื่อว่า `EMPLOYEE`(Table), `GENDER`(Column), `PERFORMANCE`(Column) เพื่อง่ายต่อการเลือกช่วง cell มาใช้
+
+     ผมจึงเลือกช่วง `EMPLOYEE` โดยที่เพศ คือ cell `B2` ที่ Dynamic และ`*` ผลการปฏิบัติงาน คือ cell `B3` ที่ Dynamic
+
+     ผลลัพธืจึงถูก Filter ออกมา หลังจากนั้น..
+     
+2. `SORT(FILTER(..ข้อ 1), 5, Not(D2))`
+
+   - ผมเรียงลำดับ `Salary` จากมากไปน้อย โดยที่ `Salary` อยู่คอลัมน์ที่ `5` และ Default ของการ Sort ที่จะเรียงจากน้อยไปมากได้ก็ต่อเมื่อมีค่า TRUE
+
+     ในอาร์กิวเมนต์ที่ 3 ของ Sort ดังนั้น ผมจึงเลือกคอลัมน์ `Salary` และเรียงลำดับตาม cell `D2` เป็น Checkbox เพื่อให้มีความ Dynamic เมื่อ users
+
+     ติ้ก D2 = True ซึ่งมันจะเรียงจากน้อยไปมาก ดังนั้นผมจึงใช้ `NOT(D2)` เพื่อบังคับให้การติ้กของ users นั้นเรียง `Salary` จากมากไปน้อยโดยอัตโนมัติ
     
-| ชื่อ | อายุ | อาชีพ |
-|------|----|------|
-| Alice | 25 | Developer |
-| Bob   | 30 | Designer |
-| Charlie | 28 | Data Scientist |
+3. `IFERROR(..ข้อ 2,"NO DATA")`
 
-```r
-# Intro
-library(tidyverse)
-library(nycflights13)
-library(glue)
-library(rnaturalearth)
-library(sf)
-library(ggplot2)
-library(purrr)
+   - ถ้าหาก Formula ข้อ 1 หรือ 2 ส่งผลลัพธ์ Error จะให้แสดง `NO DATA` แต่แน่นอนว่าในตาราง `EMPLOYEE` จะต้องมีการ filter ที่ไม่ match กัน
 
-?flights # file มีเเถว 336,766 ถ้าเราโหลด nycflights23 เวลารัน
-# Flights จะเป็น data 2023 เเล้ว เหมือนมัน update
+     นั้นหมายความว่าไม่มีค่า filter ที่ต้องการดังนั้นผลลัพธ์จึงแสดง `NO DATA` นั่นเอง !
 
-write.csv(flights, file = "flights.csv") # เขียนไฟล์เพื่อดูขนาดไฟล์
-df <- read_csv("flights.csv") # อ่านไฟล์ที่ต้องใชเ _csv เพระาเวลารันมันไม่เป็น tibble ให้
+📌 **ตัวอย่าง:** [แนะนำให้ลองดูใน Sheet: Click](https://docs.google.com/spreadsheets/d/1a3l_9Lgr_G6m5DkfvEdUg4a3fpwKmLog1oEyewA8Zg4/edit?usp=sharing)
 
-## homework 16.25 - 22.30
-## manipulate data (nycflights13)
+<p align="center">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-1-6.gif" alt="Highlight Row">
+</p>
 
-## นี่คือ table ทั้งหมดที่ file Default (nycflights13)
-flights # primary key -> 1 lines = 1 row = 1 เที่ยวบน = 1 การเดินทาง
-airlines # primary key -> name_airlines
-airports # primary key -> name_air
-planes # primary key -> number_planes
-weather # primary key ->origin_location_specific_time
-
-## Let's start HOMEWORK--------------------------------------------------------------
-
-### 1. ต้องการอยากทราบว่า คนบินไปรัฐไหนบ้างแตกต่างกันอย่างไร---------------
-
-# 1. โหลดข้อมูลเมืองจาก rnaturalearth
-cities <- ne_download(scale = "large", type = "populated_places", returnclass = "sf")
-
-# 2. แปลงตาราง airports ให้เป็น sf object
-airport_coords <- airports %>%
-  select(faa, name, lat, lon) %>%
-  st_as_sf(coords = c("lon", "lat"), crs = 4326, remove = FALSE)
-
-# 3. เชื่อมสนามบินกับเมืองใกล้เคียงที่สุด
-matched_cities <- st_join(airport_coords, cities, join = st_nearest_feature)
-
-colnames(matched_cities) <- tolower(colnames(matched_cities))
-colnames(matched_cities)[2] <- "name_airport"
-
-
-# 4. เลือกคอลัมน์ที่ต้องการเพื่อจะนำไป Join 
-state <- matched_cities %>%
-  select(faa, adm1name, name_airport)
-
-## 5. หาจำนวนเที่ยวบินที่ไปถึงที่สนามบินปลายทาง
-n_flight_des <- flights %>%
-  filter(if_all(everything(), ~ !is.na(.))) %>%
-  select(dest) %>%
-  group_by(dest) %>%
-  summarise(n_flights = n()) %>%
-  arrange(- n_flights)
-
-## ไม่ต้องไปดูตรงอื่นเริ่มตรงนี้ !!!!
-## 6. Join table เพื่อดูว่าสนามบินที่ว่าตั้งอยู่เมืองไหน และจัดการค่า NA
-prep_n_flights <- n_flight_des %>%
-  left_join(state, by = c("dest" = "faa")) %>%
-  select(name_airport, dest, adm1name, n_flights) %>%
-  # filter(if_any(everything(), is.na)) %>% # ไว้ test ว่าคอลัมน์ไหนมี NA
-  mutate(
-    adm1name = case_when(
-      is.na(adm1name) & dest == "STT" ~ "U.S. Virgin Islands",
-      is.na(adm1name) & dest == "BQN" ~ "Puerto Rico",
-      is.na(adm1name) & dest == "SJU" ~ "Puerto Rico",
-      is.na(adm1name) & dest == "PSE" ~ "Puerto Rico",
-      TRUE ~ adm1name
-    ), 
-    name_airport = case_when(
-      is.na(name_airport) & dest == "STT" ~ "Cyril E. King Airport",
-      is.na(name_airport) & dest == "BQN" ~ "Rafael Hernandez Airport",
-      is.na(name_airport) & dest == "SJU" ~ "Luis Munoz Marin Interenational Airpot",
-      is.na(name_airport) & dest == "PSE" ~ "Mercedita Airport",
-      TRUE ~ name_airport
-    )
-  )
-# view()
-
-## 7. นับจำนวนเที่ยวบินที่บินไปแต่ละที่ ว่าปี 2013 สนามบินในนิวยอร์กบินไปไหนมากที่สุดเรียงจากน้อยไปมาก
-
-summary_data1 <- prep_n_flights %>% 
-  select(adm1name, n_flights) %>%
-  group_by(adm1name) %>%
-  summarise(n_flights = sum(n_flights)) %>%
-  arrange(- n_flights) %>%
-  slice_head(n = 5)
-#summarise(sum(n_flights))
-
-## แถม
-## ลบเเถวที่มี NA ออกให้หมด
-## show เเถวที่มี NA ประกอบ
-## ลอง make chart คร่าวๆ
-
-flights %>%
-  # filter(if_all(everything(), ~ !is.na(.)))
-  # filter(if_any(everything(), is.na))
-  
-  
-  summary_data1 %>% 
-  ggplot(aes(x = reorder(adm1name,  n_flights), y = n_flights)) + 
-  geom_col() + 
-  coord_flip()
-
-## ตอบ Florida, California, North Carolina 
-## --------------- End 1 ------------------
-```
-
-## 🔢 การคำนวณโบนัสพนักงาน  
-```excel
-=IF(B2>100000, B2*10%, B2*5%)
-```
-📌 **อธิบายสูตร:**  
-- ถ้ายอดขาย (`B2`) มากกว่า `100,000` → ได้โบนัส `10%`  
-- ถ้ายอดขาย ≤ `100,000` → ได้โบนัส `5%`  
+<p align="center">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-1-6.png" alt="Highlight Row">
+</p>
 
 ---
+## Project Summary
 
-## **2️⃣ ใช้ตารางเพื่อแสดงตัวอย่าง Input และ Output**  
-> 📊 **ช่วยให้ Users เข้าใจผลลัพธ์ได้ง่ายขึ้น**  
+ก็จบไปแล้วสำหรับ Project 1 : Data Exploration and Transformation with Google Sheets 
 
-| ยอดขาย (B2) | โบนัสที่ได้ (สูตร `=IF(B2>100000, B2*10%, B2*5%)`) |
-|-------------|-------------------------------------|
-| 120,000     | 12,000 (10%) |
-| 80,000      | 4,000 (5%) |
-| 150,000     | 15,000 (10%) |
+โดยมี 6 ตัวอย่าง ไว้ใช้สำหรับ Explore และ Transform ข้อมูล
 
-=A1 + B1
-=sum(A1:C4)
+1. ใช้สูตร filter ข้อมูล และสามารถ Dropdown List เพื่อเลือกเพศและผลการปฎิบัติงานของพนักงาน
+
+2. ใช้ Highlight Conditional Formatting ในการ Hightlight ข้อมูลของพนักงานที่เราต้องการ
+
+3. ใช้สูตร `Query()` ในการ Dropdown List ข้อมูลลูกค้า เพศ, ผลการปฎิบัติงาน, วันเริ่มงานให้มีความ Dynamic
+
+4. `Vlookup()` เครื่องมือยอดฮิตหนึ่งในตระกูล lookup ไว้ใช้หาค่าต่างๆที่มีความสัมพันธ์เชิงข้อมูล
+
+5. แปลงรูปแบบวันที่ไทย เป็นวันที่มาตรฐานสากล ISO ด้วย `SPLIT()`, `DATE()` และ `VLOOKUP()`
+
+6. การ Transform Data ด้วย Regular Expression สูตรที่ใช้หลักๆ `REGEXEXTRACT()` และ `REGEXMATCH()`
+
+เป็นต้น ขอบคุณมากๆครับที่อ่านมาถึงตรงนี้ ฝากผลงาน project อื่นๆด้วยนะครับ ขอบคุณครับ
+
+
+
+
+
 
