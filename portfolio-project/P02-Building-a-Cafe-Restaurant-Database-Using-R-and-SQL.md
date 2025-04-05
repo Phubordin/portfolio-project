@@ -268,7 +268,7 @@ Feedback ที่ได้จากลูกค้ามีทั้งหม�
 
 ---
 
-## 2 Create Tables and Perform INSERT Using R (ลองทำใน R Studio)
+## 2 Create Tables and Perform INSERT Using R
 
 ```r
 
@@ -288,8 +288,7 @@ transactions_table <- data.frame(invoiceid, branchid1, customerid1, menuid1, com
 
 # สร้าง 3 คอลัมน์ ใน Menus Table
 menuid2 <- c(1, 2, 3, 4, 5, 6, 7, 8) # สร้างคอลัมน์นี้เป็น Primary Key ชื่อ menuid2
-menu_name <- c('Pad Thai', 'Spaghetti', 'Coke', 'Cake', 'Fried Rice', 'Lasagna', 'Water', 'Ice Cream') # สร้างคอลัมน์ menu_name แสดงถึง
-รายชื่ออาหาร
+menu_name <- c('Pad Thai', 'Spaghetti', 'Coke', 'Cake', 'Fried Rice', 'Lasagna', 'Water', 'Ice Cream') # สร้างคอลัมน์ menu_name แสดงถึงรายชื่ออาหาร
 categories <- c('Rice', 'Pasta', 'Drinks', 'Dessert', 'Rice', 'Pasta', 'Drinks', 'Dessert') # สร้างคอลัมน์ categories เพื่อแบ่งหมวดหมู่ของอาหาร
 
 # นำ 3 คอลัมน์ทั้งหมดมารวมเป็น 1 ตารางด้วยการใช้คำสั่ง data.frame() ชื่อ menus_table
