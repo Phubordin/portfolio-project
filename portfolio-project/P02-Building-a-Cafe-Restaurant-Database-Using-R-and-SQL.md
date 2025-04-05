@@ -376,7 +376,7 @@ dbDisconnect(con) # สำคัญใช้แล้วต้องยกเล
 
 และเว็บไซต์ที่ไว้ใช้สร้าง [ER Diagram dbdiagram.io](https://dbdiagram.io/home)
 
-ER Diagram ย่อมาจาก Entity-Relationship Diagram เปรียบเสมือนเป็นแผนที่ในการเข้าใจเส้นทางของตารางข้อมูลตารางที่มีอยู่ใน Database ของเรา ช่วยให้เราเข้าถึงข้อมูลได้อย่างง่ายดาย
+ER Diagram ย่อมาจาก Entity-Relationship Diagram เปรียบเสมือนเป็นแผนที่ในการเข้าใจเส้นทางการเดินทางของข้อมูลในตารางที่มีอยู่ใน Database ของเรา ช่วยให้เราเข้าถึงข้อมูลได้อย่างง่ายดาย
 
 ณ ที่นี้ผมใช้เว็บไซต์ [dbdiagram.io](https://dbdiagram.io/home) ในการสร้าง [ER Diagram ของผม](https://dbdiagram.io/d/667d52279939893dae6e7191) เรียบร้อยแล้ว
 
