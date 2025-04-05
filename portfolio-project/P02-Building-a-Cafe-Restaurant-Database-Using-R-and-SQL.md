@@ -337,8 +337,10 @@ feedback_table <- data.frame(commentid2, comment, emotional)
 
 2. dbWriteTable() เขียน table เข้าไปใน database นั้นๆ
 
-```r
+❗️ ต้องดาวน์โหลด package RSQLite ก่อนโหลด library ด้วยคำสั่ง `install.packages("RSQLite")`
 
+```r
+library(RSQLite)
 con <- dbConnect(SQLite(), "cafe-restaurant.db") # สร้างไฟล์ใหม่เป็น database ชื่อ cafe-restaurant.db ประเภท SQLite Database เก็บไว้ในตัวแปร con
 
 dbWriteTable(con, "transactions", transactions_table) # นำ transactions_table เขียนเข้าไปอยู่ใน SQLite Database
@@ -351,14 +353,24 @@ dbDisconnect(con) # สำคัญใช้แล้วต้องยกเล
 
 ```
 
+📌 **Result:**
 
+<p align="center">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/blob/main/cafe-r.png" alt="cafe R">
+</p>
 
+1. นำ code ด้านบนไปบนรันหน้าต่าง R Script จังหวะรันจะเห็น 
 
+2. code ทั้งหมดขึ้นแสดงหน้าต่าง console (หมายเลข 2) ด้านล่างไม่มี Error รันผ่าน
+
+3. ที่อยู่ของไฟล์ ที่เรา Set Working Directory ไว้ตอนแรก ไฟล์ถูกเขียนขึ้นชื่อ `cafe-restaurant.db` และเก็บไว้ในตัวแปรที่อยู่ในหมายเลข 4 ชื่อ `con`
+
+4. สถานที่เก็บตัวแปรทั้งหมดที่เราเขียนไว้ใน R Script
 
 ---
 
 
-## 3 Create ER Diagram (DBML Code)
+## 3 Create ER Diagram (DBML Code) ถึงตรงนี้
 
 <p align="center">
   <img src="https://github.com/Phubordin/My-Portfolio-Website/blob/main/er-diagram.png" alt="ER Diagram">
