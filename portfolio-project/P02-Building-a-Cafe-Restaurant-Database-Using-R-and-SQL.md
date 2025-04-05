@@ -3,7 +3,7 @@
 ## 📌 Table of Contents
 1. [Create Tables and Perform SQL INSERT with Basic Queries and Aggregation](#1-create-tables-and-perform-sql-insert-with-basic-queries-and-aggregation)
 2. [Create Tables and Perform INSERT Using R](#2-create-tables-and-perform-insert-using-r)
-3. [Create ER Diagram](#3-create-er-diagram)
+3. [Create ER Diagram (DBML Code)](#3-create-er-diagram-(dbml-code))
 
 [Project Summary](#project-summary)
 
