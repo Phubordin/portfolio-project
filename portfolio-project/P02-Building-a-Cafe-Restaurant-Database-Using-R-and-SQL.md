@@ -20,6 +20,10 @@
 
 ## 3 Create ER Diagram (DBML Code)
 
+<p align="center">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/blob/main/er-diagram.png" alt="ER Diagram">
+</p>
+
 ```dbml
 // Use DBML to define your database structure
 // Docs: https://dbml.dbdiagram.io/docs
