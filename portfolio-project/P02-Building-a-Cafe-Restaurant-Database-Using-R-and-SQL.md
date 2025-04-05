@@ -294,7 +294,7 @@ menu_name <- c('Pad Thai', 'Spaghetti', 'Coke', 'Cake', 'Fried Rice', 'Lasagna',
 categories <- c('Rice', 'Pasta', 'Drinks', 'Dessert', 'Rice', 'Pasta', 'Drinks', 'Dessert') # สร้างคอลัมน์ categories เพื่อแบ่งหมวดหมู่ของอาหาร
 
 # นำ 3 คอลัมน์ทั้งหมดมารวมเป็น 1 ตารางด้วยการใช้คำสั่ง data.frame() ชื่อ menus_table
-menus_table <- data.frame(menuid2, name_menu, categories)
+menus_table <- data.frame(menuid2, menu_name, categories)
 
 # ------------------------------------------------------------------------------------------------
 
@@ -304,7 +304,7 @@ branch_name <- c('Ratchayothin', 'Rama 7', 'ChokChai 4') # สร้างคอ
 address <- c('Chatuchak', 'BangSue', 'Latphrao') # สร้างคอลัมน์ address แสดงที่อยู่สาขาเหล่านั้น
 
 # นำ 3 คอลัมน์ทั้งหมดมารวมเป็น 1 ตารางด้วยการใช้คำสั่ง data.frame() ชื่อ branch_table
-branch_table <- data.frame(branchid2, name_branch, address)
+branch_table <- data.frame(branchid2, branch_name, address)
 
 # ------------------------------------------------------------------------------------------------
 
@@ -315,7 +315,7 @@ gender <- c('Male', 'Female', 'LGBTQ+', 'Female', 'Male') # สร้างค�
 status <- c('Member', 'Guest', 'Member', 'Guest', 'Member') # สร้างคอลัมน์ status เพื่อบอกสถานะลูกค้าแต่ละคน
 
 # นำ 4 คอลัมน์ทั้งหมดมารวมเป็น 1 ตารางด้วยการใช้คำสั่ง data.frame() ชื่อ customers_table
-customers_table <- data.frame(customerid2, name_customer, gender, status)
+customers_table <- data.frame(customerid2, cusotmer_name, gender, status)
 
 # ------------------------------------------------------------------------------------------------
 
