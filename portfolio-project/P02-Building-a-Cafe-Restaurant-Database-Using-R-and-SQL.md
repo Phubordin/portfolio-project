@@ -370,15 +370,35 @@ dbDisconnect(con) # สำคัญใช้แล้วต้องยกเล
 ---
 
 
-## 3 Create ER Diagram (DBML Code) ถึงตรงนี้
+## 3 Create ER Diagram (DBML Code)
 
+ก่อนอื่นขอขอบคุณ พี่ทอย DataRockie สำหรับบทความ [วิธีการสร้าง ER Diagram อย่างง่ายและฟรี!](https://datarockie.com/blog/free-database-diagram-tool/)
+
+และเว็บไซต์ที่ไว้ใช้สร้าง [ER Diagram](https://dbdiagram.io/home)
+
+ER Diagram ย่อมาจาก Entity-Relationship Diagram เปรียบเสมือนเป็นแผนที่ในการเข้าใจเส้นทางของตารางข้อมูลตารางที่มีอยู่ใน Database ของเรา ช่วยให้เราเข้าถึงข้อมูลได้อย่างง่ายดาย
+
+ณ ที่นี้ผมใช้เว็บไซต์ [dbdiagram.io](https://dbdiagram.io/home) ในการสร้าง [ER Diagram ของผม](https://dbdiagram.io/d/667d52279939893dae6e7191) เรียบร้อยแล้ว
+
+โดยใช้ข้อมูลตารางต่างๆที่สร้างมาจากหัวข้อก่อนหน้า ก็จะได้ภาพแผนที่ ER Diagram ตามด้านล่าง
+ 
 <p align="center">
   <img src="https://github.com/Phubordin/My-Portfolio-Website/blob/main/er-diagram.png" alt="ER Diagram">
 </p>
 
+โดยการได้มาที่ภาพนี้เราต้องเขียนโครงสร้างของมันตาม code ด้านล่างด้วย DBML 
+
+DBML ย่อมาจาก Database Markup Language เป็นภาษาสคริปต์ที่ออกแบบมาเพื่อกำหนดและจัดทำเอกสารโครงสร้างของฐานข้อมูล
+
+โดยมีไวยากรณ์ที่เรียบง่ายและอ่านเข้าใจได้ง่าย ถึงจะไม่เป็นภาษาที่ทางการ แต่ก็ใช้ร่วมกับ [dbdiagram.io](https://dbdiagram.io/home) ในการสร้าง ER Diagram ได้อย่างดีเลย
+
+code ที่ผมใช้สร้าง อยู่ด้านล่าง
+
+++++ถึงขั้นตอนการอธิบาย code แล้ว,
+
 ```dbml
-// Use DBML to define your database structure
-// Docs: https://dbml.dbdiagram.io/docs
+// Use DBML to define your database structure ใช้ ภาษา
+// Docs: https://dbml.dbdiagram.io/docs เอกสารไว้ใช้ในการศึกษา Syntax ต่างๆ
 
 Table Transactions {
   InvoiceId integer [primary key]
