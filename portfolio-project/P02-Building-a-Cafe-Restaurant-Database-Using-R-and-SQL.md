@@ -374,7 +374,7 @@ dbDisconnect(con) # สำคัญใช้แล้วต้องยกเล
 
 ก่อนอื่นขอขอบคุณ พี่ทอย DataRockie สำหรับบทความ [วิธีการสร้าง ER Diagram อย่างง่ายและฟรี!](https://datarockie.com/blog/free-database-diagram-tool/)
 
-และเว็บไซต์ที่ไว้ใช้สร้าง [ER Diagram](https://dbdiagram.io/home)
+และเว็บไซต์ที่ไว้ใช้สร้าง [ER Diagram dbdiagram.io](https://dbdiagram.io/home)
 
 ER Diagram ย่อมาจาก Entity-Relationship Diagram เปรียบเสมือนเป็นแผนที่ในการเข้าใจเส้นทางของตารางข้อมูลตารางที่มีอยู่ใน Database ของเรา ช่วยให้เราเข้าถึงข้อมูลได้อย่างง่ายดาย
 
