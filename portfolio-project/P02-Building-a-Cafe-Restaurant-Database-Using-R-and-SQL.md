@@ -15,14 +15,14 @@
 -- สร้าง Table ด้วยด้วย CREATE TABLE ทั้งหมด 5 Table
 
 CREATE TABLE Transactions (
-  InvoiceId INT PRIMARY KEY,
-  BranchId INT,
-  CustomerId INT,
-  MenuId INT,
-  CommentId INT, 
-  InvoiceDate DATETIME,
-  Quantity INT, 
-  Total_Sales REAL
+  InvoiceId INT PRIMARY KEY, -- สร้างคอลัมน์ InvoiceId เป็น Primary Key
+  BranchId INT, -- สร้างคอลัมน์ BranchId เป็น ตัวเลขจำนวนเต็ม
+  CustomerId INT,-- สร้างคอลัมน์ CustomerId เป็น ตัวเลขจำนวนเต็ม
+  MenuId INT,-- สร้างคอลัมน์ MenuId เป็น ตัวเลขจำนวนเต็ม
+  CommentId INT, -- สร้างคอลัมน์ CommentId เป็น ตัวเลขจำนวนเต็ม
+  InvoiceDate DATETIME, -- สร้างคอลัมน์ InvoiceDate เป็น DATETIME FORMAT
+  Quantity INT, -- สร้างคอลัมน์ Quantity เป็น ตัวเลขจำนวนเต็ม
+  Total_Sales REAL -- สร้างคอลัมน์ Total_Sales เป็น ตัวเลขจำนวนจริง(ทศนิยมได้)
 );
 
 -- Creating Menus Table
@@ -217,15 +217,15 @@ commentid1 <- c(1, 4, 5, 2, 4, 6, 5, 5, 3, 3) # สร้างคอลัม�
 invoicedate <- as.Date(c('2023-05-01', '2023-06-02', '2023-08-03', '2023-12-04', '2023-11-05', # สร้างคอลัมน์ invoicedate
                          '2023-03-06', '2023-02-07', '2023-09-08', '2023-05-09', '2023-08-10')) # และปรับเป็น Date Format
 quantity <- c(4, 3, 4, 2, 1, 3, 3, 2, 3, 5) # สร้างคอลัมน์ quantity เพื่อดูว่าบิลที่ลูกค้าซื้อมีกี่รายการ
-total_sales <- c(100.00, 200.00, 300.00, 400.00, 500.00, 600.00, 700.00, 800.00, 900.00, 1000.00) # สร้าง total_sales ว่ามูลค่าของบิลทั้งหมด
+total_sales <- c(100.00, 200.00, 300.00, 400.00, 500.00, 600.00, 700.00, 800.00, 900.00, 1000.00) # สร้าง total_sales ดูมูลค่าของบิลทั้งหมด
 
 
 transactions <- data.frame(invoiceid, branchid1, customerid1, menuid1, commentid1, invoicedate, quantity, total_sales) # นำ 9 คอลัมน์
 ทั้งหมดมารวมเป็น 1 ตารางด้วยการใช้คำสั่ง data.frame() 
 
-# สร้าง 9 คอลัมน์ ใน Transactions Table Menus Table
-menuid2 <- c(1, 2, 3, 4, 5, 6, 7, 8)
-name_menu <- c('Pad Thai', 'Spaghetti', 'Coke', 'Cake', 'Fried Rice', 'Lasagna', 'Water', 'Ice Cream')
+# สร้าง 3 คอลัมน์ ใน Transactions Table Menus Table
+menuid2 <- c(1, 2, 3, 4, 5, 6, 7, 8) # สร้างคอลัมน์นี้เป็น Primary Key ชื่อ menuid2
+name_menu <- c('Pad Thai', 'Spaghetti', 'Coke', 'Cake', 'Fried Rice', 'Lasagna', 'Water', 'Ice Cream') # สร้างคอลัมน์นี้เป็น Primary Key ชื่อ menuid2
 categories <- c('Rice', 'Pasta', 'Drinks', 'Dessert', 'Rice', 'Pasta', 'Drinks', 'Dessert')
 
 menus <- data.frame(menuid2, name_menu, categories)
