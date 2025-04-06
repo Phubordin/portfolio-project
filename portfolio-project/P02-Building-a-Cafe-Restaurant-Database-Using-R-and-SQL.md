@@ -436,13 +436,13 @@ Table Feedback {                  \\ สร้างตารางชื่อ 
   Emotional varchar               \\ สร้างคอลัมน์ Emotional เป็นรูปแบบข้อความ
 }
 
-Ref: Customers.CustomerId < Transactions.CustomerId // one-to-many
+Ref: Customers.CustomerId < Transactions.CustomerId // ความสัมพันธ์แบบ ONE-TO-MANY โดยมีตัว Key เชื่อมคือ CustomerId
 
-Ref: Branch.BranchId < Transactions.BranchId
+Ref: Branch.BranchId < Transactions.BranchId        // ความสัมพันธ์แบบ ONE-TO-MANY โดยมีตัว Key เชื่อมคือ BranchId
 
-Ref: Menus.MenuId < Transactions.MenuId
+Ref: Menus.MenuId < Transactions.MenuId             // ความสัมพันธ์แบบ ONE-TO-MANY โดยมีตัว Key เชื่อมคือ MenuId
 
-Ref: Feedback.CommentId < Transactions.CommentId
+Ref: Feedback.CommentId < Transactions.CommentId    // ความสัมพันธ์แบบ ONE-TO-MANY โดยมีตัว Key เชื่อมคือ CommentId
 
 ```
 
@@ -450,26 +450,7 @@ Ref: Feedback.CommentId < Transactions.CommentId
 
 ## Project Summary
 
-ก็จบไปแล้วสำหรับ Project 1 : Data Exploration and Transformation with Google Sheets 
-
-โดยมี 6 ตัวอย่าง ไว้ใช้สำหรับ Explore และ Transform ข้อมูล
-
-1. ใช้สูตร filter ข้อมูล และสามารถ Dropdown List เพื่อเลือกเพศและผลการปฎิบัติงานของพนักงาน
-
-2. ใช้ Highlight Conditional Formatting ในการ Hightlight ข้อมูลของพนักงานที่เราต้องการ
-
-3. ใช้สูตร `Query()` ในการ Dropdown List ข้อมูลลูกค้า เพศ, ผลการปฎิบัติงาน, วันเริ่มงานให้มีความ Dynamic
-
-4. `Vlookup()` เครื่องมือยอดฮิตหนึ่งในตระกูล lookup ไว้ใช้หาค่าต่างๆที่มีความสัมพันธ์เชิงข้อมูล
-
-5. แปลงรูปแบบวันที่ไทย เป็นวันที่มาตรฐานสากล ISO ด้วย `SPLIT()`, `DATE()` และ `VLOOKUP()`
-
-6. การ Transform Data ด้วย Regular Expression สูตรที่ใช้หลักๆ `REGEXEXTRACT()` และ `REGEXMATCH()`
-
-เป็นต้น ขอบคุณมากๆครับที่อ่านมาถึงตรงนี้ ฝากผลงาน project อื่นๆด้วยนะครับ ขอบคุณครับ
-
-
-
+สร้าง Database ไว้เก็บข้อมูลร้านอาหารทั้งหมด 5 ตารางด้วยภาษา SQL และ R รวมถึงการสร้าง ER Diagram ไว้ดูความสัมพันธ์โครงสร้างภายในของ Database
 
 
 
