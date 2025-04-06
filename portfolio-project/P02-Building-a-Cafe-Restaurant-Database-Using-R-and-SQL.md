@@ -12,7 +12,7 @@
 ## 1 Create Tables and Perform SQL INSERT with Basic Queries and Aggregation
 
 ```sql
--- สร้าง Table ด้วยด้วย CREATE TABLE ทั้งหมด 5 Table
+-- สร้าง Table ด้วย CREATE TABLE ทั้งหมด 5 Table
 
 CREATE TABLE Transactions (
   InvoiceId INT PRIMARY KEY, -- สร้างคอลัมน์ InvoiceId เป็น Primary Key
