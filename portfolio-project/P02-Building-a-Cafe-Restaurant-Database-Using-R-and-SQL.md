@@ -54,6 +54,9 @@ CREATE TABLE Feedback (
   Emotional TEXT CHECK (Emotional IN ('Positive', 'Negative')) -- สร้างคอลัมน์ Emotional เป็น TEXT และกำหนดให้มีเฉพาะค่า 'Positive', 'Negative' เท่านั้น
 );
 
+```
+
+```sql
 
 -- เพื่มข้อมูลแต่ละเเถวเข้าไปใน TABLE ที่สร้างเมื่อสักครู่ ทั้งหมด 5 Table ด้วย INSERT INTO
 
