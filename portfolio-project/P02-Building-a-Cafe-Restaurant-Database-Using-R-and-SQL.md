@@ -344,13 +344,7 @@ feedback_table <- data.frame(commentid2, comment, emotional)
 
 ```
 
-ตอนนี้เราก็มี 5 table ใน R ที่พร้อมจะนำไปสร้างเป็น SQLite Database ด้วยการใช้ 2 คำสั่งนี้
-
-1. dbConnect() เชื่อมต่อกับ database
-
-2. dbWriteTable() เขียน table เข้าไปใน database นั้นๆ
-
-❗️ ต้องดาวน์โหลด package RSQLite ก่อนโหลด library ด้วยคำสั่ง `install.packages("RSQLite")`
+ต่อไปเราจะนำ Table ที่สร้างไปเขียนใส่ลงใน SQLite Database ตามภาพด้านล่าง
 
 ```r
 library(RSQLite)
@@ -371,6 +365,15 @@ dbDisconnect(con) # สำคัญใช้แล้วต้องยกเล
 <p align="center">
   <img src="https://github.com/Phubordin/My-Portfolio-Website/blob/main/cafe-r.png" alt="cafe R">
 </p>
+
+
+ตอนนี้เราก็มี 5 table ใน R ที่พร้อมจะนำไปสร้างเป็น SQLite Database ด้วยการใช้ 2 คำสั่งนี้
+
+1. dbConnect() เชื่อมต่อกับ database
+
+2. dbWriteTable() เขียน table เข้าไปใน database นั้นๆ
+
+❗️ ต้องดาวน์โหลด package RSQLite ก่อนโหลด library ด้วยคำสั่ง `install.packages("RSQLite")`
 
 1. นำ code ด้านบนไปบนรันหน้าต่าง R Script จังหวะรันจะเห็น 
 
