@@ -3,14 +3,17 @@
 ## 📌 Table of Contents
 1. [Filter & Sort Dynamic](#1-filter-and-sort-dynamic)
 2. [Conditional Formatting: Highlight Row](#2-conditional-formatting-highlight-row)
+   
      - 2.1 [Highlight Data Point เฉพาะ Perfomance ที่ Users กรองข้อมูล](#21-highlight-data-point-เฉพาะ-perfomance-ที่-users-กรองข้อมูล)
      - 2.2 [Highlight Variable Gender Column แบ่งตามสี](#22-highlight-variable-gender-column-แบ่งตามสี)
      - 2.3 [Highlight Variable Salary Column ไล่สเกลสูงไปต่ำ](#23-highlight-variable-salary-column-ไล่สเกลสูงไปต่ำ)
      - 2.4 [Highlight Variable 2 Column ชื่อพนักงานที่มีตัวเลข SNN นำหน้าตามเงื่อนไขที่กำหนด](#24-highlight-variable-2-column-ชื่อพนักงานที่มีตัวเลข-SNN-นำหน้าตามเงื่อนไขที่กำหนด)
+       
 3. [Dynamic Query](#3-dynamic-query)
 4. [Vlookup](#4-vlookup)
 5. [Convert Date](#5-convert-date)
 6. [Regular Expression](#6-regular-expression)
+   
    - 6.1 [ID ใช้สูตร](#61-id-ใช้สูตร)
    - 6.2 [Gender ใช้สูตร](#62-gender-ใช้สูตร)
    - 6.3 [FirstName ใช้สูตร](#63-firstname-ใช้สูตร)
