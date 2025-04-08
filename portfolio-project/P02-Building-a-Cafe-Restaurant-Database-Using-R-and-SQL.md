@@ -2,11 +2,13 @@
 
 ## 📌 Table of Contents
 1. [Create Tables and Perform SQL INSERT with Basic Queries and Aggregation](#1-create-tables-and-perform-sql-insert-with-basic-queries-and-aggregation)
+   
      - 1.1 [สร้าง Table ด้วย CREATE TABLE ทั้งหมด 5 Table](#11-สร้าง-table-ด้วย-create-table-ทั้งหมด-5-table)
      - 1.2 [เพิ่มข้อมูลแต่ละเเถวเข้าไปใน TABLE ที่สร้างเมื่อสักครู่ ทั้งหมด 5 Table ด้วย INSERT INTO](#12-เพิ่มข้อมูลแต่ละเเถวเข้าไปใน-table-ที่สร้างเมื่อสักครู่-ทั้งหมด-5-table-ด้วย-insert-into)
      - 1.3 [เขียน Query ดึงข้อมูลลูกค้าที่เป็น member มีความคิดเห็นอย่างไรกับร้านอาหารของเรา](#13-เขียน-query-ดึงข้อมูลลูกค้าที่เป็น-member-มีความคิดเห็นอย่างไรกับร้านอาหารของเรา)
-3. [Create Tables and Perform INSERT Using R](#2-create-tables-and-perform-insert-using-r)
-4. [Create ER Diagram (DBML Code)](#3-create-er-diagram-dbml-code)
+       
+2. [Create Tables and Perform INSERT Using R](#2-create-tables-and-perform-insert-using-r)
+3. [Create ER Diagram (DBML Code)](#3-create-er-diagram-dbml-code)
 
 [Project Summary](#project-summary)
 
