@@ -24,8 +24,25 @@
 ---
 
 ## 1 Explore Data and Load Data
+
+- แนะนำ dataset mock up data, p'toy
+- โหลด data
+- กี่แถว กี่คอลัมน์
+- คอลัมน์ประเภทอะไร อธิบายแต่ละคอลัมน์
+- Na มีเท่าไร คอลัมน์ไหนบ้าง ชื่อเมืองซ้ำกับหลายรัฐ ใช้ mode ไม่ได้ เพราะมี รัฐ+เมือง ไม่มี Postal Code เลย
+- เมื่อสำรวจแล้วต่อไปก็แปลง
+
+
 ## 2 Prepare Data
+
+- วันที่
+- trim
+- drop columns นั้นทิ้ง
+
 ## 3 RFM Analysis Using Python and R
+
+อธิบาย RFM, แผนผัง, ประเภทแต่ละกลุ่ม
+
 ## 31 RFM Analysis Using Python
 ## 32 RFM Analysis Using R
 ## 4 Exploratory Sales & Customer Analysis (2017–2020)
