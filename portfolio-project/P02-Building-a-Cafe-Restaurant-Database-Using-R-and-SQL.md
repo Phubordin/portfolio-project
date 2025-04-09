@@ -484,9 +484,11 @@ Ref: Feedback.CommentId < Transactions.CommentId    // ความสัมพ�
 
 ## Relevant data
 
-cafe-restaurant.db
+[cafe-restaurant.db](https://drive.google.com/file/d/1WIf2r0WLv4aunssDXNmmDyOsM3TrpFRO/view?usp=sharing)
 
-cafe-restaurant.R
+[cafe-restaurant.R](https://drive.google.com/file/d/16yxWyb9vvSJ0eDwRdaUCqAvuuxYhiUz8/view?usp=sharing)
+
+[ER Diagram](https://drive.google.com/file/d/1aA7XziO9fjJVDbfFRbmLHoSPsF8ahDFb/view?usp=sharing)
 
 
 
