@@ -32,7 +32,7 @@
 
 ขอขอบคุณ Mock up Data จากพี่ทอย DataRockie สำหรับไฟล์ที่ใช้ในการวิเคราะห์นะครับ
 
-ขั้นตอนแรกผมจะโหลด Data เข้ามาใน Google Colab ตามภาพด้านล่างครับ
+ขั้นตอนแรกผมจะโหลด Data เข้ามาใน [Google Colab: Project 3 RFM Analysis](https://colab.research.google.com/drive/1-zaB6ZUy02SvfJKNKsgmx-6X_3BOsoMh?usp=sharing) ตามภาพด้านล่างครับ
 
 
 
