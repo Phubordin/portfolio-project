@@ -32,15 +32,15 @@
 
 ขอขอบคุณ Mock up Data จากพี่ทอย DataRockie สำหรับไฟล์ที่ใช้ในการวิเคราะห์นะครับ
 
-1. Load Data [sample-store.csv](https://drive.google.com/file/d/1-3p1eJCJZjYpfO4rfRh4aMehnUWS2LKY/view?usp=sharing) on PC
+### 11 DownLoad Data [sample-store.csv](https://drive.google.com/file/d/1-3p1eJCJZjYpfO4rfRh4aMehnUWS2LKY/view?usp=sharing) on PC
 
-     📸 Preview :
+📸 Preview :
      
-     <p align="center">
-          <img src="https://github.com/Phubordin/My-Portfolio-Website/blob/main/sample-store.png">
-     </p>
+<p align="center">
+     <img src="https://github.com/Phubordin/My-Portfolio-Website/blob/main/sample-store.png">
+</p>
         
-2. Load Data On [Google Colab: Project 3 : Customer Segmentation and RFM Analysis Using Python and R  for Strategic Business Insight](https://colab.research.google.com/drive/1-zaB6ZUy02SvfJKNKsgmx-6X_3BOsoMh?usp=sharing)
+### 12 Import Data On [Google Colab: Project 3 : Customer Segmentation and RFM Analysis Using Python and R  for Strategic Business Insight](https://colab.research.google.com/drive/1-zaB6ZUy02SvfJKNKsgmx-6X_3BOsoMh?usp=sharing)
 
 <p align="center">
   <img src="https://github.com/Phubordin/My-Portfolio-Website/blob/main/p3-load-data0.png" alt="load-data-colab">
@@ -57,7 +57,7 @@ df = pd.read_csv("sample-store.csv") # อ่านข้อมูลในไ�
 
 1. กดรูปโฟลเดอร์
 
-2. เลือก upload file
+2. เลือก upload file และ เลือกไฟล์ `sample-store.csv`
 
 3. ไฟล์ถูกอัพโหลดเข้ามา
 
