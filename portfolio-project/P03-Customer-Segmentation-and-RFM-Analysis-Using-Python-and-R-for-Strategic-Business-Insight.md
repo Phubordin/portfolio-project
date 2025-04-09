@@ -33,9 +33,14 @@
 ขอขอบคุณ Mock up Data จากพี่ทอย DataRockie สำหรับไฟล์ที่ใช้ในการวิเคราะห์นะครับ
 
 1. ให้โหลด [sample-store.csv](https://drive.google.com/file/d/1-3p1eJCJZjYpfO4rfRh4aMehnUWS2LKY/view?usp=sharing) ลงเครื่อง
-   
 
-โหลด Data เข้ามาใน [Google Colab: Project 3 RFM Analysis](https://colab.research.google.com/drive/1-zaB6ZUy02SvfJKNKsgmx-6X_3BOsoMh?usp=sharing) ตามภาพด้านล่างครับ
+📸 Preview :
+
+<p align="center">
+     <img src="https://github.com/Phubordin/My-Portfolio-Website/blob/main/sample-store.png">
+</p>
+   
+2. โหลด Data เข้ามาใน [Google Colab: Project 3 RFM Analysis](https://colab.research.google.com/drive/1-zaB6ZUy02SvfJKNKsgmx-6X_3BOsoMh?usp=sharing) ตามภาพด้านล่างครับ
 
 <p align="center">
   <img src="https://github.com/Phubordin/My-Portfolio-Website/blob/main/p3-load-data0.png" alt="load-data-colab">
