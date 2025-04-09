@@ -1,4 +1,4 @@
-# P1 : Data Exploration and Transformation with Google Sheets
+# Project 1 : Data Exploration and Transformation with Google Sheets
 
 ## 📌 Table of Contents
 1. [Filter & Sort Dynamic](#1-filter-and-sort-dynamic)
