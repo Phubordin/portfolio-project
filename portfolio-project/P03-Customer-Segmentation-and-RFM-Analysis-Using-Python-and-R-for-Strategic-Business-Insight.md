@@ -40,7 +40,7 @@
      <img src="https://github.com/Phubordin/My-Portfolio-Website/blob/main/sample-store.png">
 </p>
    
-2. โหลด Data เข้ามาใน [Google Colab: Project 3 RFM Analysis](https://colab.research.google.com/drive/1-zaB6ZUy02SvfJKNKsgmx-6X_3BOsoMh?usp=sharing) ตามภาพด้านล่างครับ
+2. โหลด Data เข้ามาใน [Google Colab: Project 3 : Customer Segmentation and RFM Analysis Using Python and R  for Strategic Business Insight](https://colab.research.google.com/drive/1-zaB6ZUy02SvfJKNKsgmx-6X_3BOsoMh?usp=sharing) ตามภาพด้านล่างครับ
 
 <p align="center">
   <img src="https://github.com/Phubordin/My-Portfolio-Website/blob/main/p3-load-data0.png" alt="load-data-colab">
