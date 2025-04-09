@@ -3,8 +3,8 @@
 ## 📌 Table of Contents
 1. [Explore Data and Load Data](#1-explore-data-and-load-data)
 
-   1.1 [DownLoad data on PC](#11-download-data-on-pc)
-   1.2 [Import data on Google Colab](#12-import-data-on-google-colab)
+   - 1.1 [DownLoad data on PC](#11-download-data-on-pc)
+   - 1.2 [Import data on Google Colab](#12-import-data-on-google-colab)
 
 2. [Prepare Data](#2-prepare-data)
 3. [RFM Analysis Using Python and R](#3-rfm-analysis-using-python-and-r)
