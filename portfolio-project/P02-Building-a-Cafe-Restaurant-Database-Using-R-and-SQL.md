@@ -1,4 +1,4 @@
-# P2 : Building a Café Restaurant Database Using R and SQL
+# Project 2 : Building a Café Restaurant Database Using R and SQL
 
 ## 📌 Table of Contents
 1. [Create Tables and Perform SQL INSERT with Basic Queries and Aggregation](#1-create-tables-and-perform-sql-insert-with-basic-queries-and-aggregation)
