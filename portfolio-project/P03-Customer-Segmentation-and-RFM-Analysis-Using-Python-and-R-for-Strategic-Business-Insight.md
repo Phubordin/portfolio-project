@@ -1,4 +1,4 @@
-# P3 : Project 3 : Customer Segmentation and RFM Analysis Using Python and R for Strategic Business Insight
+# Project 3 : Customer Segmentation and RFM Analysis Using Python and R for Strategic Business Insight
 
 ## 📌 Table of Contents
 1. [Explore Data and Load Data](#1-explore-data-and-load-data)
