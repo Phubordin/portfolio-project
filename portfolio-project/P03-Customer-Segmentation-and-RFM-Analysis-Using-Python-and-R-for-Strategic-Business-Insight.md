@@ -6,13 +6,13 @@
    1.1 [DownLoad data on PC](#11-download-data-on-pc)
    1.2 [Import data on Google Colab](#12-import-data-on-google-colab)
 
-3. [Prepare Data](#2-prepare-data)
-4. [RFM Analysis Using Python and R](#3-rfm-analysis-using-python-and-r)
+2. [Prepare Data](#2-prepare-data)
+3. [RFM Analysis Using Python and R](#3-rfm-analysis-using-python-and-r)
 
      - 3.1 [RFM Analysis Using Python](#31-rfm-analysis-using-python)
      - 3.2 [RFM Analysis Using R](#32-rfm-analysis-using-r)
 
-5. [Exploratory Sales & Customer Analysis (2017–2020)](#4-exploratory-sales--customer-analysis-20172020)
+4. [Exploratory Sales & Customer Analysis (2017–2020)](#4-exploratory-sales--customer-analysis-20172020)
 
      - 41 [Export Customer Data in California (CSV Format)](#41-export-customer-data-in-california-csv-format)
      - 42 [Export Order Data (CSV): Customers in California and Texas, 2017](#42-export-order-data-csv-customers-in-california-and-texas-2017)
