@@ -32,7 +32,9 @@
 
 ขอขอบคุณ Mock up Data จากพี่ทอย DataRockie สำหรับไฟล์ที่ใช้ในการวิเคราะห์นะครับ
 
-### 11 DownLoad Data [sample-store.csv](https://drive.google.com/file/d/1-3p1eJCJZjYpfO4rfRh4aMehnUWS2LKY/view?usp=sharing) on PC
+### 11 DownLoad data on PC
+
+ดาวน์โหลดไฟล์ [sample-store.csv](https://drive.google.com/file/d/1-3p1eJCJZjYpfO4rfRh4aMehnUWS2LKY/view?usp=sharing)(Google Drive) ลงบนคอม
 
 📸 Preview :
      
@@ -40,12 +42,13 @@
      <img src="https://github.com/Phubordin/My-Portfolio-Website/blob/main/sample-store.png">
 </p>
         
-### 12 Import Data On [Google Colab: Project 3 : Customer Segmentation and RFM Analysis Using Python and R  for Strategic Business Insight](https://colab.research.google.com/drive/1-zaB6ZUy02SvfJKNKsgmx-6X_3BOsoMh?usp=sharing)
+### 12 Import data on Google Colab
+
+Google Colab : [Project 3 : Customer Segmentation and RFM Analysis Using Python and R  for Strategic Business Insight](https://colab.research.google.com/drive/1-zaB6ZUy02SvfJKNKsgmx-6X_3BOsoMh?usp=sharing)
 
 <p align="center">
   <img src="https://github.com/Phubordin/My-Portfolio-Website/blob/main/p3-load-data0.png" alt="load-data-colab">
 </p>
-
 
 ```python
 
