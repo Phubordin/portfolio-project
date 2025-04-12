@@ -113,8 +113,7 @@ Colab
 
 
 
-<iframe src="https://github.com/Phubordin/My-Portfolio-Website/blob/main/Project_3_Customer_Segmentation_and_RFM_Analysis_Using_Python_and_R_for_Strategic_Business_Insight.html" width="100%" height="600"></iframe>
-
+<iframe src="https://phubordin.github.io/My-Portfolio-Website/Project_3_Customer_Segmentation_and_RFM_Analysis_Using_Python_and_R_for_Strategic_Business_Insight.html#all-columns-specific-nan-rows" height="600"></iframe>
 
 
 
