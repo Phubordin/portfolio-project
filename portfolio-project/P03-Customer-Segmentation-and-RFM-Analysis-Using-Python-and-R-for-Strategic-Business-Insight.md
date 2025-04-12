@@ -113,7 +113,8 @@ Colab
 
 
 
-Visual Insights: At Least Two Interesting Plots
+<iframe src="https://github.com/Phubordin/My-Portfolio-Website/blob/89748f35159e5ee6b9620586c1a590a5da10908c/Project_3_Customer_Segmentation_and_RFM_Analysis_Using_Python_and_R_for_Strategic_Business_Insight.ipynb" width="100%" height="600"></iframe>
+
 
 
 
