@@ -113,7 +113,12 @@ Colab
 
 
 
-<iframe src="https://phubordin.github.io/My-Portfolio-Website/Project_3_Customer_Segmentation_and_RFM_Analysis_Using_Python_and_R_for_Strategic_Business_Insight.html#all-columns-specific-nan-rows" height="600"></iframe>
+### 🔍 คลิกดู Interactive Report ด้านล่างนี้:
+
+[เปิดดู RFM Report](https://phubordin.github.io/My-Portfolio-Website/Project_3_Customer_Segmentation_and_RFM_Analysis_Using_Python_and_R_for_Strategic_Business_Insight.html)
+
+![ภาพตัวอย่าง](https://raw.githubusercontent.com/phubordin/My-Portfolio-Website/main/screenshot.png)
+
 
 
 
