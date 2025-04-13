@@ -4,7 +4,7 @@ This is Project Code into the [My Profolio Website](https://phubordin.github.io/
 ## Markdown.md (.r .py .sql .txt .xml etc. | ⊞ Table, 📊 Chart)
 - [P1 : Data Exploration and Transformation with Google Sheets](portfolio-project/P01-Data-Exploration-and-Transformation-with-Google-Sheets.md)
 - [P2 : Building a Café Restaurant Database Using R and SQL](portfolio-project/P02-Building-a-Cafe-Restaurant-Database-Using-R-and-SQL.md)
-- [P3 : Customer Segmentation and RFM Analysis Using Python and R for Strategic Business Insight](portfolio-project/P03-Customer-Segmentation-and-RFM-Analysis-Using-Python-and-R-for-Strategic-Business-Insight.md)
+- [P3 : Customer Segmentation and RFM Analysis Using Python and R for Strategic Business Insight](portfolio-project/P03-Customer-Segmentation-and-RFM-Analysis-Using-Python-and-R-for-Strategic-Business-Insight.ipynb)
 - [P4 : Creating a Multi-Round Rock-Paper-Scissors Game in Python and R](P4-Creating-a-Multi-Round-Rock-Paper-Scissors-Game-in-Python-and-R.md)
 - [P5 : EDA and Comparison of NYC Flights Data (2013 vs. 2023) with R](P5-EDA-and-Comparison-of-NYC-Flights-Data-(2013-vs.-2023)-with-R.md)
 - [P6 : EDA Visualization of the Diamond Dataset Using R and R Markdown](portfolio-project/P6-EDA-Visualization-of-the-Diamond-Dataset-Using-R-and-R-Markdown.rmd)
