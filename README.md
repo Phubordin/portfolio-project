@@ -1,7 +1,7 @@
 # Projects
 This is Project Code into the [My Profolio Website](https://phubordin.github.io/My-Portfolio-Website/) Thank you for your watching.
 
-## Markdown.md (.r .py .sql .txt .xml etc. | ⊞ Table, 📊 Chart)
+## SQL R Python | (Google Colab, RStudio, Beekeeper Studio, Spreadsheets)
 - [P1 : Data Exploration and Transformation with Google Sheets](portfolio-project/P01-Data-Exploration-and-Transformation-with-Google-Sheets.md)
 - [P2 : Building a Café Restaurant Database Using R and SQL](portfolio-project/P02-Building-a-Cafe-Restaurant-Database-Using-R-and-SQL.md)
 - [P3 : Customer Segmentation and RFM Analysis Using Python and R for Strategic Business Insight](portfolio-project/P03_Customer_Segmentation_and_RFM_Analysis_Using_Python_and_R_for_Strategic_Business_Insight.ipynb)
