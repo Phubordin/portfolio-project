@@ -1,0 +1,431 @@
+---
+title: 'Project 6 : EDA Visualization of the Diamond Dataset Using R and R Markdown'
+author: "Phubordin Phanyosri"
+date: "2025-07"
+output:
+  html_document:
+    latex_engine: xelatex
+    toc: true
+    number_sections: true
+    fig_caption: true
+    df_print: paged
+  pdf_document:
+    latex_engine: xelatex
+    toc: true
+    number_sections: true
+    fig_caption: true
+    toc_depth: 4
+mainfont: Prompt
+monofont: IBM Plex Sans Thai
+fontsize: 8pt
+geometry: margin=1in
+---
+
+\newpage
+
+# คำแนะนำ :
+
+ถ้าคุณดูเอกสารนี้บน Github ให้กด Ctrl+F เพื่อไปยังหัวข้อที่สนใจ (ที่บอกมาจาก [My Portfolio Website](https://phubordin.github.io/My-Portfolio-Website/project_vizdimond_dsb10.html))
+
+# Load Library
+
+```{r}
+library(knitr) # ใช้สำหรับรันโค้ด R ที่ฝังในเอกสาร Markdown / LaTeX
+library(tidyverse) # แพ็คเกจที่รวบรวมเครื่องใช้จัดการข้อมูล และนำเสนอข้อมูล
+
+```
+
+# Explore Data
+
+## Data Glimpse
+
+```{r}
+diamonds |> glimpse() # โครงสร้างตาราง diamonds กี่แถว กี่คอลัมน์ ประเภทคอลัมน์ แต่ละคอลัมน์หน้าตาเป็นยัง
+
+```
+
+\newpage
+
+## Preview Data
+
+ตาราง `diamonds` เป็นชุดข้อมูลเกี่ยวกับเพชรที่มีคอลัมน์หลากหลาย พร้อมข้อมูลคุณสมบัติที่ ใช้กำหนดราคาเพชร มาดูแต่ละคอลัมน์และความหมายของมัน:
+
+| Cols | Description | Type |
+|--------------|--------------------------------------------|--------------|
+| carat | น้ำหนักของเพชร มีหน่วยเป็น "กะรัต" (carats) หน่วยวัดน้ำหนักเพชร | Numeric |
+| cut | ระดับคุณภาพการเจียระไน (cut quality) เช่น Fair, Good, Very Good, Premium, Ideal (เรียงจากต่ำไปสูง) | Ordered Factor |
+| color | สีของเพชร (D ถึง J โดยที่ D คือใสที่สุด) | Ordered Factor |
+| clarity | ระดับความใสของเพชร โดยดูจากตำหนิหรือจุดบกพร่อง (I1, SI2, SI1, VS2, VS1, VVS2, VVS1, IF เรียงจากตำหนิชัดเจนถึงไม่มีเลย) | Ordered Factor |
+| depth | อัตราส่วนระหว่างความลึกของเพชรกับเส้นผ่านศูนย์กลางเฉลี่ย มีหน่วยเป็นเปอร์เซ็นต์ (%): (z / mean(x, y)) \* 100 | Numeric |
+| table | ความกว้างของโต๊ะเพชร (ส่วนเรียบด้านบนของเพชร) เทียบกับเส้นผ่านศูนย์กลางเฉลี่ย มีหน่วยเป็นเปอร์เซ็นต์ (%) | Numeric |
+| price | ราคาของเพชร มีหน่วยเป็นดอลลาร์สหรัฐ | Integer |
+| x | ความยาว (length) ของเพชรในหน่วยมิลลิเมตร | Numeric |
+| y | ความกว้าง (width) ของเพชรในหน่วยมิลลิเมตร | Numeric |
+| z | ความลึก (depth) ของเพชรในหน่วยมิลลิเมตร | Numeric |
+
+-   ขยายความหมาย: depth : ( z / mean(x, y)) \* 100
+
+    -   ค่านี้แสดงถึง ความสมดุลของรูปร่างเพชร:
+
+        -   ค่า depth ต่ำเกินไป: เพชรอาจแบนเกินไป
+
+        -   ค่า depth สูงเกินไป: เพชรอาจลึกหรือหนาเกินไป
+
+    -   ค่าที่เหมาะสมสำหรับ เพชรทรงกลม (round cut) มักอยู่ที่ประมาณ 59-62% เพื่อให้เพชรมีประกายดีที่สุด
+
+```{r}
+diamonds |> head() # ดู 6 แถวแรก(ไม่รวมหัวตาราง)
+diamonds |> tail() # ดู 6 แถวท้าย(ไม่รวมหัวตาราง)
+
+```
+
+\newpage
+
+## Duplicate Rows
+
+```{r}
+diamonds |> distinct() |> count() !=  diamonds |> count() # ตรวจสอบว่ามีแถวซ้ำกันไหม TRUE มี, False ไม่มี
+
+```
+
+### View Only Duplicate Rows
+
+ดูเฉพาะแถวที่ซ้ำ
+
+```{r}
+diamonds |> 
+  group_by(across(everything())) |> # group_by(across(everything())) คือการ group โดยใช้ทุกคอลัมน์
+  filter(n() > 1) # เลือกเฉพาะกลุ่มที่มีแถวมากกว่า 1 ⇒ นั่นคือแถวที่ซ้ำกัน
+
+```
+
+\newpage
+
+### View Only Unique Rows
+
+```{r}
+# ดูเฉพาะแถวที่ไม่ซำ (ไม่รวมแถวซ้ำ)
+diamonds |> 
+  group_by(across(everything())) |> # group_by(across(everything())) คือการ group โดยใช้ทุกคอลัมน์
+  filter(n() == 1) # เลือกเฉพาะแถวที่ไม่ซ้ำกันเท่านั้น
+
+```
+
+### Identify Duplicates with Counts
+
+```{r}
+# ดูเฉพาะแถวที่ซ้ำว่ามีกี่แถว แต่ละแถวซ้ำกันกี่ครั้ง
+diamonds |> 
+  group_by(across(everything())) |> 
+  tally() |> 
+  filter(n > 1)  # แสดงเฉพาะแถวที่ซ้ำ
+
+```
+
+\newpage
+
+### Remove Duplicate Rows (Keeping First Instance)
+
+```{r}
+diamonds |> distinct() # ลบเฉพาะแถวซ้ำ แต่ยังคงไว้แค่แถวแรกไว้
+
+```
+
+## Explore NA
+
+### Rows with at least one NA in any column
+
+```{r}
+diamonds |> filter(if_any(everything(), is.na)) # เลือกแถวที่มีค่า NA อย่างน้อย 1 คอลัมน์
+
+```
+
+### Columns with at least one NA in any row
+
+```{r}
+diamonds |> select(where(~ any(is.na(.)))) # เลือกคอลัมน์ที่มี NA อย่างน้อย 1 แถว
+
+```
+
+\newpage
+
+# Clensing Diamonds Data
+
+ลบแถวซ้ำ
+
+```{r}
+prep_diamonds <- diamonds |> distinct()
+prep_diamonds
+
+```
+
+## Check Duplicate Rows
+
+```{r}
+# ตรวจสอบว่ามีแถวซ้ำกันไหม TRUE มี, False ไม่มี
+prep_diamonds |> distinct() |> count() !=  prep_diamonds |> count()
+
+```
+
+\newpage
+
+# Visualize Diamonds Data
+
+```{r, warning = FALSE, message = FALSE}
+# สร้างธีมที่เราต้องการเป็นมาตรฐานในการแสดงผล
+custom_theme <- theme_linedraw() +
+  theme(
+    # Darker plot title
+    plot.title = element_text( # ชื่อหัวข้อของกราฟ
+      face = "bold",          # เป็นตัวหนา
+      size = rel(1.1),        # 110% ของขนาดฟอนต์ปกติ เทียบกับค่า default ของธีม
+      color = "black",        # ฟอนด์สีดำ
+      margin = margin(b = 10) # ระยะห่างจากด้านล่าง title กับ subtitle หรือกราฟ 10 pt
+    ),
+    # Darker subtitle
+    plot.subtitle = element_text( # ชื่อหัวข้อย่อยลงมา
+      size = rel(0.9),        # 90% ของขนาดฟอนต์ปกติ เทียบกับค่า default ของธีม
+      color = "#2F4F4F",      # Dark slate gray
+      margin = margin(b = 15) # ระยะห่างจากด้านล่าง title กับ subtitle หรือกราฟ 15 pt
+    ),
+    # Darker caption
+    plot.caption = element_text( # ชื่อแหล่งที่มามุมล่างขวา
+      size = 8,               # ขนาด 8 pt
+      color = "#4A4A4A",      # Darker gray
+      margin = margin(t = 10) # ระยะห่างจากด้านบน title กับ subtitle หรือกราฟ 15 pt
+    ),
+    # Darker axis titles
+    axis.title = element_text( # ชื่อแกน
+      size = 11,          # ขนาด 11 pt
+      color = "#1C1C1C",  # Very dark gray
+      face = "bold"       # ตัวหนา
+    ),
+    # Darker axis text
+    axis.text = element_text( # เลขบนแกน
+      size = 9,          # ขนาด 9 pt
+      color = "#2F4F4F"  # Dark slate gray
+    ),
+    # Customize facet labels
+    strip.text = element_text( # ชื่อแกน x, y บน facet
+      size = 10,          # ขนาด 10 pt
+      color = "white",    # สีขาว
+      face = "bold"       # ตัวหนา
+    ),
+    strip.background = element_rect( # กำหนดพื้นหลังชื่อแกน facet
+      fill = "#2F4F4F",  # กำหนดสีพื้นหลังของชื่อแกน facet
+      color = "black"    # สีขอบพื้นหลังของชื่อแกน facet
+    ),
+    # Darker panel elements
+    panel.grid.major = element_line( # เส้นกริดหลัก (เส้นใหญ่) บนพื้นหลังกราฟ (แนวนอน-แนวตั้ง)
+      color = "#BEBEBE",  # Medium gray
+      size = 0.3          # ความบาง-หนา ยิ่งเข้าใกล้ 1 ยิ่งหนามาก
+    ),
+    panel.grid.minor = element_line( # เส้นกริดรอง (เส้นเล็ก) บนพื้นหลังกราฟ (แนวนอน-แนวตั้ง)
+      color = "#D3D3D3",  # Light gray
+      size = 0.2          # ความบาง-หนา ยิ่งเข้าใกล้ 1 ยิ่งหนามาก
+    ),
+    panel.border = element_rect( # เส้นขอบภายในแกนวาดกราฟเท่านั้น
+      color = "black",    # สีดำ
+      size = 0.8          # ความบาง-หนา ยิ่งเข้าใกล้ 1 ยิ่งหนามาก
+    ),
+    # Add margin around the plot
+    # กำหนดให้ element ทั้งหมดภายใน canvas top, right, bottom, left ห่าง 15 pt
+    plot.margin = margin(15, 15, 15, 15), 
+    panel.background = element_rect( # พื้นหลังภายในแกนเท่านั้น
+      fill = "white"  # เป็นสีขาว
+    )
+  )
+
+```
+
+\newpage
+
+## Distribution of price groups of diamonds by Density, Table.
+
+### Table: Price Ranges of Diamonds
+
+```{r, message=FALSE}
+# สร้างตารางความถี่ของราคาเพขร
+prep_diamonds %>%
+  mutate( # สร้างคอลัมน์ใหม่
+    price_range = cut( # ชื่อคอลัมน์ใหม่ price_range โดยการแบ่งช่วงราคา
+      # นำ price มาสร้างจุดแบ่ง(break) ทีละ 500 เช่น 0, 500, 1000, ..,  18000 18500(max)
+      price, breaks = seq(0, max(price), by = 500),
+      labels = paste(
+        seq(0, max(price) - 500, by = 500), 
+        seq(500, max(price), by = 500), sep = "-" 
+      ) # สร้าง labels เพื่อบอกว่าคอลัมน์ price อยู่ช่วงราคาเพชรไหนด้วย ขอบบน-ขอบล่าง
+    )
+  ) %>%
+  count(price_range) %>% # นับเพชรในแต่ละช่วงราคา
+  head(10) %>% # เลือก 10 แถวบนสุด
+  # ทำเป็นตารางที่ดูเหมาะสมขึ้น พร้อมเปลี่ยนชื่อคอลัมน์ใหม่
+  kable(col.names = c("Price Range ($)", "Number of Diamonds"))  
+
+```
+
+\newpage
+
+### Density: Price Ranges of Diamonds
+
+```{r, fig.align='center'}
+# Density Chart ดูการกระจายตัวของช่วงราคาเพชร
+prep_diamonds %>%
+  ggplot(aes(price)) + # กำหนดแกน x เป็น price
+  geom_density(fill = "#4682B4", alpha = 0.7) + # ลงสีพื้นที่ใต้ดราฟเป็นสีออกนำ้เงิน ค่อนไปทางเข้มๆ
+  custom_theme + # ปรับแต่งธีมของ Chart ตามตัวอย่างแรก
+  theme(plot.background = element_rect(fill = "#f5e19f")) + # เพิ่มสีของ canvas เป็นสีครีม
+  labs(title = "Price Distribution of Diamonds",# ชื่อของ Chart การกระจายตัวราคาเพชร
+       # กำหนดหัวข้อรองลงมาว่าจำนวนเพชรมากสุดอยู่ที่ช่วงไหน
+       subtitle = "The $500-$1000 price range has the largest number of diamonds.",
+       caption = "Source: ggplot Package", # เพิ่ม caption มุมล่างขวาของ canvas
+       x = "Diamond Price Range",  # ชื่อแกน x
+       y = "Number of Diamonds")  # ชื่อแกน y
+
+```
+
+\newpage
+
+## Sub-Diagram of Diamond Price Groups, Divided by cut.
+
+```{r, fig.align='center'}
+# Density Chart ดูการกระจายตัวของช่วงราคาเพชร แบ่งตามเกรด fair, good, very good, premium, Ideal
+prep_diamonds %>%
+  ggplot(aes(price)) + # กำหนดแกน x เป็น price
+  geom_density(fill = "#4682B4", alpha = 0.7) + # ลงสีพื้นที่ใต้ดราฟเป็นสีออกนำ้เงิน ค่อนไปทางเข้มๆ
+  custom_theme + # ปรับแต่งธีมของ Chart ตามตัวอย่างอรก 
+  theme(plot.background = element_rect(fill = "#f5e19f")) + # เพิ่มสีของ canvas เป็นสีครีม
+  labs(title = "Price Distribution of Diamonds",# ชื่อของ Chart การกระจายตัวราคาเพชร
+       # กำหนดหัวข้อรองลงมาว่าจำนวนเพชรมากสุดอยู่ที่ช่วงไหน
+       subtitle = "The $500-$1000 price range has the largest number of diamonds.",
+       caption = "Source: ggplot Package", # เพิ่ม caption มุมล่างขวาของ canvas
+       x = "Diamond Price Range",  # ชื่อแกน x
+       y = "Number of Diamonds") +  # ชื่อแกน y
+  facet_wrap(~ cut)  # แบ่งตามเกรด
+
+```
+
+\newpage
+
+## Depth Distribution Across Diamond Cut Quality.
+
+### Boxplot: Comparing Depth Values for Cut Quality
+
+```{r}
+# Box plot ดูการกระจายตัวของ รูปร่างของเพชรที่มีค่ามากกว่า 60 %
+prep_diamonds %>%
+  # กรอง สัดส่วนของความลึก เทียบกับเส้นผ่านศูนย์กลางของเพชรมากกว่า 60% ขึ้นไป
+  filter(depth > 60) %>%
+  # กำหนดแกน x, y เป็น cut, depth ตามลำดับ เติมสีแยกกันตาม cut
+  ggplot(aes(cut, depth, fill = cut)) +
+  geom_boxplot() + # กำหนด Box Plot
+  custom_theme +  # ปรับแต่งธีมของ Chart ตามตัวอย่างแรก
+  theme(plot.background = element_rect(fill = "#f5e19f")) + # เพิ่มสีของ canvas เป็นสีครีม
+  labs(  # ชื่อของ Chart การกระจายตัวราคาเพชร
+    # กำหนดชื่อหัวข้อใหญ่
+    title = "Depth Distribution Across Diamond Cut Quality",
+    # กำหนดหัวข้อรองลงมา
+    subtitle = "Comparing Depth Values for 'Fair', 'Good', 'Very Good', 'Premium' and 'Ideal' Cuts",
+    caption = "Source: ggplot2 Diamonds Dataset",  # เพิ่ม caption มุมล่างขวาของ canvas
+    x = "Cut Quality",  # ชื่อแกน x
+    y = "Depth Percentage (%)"  # ชื่อแกน y
+  )
+
+```
+
+\newpage
+
+### Scatter: Dist. of Diamond Shapes with Prices by Diamond Color
+
+```{r}
+# Scatter plot ดูการกระจายตัวของ รูปร่างของเพชรที่มีค่ามากกว่า 50%
+prep_diamonds %>%
+  # กรอง สัดส่วนของความลึก เทียบกับเส้นผ่านศูนย์กลางของเพชรมากกว่า 50% ขึ้นไป
+  filter(depth > 50) %>%
+  # กำหนดแกน x, y เป็น depth, price ตามลำดับ เติมสีแยกกันตาม color
+  ggplot(aes(depth, price, color = color)) +
+  geom_point() +  # กำหนด Scatter Plot
+  facet_wrap(~ cut) +  # แบ่งตามเกรด
+  custom_theme +  # ปรับแต่งธีมของ Chart ตามตัวอย่างแรก
+  theme(plot.background = element_rect(fill = "#f5e19f")) + # เพิ่มสีของ canvas เป็นสีครีม
+  labs(
+    # กำหนดชื่อหัวข้อใหญ่
+    title = "Dist. of Diamond Shapes with Prices by Diamond Color",
+    # กำหนดหัวข้อรองลงมา
+    subtitle = "Provided by Cut Quality",
+    caption = "Source: ggplot2 Diamonds Dataset",  # เพิ่ม caption มุมล่างขวาของ canvas
+    x = "Depth Percentage (%)",  # ชื่อแกน x
+    y = "Price ($USD)"  # ชื่อแกน y
+  )
+
+```
+
+\newpage
+
+ขอเสริมข้อ 5.3 Depth Distribution Across Diamond Cut Quality.
+
+```         
+จาก chart ที่แสดง boxplot ความสัมพันธ์ระหว่าง depth (ความลึกของเพชร) และ cut (คุณภาพการเจียระไนของเพชร)
+
+เราสามารถตั้งชื่อ labels
+
+-   Title
+    
+    -   Depth Distribution Across Diamond Cut Quality
+    
+    -   (แสดงการกระจายตัวของความลึกในแต่ละระดับคุณภาพการเจียระไน)
+
+-   Subtitle
+    
+    -   Comparing Depth Values for 'Fair', 'Good', 'Very Good', 'Premium', and 'Ideal' Cuts
+    
+    -   (เปรียบเทียบค่าความลึกในแต่ละคุณภาพการเจียระไน)
+
+-   Caption
+    
+    -   Source: ggplot2 Diamonds Dataset
+    
+    -   (ระบุแหล่งข้อมูลจาก dataset)
+
+-   x
+    
+    -   Cut Quality
+
+    -   (แสดงคุณภาพการเจียระไน)
+
+-   y
+    
+    -   Depth Percentage (%)
+
+    -   (ระบุสัดส่วนความลึกของเพชร)
+```
+
+\newpage
+
+## Correlation Between Carat and Diamond Price.
+
+```{r, message=FALSE}
+# Scatter Plot vs. Line Chart ดูความสัมพันธ์น้ำหนักเพชรกับราคาเพชร แบ่งตาม clarity, cut
+prep_diamonds %>%
+  filter(
+    clarity %in% c("VS1", "VVS2", "VVS1", "IF"), # clarity ที่มี VS1, VVS2, VVS1, IF
+    color %in% c("G", "E", "F"), # color มี G, E, F
+    cut %in% c("Ideal", "Premium", "Very Good") #  cut Ideal, Premium, Very Good
+  ) %>%
+  # กำหนดแกน x, y เป็น carat, price ตามลำดับ เติมสีแยกกันตาม clarity
+  ggplot(aes(carat, price, col = clarity)) +
+  geom_point() +  # กำหนด Scatter Plot
+  geom_smooth(method = "lm", col = "red") + # สร้าง LR สีแดง carat vs. price
+  # แยก cut ตามแนวแกน x และแยก color ตามแนวแกน y
+  facet_grid(color ~ cut) + 
+  custom_theme +  # ปรับแต่งธีมของ Chart ตามตัวอย่างแรก
+  theme(plot.background = element_rect(fill = "#f5e19f")) + # เพิ่มสีของ canvas เป็นสีครีม
+  labs(
+    title = "Correlation Between Carat and Diamond Price", # กำหนดชื่อหัวข้อใหญ่
+    subtitle = "The overall correlation coefficient is 0.9215913.",# กำหนดหัวข้อรองลงมา
+    caption = "Source: ggplot2 Diamonds Dataset",  # เพิ่ม caption มุมล่างขวาของ canvas
+    x = "Weigth (Carats)",  # ชื่อแกน x
+    y = "Price ($USD)"  # ชื่อแกน y
+  )
+
+```
