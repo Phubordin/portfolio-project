@@ -1,7 +1,7 @@
 # Projects
 This is Project Code into the [My Profolio Website](https://phubordin.github.io/My-Portfolio-Website/) Thank you for your watching.
 
-## R SQL Python | (⭐️ = Recommend.)
+## Google Sheets, R, SQL, Python | (⭐️ = Recommend.)
 - [P1 : Data Exploration and Transformation with Google Sheets](portfolio-project/P01-Data-Exploration-and-Transformation-with-Google-Sheets.md)
 - [P2 : Building a Café Restaurant Database Using R and SQL](portfolio-project/P02-Building-a-Cafe-Restaurant-Database-Using-R-and-SQL.md)
 - ⭐️ [P3 : Customer Segmentation and RFM Analysis Using Python and R for Strategic Business Insight](portfolio-project/P03-Customer-Segmentation-and-RFM-Analysis-Using-Python-and-R-for-Strategic-Business-Insight.ipynb)
