@@ -8,7 +8,7 @@ The following are projects featured on [My Profolio Website](https://phubordin.g
 - [P4 : Creating a Multi-Round Rock-Paper-Scissors Game in R and Python](portfolio-project/P04-Creating-a-Multi-Round-Rock-Paper-Scissors-Game-in-R-and-Python.ipynb)
 - ⭐️ [P5 : EDA and Comparison of NYC Flights Data (2013 vs. 2023) with R](portfolio-project/P05-EDA-and-Comparison-of-NYC-Flights-Data-2013-vs-2023-with-R.ipynb)
 - ⭐️ [P6 : EDA Visualization of the Diamond Dataset Using R and R Markdown](portfolio-project/P06-EDA-Visualization-of-the-Diamond-Dataset-Using-R-and-R-Markdown..pdf)
-- ⭐️ [P7 : Logistic Regression Analysis on the Titanic Dataset Using R](https://phubordin.github.io/My-Portfolio-Website/P07-Titanic-Survival-Prediction-A-Comparative-Analysis-of-Classification-Models%2022.54.56.html)
+- ⭐️ [P7 : Logistic Regression Analysis on the Titanic Dataset Using R](https://phubordin.github.io/My-Portfolio-Website/P07-Titanic-Survival-Prediction-A-Comparative-Analysis-of-Classification-Models.html)
 - ⭐️ [P8 : Data-Driven Insights: Sales Performance & Profitability in Looker Studio](P8-Data-Driven-Insights-Sales-Performance-&-Profitability-in-Looker-Studio.md)
 - [P9 : Chatbot Development for a Pizza Business Using R Programming](P9-Chatbot-Development-for-a-Pizza-Business-Using-Programming.md)
 - [P10 : Object-Oriented ATM System: Financial Transactions with Python OOP](P10-Object-Oriented-ATM-System-Financial-Transactions-with-Python-OOP.md)
