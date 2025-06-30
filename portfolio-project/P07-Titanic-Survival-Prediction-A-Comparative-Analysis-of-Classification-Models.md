@@ -2,7 +2,7 @@
 
 📍 ผมสร้างโปรเจกต์ไว้ ที่นี่ : (ใช้เวลาเปิดประมาณ ~40-60 วินาที หลังจากนั้นจะดูหน้าเว็บได้อย่างไม่กระตุก)
 
-[Project 7 : Titanic Survival Prediction: A Comparative Analysis of Classification Models](https://phubordin.github.io/My-Portfolio-Website/P07-Titanic-Survival-Prediction-A-Comparative-Analysis-of-Classification-Models%2022.54.56.html)  
+[Project 7 : Titanic Survival Prediction: A Comparative Analysis of Classification Models](https://phubordin.github.io/My-Portfolio-Website/P07-Titanic-Survival-Prediction-A-Comparative-Analysis-of-Classification-Models.html)  
 
 🔥 กด Ctrl+F เพื่อพิมพ์หัวข้อที่สนใจ ที่ได้รับมาจากหน้าเว็บ : [My Portfolio Website](https://phubordin.github.io/My-Portfolio-Website/project_titanic_glm_dsb10.html)
 
