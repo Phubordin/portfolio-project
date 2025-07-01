@@ -4,8 +4,7 @@
 
 [Project 7 : Titanic Survival Prediction: A Comparative Analysis of Classification Models](https://phubordin.github.io/My-Portfolio-Website/P07-Titanic-Survival-Prediction-A-Comparative-Analysis-of-Classification-Models.html)  
 
---------------------------------------------------------------------------------------------------------------------------------------------------
-
+--
 🔥 กด Ctrl+F เพื่อพิมพ์หัวข้อที่สนใจ ที่ได้รับมาจากหน้าเว็บ :
 [Project 7 : Titanic Survival Prediction: A Comparative Analysis of Classification Models R](https://phubordin.github.io/My-Portfolio-Website/project_titanic_glm_dsb10.html)
 
