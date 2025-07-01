@@ -7,10 +7,12 @@
 
 ปล. 🔥 กด Ctrl+F ที่ได้รับมาจากหน้าเว็บ
 
+Preview 📸 :
+
 ## 📊 Focus Output Code
 
-หน้าเว็บไซต์ Portfolop ที่เน้นดู Output ของ code
+หน้าเว็บไซต์ Portfolio ที่เน้นดู Output ของ code
 
-[Project 7 : Titanic Survival Prediction: A Comparative Analysis of Classification Models R](https://phubordin.github.io/My-Portfolio-Website/project_titanic_glm_dsb10.html)
+[My Portfolio Website](https://phubordin.github.io/My-Portfolio-Website/project_titanic_glm_dsb10.html)
 
 
