@@ -7,7 +7,11 @@
 
 ปล. 🔥 กด Ctrl+F ที่ได้รับมาจากหน้าเว็บ
 
-Preview 📸 :
+**Preview 📸 :**
+
+<p align="center">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p7-preview-html.gif" alt="Titanic Project">
+</p>
 
 ## 📊 Focus Output Code
 
