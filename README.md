@@ -1,5 +1,5 @@
 # Projects
-The following are projects featured on [My Profolio Website](https://phubordin.github.io/My-Portfolio-Website/).
+The following are projects featured on [My Profolio Website](https://phubordin.github.io/My-Portfolio-Website/)
 
 ## Google Sheets, R, SQL, Python | (⭐️ = Recommend.)
 - [P1 : Data Exploration and Transformation with Google Sheets](portfolio-project/P01-Data-Exploration-and-Transformation-with-Google-Sheets.md)
