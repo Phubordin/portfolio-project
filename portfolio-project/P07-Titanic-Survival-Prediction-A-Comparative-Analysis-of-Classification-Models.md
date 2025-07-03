@@ -19,4 +19,6 @@
 
 [My Portfolio Website](https://phubordin.github.io/My-Portfolio-Website/project_titanic_glm_dsb10.html)
 
-
+<p align="center">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/project7.gif" alt="Titanic Project">
+</p>
