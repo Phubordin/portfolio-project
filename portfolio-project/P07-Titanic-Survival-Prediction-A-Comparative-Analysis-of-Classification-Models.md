@@ -7,7 +7,7 @@
 
 หน้าเว็บไซต์ Portfolio ที่เน้นดู Output ของ code
 
-[My Portfolio Website](https://phubordin.github.io/My-Portfolio-Website/project_titanic_glm_dsb10.html)
+[My Portfolio Website (Project 7)](https://phubordin.github.io/My-Portfolio-Website/project_titanic_glm_dsb10.html)
 
 <p align="center">
   <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/project7.gif" alt="Titanic Project">
