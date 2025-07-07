@@ -1,5 +1,7 @@
 # Project 1 : Data Exploration and Transformation with Google Sheets
 
+[My Website Portfolio (Project 1)](https://phubordin.github.io/My-Portfolio-Website/project_ggsheet_dsb10.html)
+
 ## 📌 Table of Contents
 1. [Filter & Sort Dynamic](#1-filter-and-sort-dynamic)
 2. [Conditional Formatting: Highlight Row](#2-conditional-formatting-highlight-row)
