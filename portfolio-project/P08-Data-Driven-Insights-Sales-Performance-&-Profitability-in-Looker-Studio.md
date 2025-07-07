@@ -6,7 +6,7 @@
 ซึ่งเป็นชุดข้อมูลมาจาก [Project 3 : RFM Analysis](https://phubordin.github.io/My-Portfolio-Website/project_rfm_py_dsb10.html#65-export-clean-data)
 (ที่ถูก Clean เรียบร้อยแล้วในหัวข้อที่ 6.5 Export Clean Data แต่จะเพิ่มคอลัมน์เล็กน้อย เช่น
 
-`Price per Unit`	`Cost per Unit`	`Profit per Unit`	`%NPM per Unit`	`%ROI per Unit`)
+`Price per Unit`,	`Cost per Unit`,	`Profit per Unit`,	`%NPM per Unit`,	`%ROI per Unit`, `%NPM Interval`)
 
 ## USA Store Dataset
 USA Store - Google Sheets : [Dataset](https://docs.google.com/spreadsheets/d/1W3uxB51xXKMRELejOsqFhjuyJ1SQRVzw5zptCLszZBs/edit?usp=sharing)
