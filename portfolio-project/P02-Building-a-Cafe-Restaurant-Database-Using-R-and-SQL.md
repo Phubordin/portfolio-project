@@ -1,6 +1,6 @@
 # Project 2 : Building a Café Restaurant Database Using R and SQL
 
-[My Website Portfolio (Project 2)](https://phubordin.github.io/My-Portfolio-Website/project_cafe_r_sql_dsb10.html)
+[My Portfolio Website (Project 2)](https://phubordin.github.io/My-Portfolio-Website/project_cafe_r_sql_dsb10.html)
 
 ## 📌 Table of Contents
 1. [Create Tables and Perform SQL INSERT with Basic Queries and Aggregation](#1-create-tables-and-perform-sql-insert-with-basic-queries-and-aggregation)
