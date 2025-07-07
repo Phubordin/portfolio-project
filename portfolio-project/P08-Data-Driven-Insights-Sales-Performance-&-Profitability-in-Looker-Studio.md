@@ -3,7 +3,7 @@
 โปรเจกต์นี้ใช้ชุดข้อมูลคำสั่งซื้อจากร้านค้าในสหรัฐอเมริกา โดยมีข้อมูลเกี่ยวกับลูกค้า สินค้า พื้นที่ขาย ช่องทางการจัดส่ง และผลลัพธ์ทางการเงิน เช่น ยอดขาย กำไร และส่วนลด
 เราจะมาวิเคราะห์ถึงพฤติกรรมการซื้อของลูกค้าในแต่ละภูมิภาค โดยการ**สร้าง Dashboard ด้วย Looker Studio**
 
-ซึ่งเป็นชุดข้อมูลมาจาก [rfm](https://phubordin.github.io/My-Portfolio-Website/project_rfm_py_dsb10.html)
+ซึ่งเป็นชุดข้อมูลมาจาก [rfm](https://phubordin.github.io/My-Portfolio-Website/project.html#name-project5)
 (ที่ถูก Clean เรียบร้อยแล้วในหัวข้อที่ 6.5 Export Clean Data)
 
 ## USA Store Dataset
