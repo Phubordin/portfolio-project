@@ -6,7 +6,7 @@
 ซึ่งแน่นอนว่า เป็นข้อมูลการขายสินค้าใน Superstore ในสหรัฐอเมริกา (ไม่ใช่ข้อมูลจริงนะครับ) ข้อมูลนี้ถูกออกแบบขึ้นมาเพื่อใช้ประกอบการฝึกวิเคราะห์ด้วยเครื่องมือเช่น 
 Tableau, Power BI, Excel, SQL และ Python โดยมีโครงสร้างและบริบทใกล้เคียงกับข้อมูลจริง
 
-และผ่านการ Clean มาแล้วในระดับนึงจากภายใน [Project 3 : RFM Analysis - 6.5 Export Clean Data](https://phubordin.github.io/My-Portfolio-Website/project_rfm_py_dsb10.html#65-export-clean-data) ที่กล่าวไว้ตอนท้ายหัวข้อว่าจะมา Clean ต่อภายในโปรเจกต์นี้โดยการที่..
+และผ่านการ Clean มาแล้วในระดับนึงจากภายใน [Project 3 : RFM Analysis - 6.5 Export Clean Data](https://phubordin.github.io/My-Portfolio-Website/project_rfm_py_dsb10.html#64-clean-data) ที่กล่าวไว้ตอนท้ายหัวข้อว่าจะมา Clean ต่อภายในโปรเจกต์นี้โดยการที่..
 
 ผมจะนำมาเพิ่มคอลัมน์เหล่านี้ลงไปด้วย :
 
