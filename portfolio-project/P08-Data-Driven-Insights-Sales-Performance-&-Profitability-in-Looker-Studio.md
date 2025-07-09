@@ -2,11 +2,13 @@
 
 ## Project Introduction
 โปรเจกต์นี้ใช้ชุดข้อมูลจาก [Tableau](https://community.tableau.com/s/question/0D54T00000CWeX8SAL/sample-superstore-sales-excelxls?_gl=1*6jtjnc*_ga*MzUyOTA0ODIyLjE3NTE5NjQxMzE.*_ga_8YLN0SNXVS*czE3NTE5NjQxMjkkbzEkZzEkdDE3NTE5NjQyMDMkajQ2JGwwJGgw*_gcl_au*NTkxNDEyNzk2LjE3NTE5NjQxMzE.)
-ซึ่งเคยใช้ไปแล้วใน [Project 3 : RFM Analysis](https://phubordin.github.io/My-Portfolio-Website/project_rfm_py_dsb10.html#65-export-clean-data) 
-แน่นอนว่า เป็นข้อมูลการขายสินค้าใน Superstore ในสหรัฐอเมริกา (ไม่ใช่ข้อมูลจริงนะครับ) ข้อมูลนี้ถูกออกแบบขึ้นมาเพื่อใช้ประกอบการฝึกวิเคราะห์ด้วยเครื่องมือเช่น 
+ซึ่งเคยใช้ไปแล้วใน [Project 3 : RFM Analysis](https://phubordin.github.io/My-Portfolio-Website/project_rfm_py_dsb10.html) 
+ซึ่งแน่นอนว่า เป็นข้อมูลการขายสินค้าใน Superstore ในสหรัฐอเมริกา (ไม่ใช่ข้อมูลจริงนะครับ) ข้อมูลนี้ถูกออกแบบขึ้นมาเพื่อใช้ประกอบการฝึกวิเคราะห์ด้วยเครื่องมือเช่น 
 Tableau, Power BI, Excel, SQL และ Python โดยมีโครงสร้างและบริบทใกล้เคียงกับข้อมูลจริง
 
-แต่เราจะนำมา เพิ่มคอลัมน์เหล่านี้ลงไปด้วย :
+และผ่านการ Clean มาแล้วในระดับนึงผมจะยืมใช้ข้อมูลที่ผ่านการคลีนมาแล้วใน [Project 3 : RFM Analysis - 6.5 Export Clean Data](https://phubordin.github.io/My-Portfolio-Website/project_rfm_py_dsb10.html#65-export-clean-data) 
+
+นำมาเพิ่มคอลัมน์เหล่านี้ลงไปด้วย :
 
 - `Price per Unit`
 - `Cost per Unit`
@@ -14,9 +16,10 @@ Tableau, Power BI, Excel, SQL และ Python โดยมีโครงสร
 - `%NPM per Unit`
 - `%ROI per Unit`
 
-เพื่อใช้ในการวิเคราะห์สำรวจรวมถึง ***Clean Data : Product ID, Product Name*** ด้วยเนื่องจาก
-1 Product ID สามารถมีได้หลาย Product Name และ
-1 Product Name สามารถมีได้หลาย Product ID
+เพื่อใช้ในการวิเคราะห์สำรวจรวมถึง ***Clean Data : Product ID, Product Name*** เพิ่มด้วยเช่นกันเพราะ..
+
+- 1 Product ID สามารถมีได้หลาย Product Name และ
+- 1 Product Name สามารถมีได้หลาย Product ID
 
 (ซึ่งไม่ควรเกิดปัญหานี้มันควรมีความสัมพันธ์แบบ One-to-One) ดังนั้น คอลัมน์ที่เพิ่มขึ้นมาจะช่วยในเรื่อง
 
