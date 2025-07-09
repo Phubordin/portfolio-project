@@ -210,6 +210,8 @@ VLOOKUP(A2:A1863,'USA-SuperStore'!$M$2:$Y$9995,{9, 10, 11, 12, 13},0)
 
 จะอยู่ในชีต `Price List`
 
+---
+
 🔥🔥**ขั้นตอนที่ 5** (สุดท้าย) : แทนที่ `Product Name` ด้วย `New Product Name` ⬇︎
 
 เพิ่มคอลัมน์ใหม่ชื่อ `New Product Name` จากนั้น `XLOOKUP()` จากตารางที่เราสร้างมาเป็น One-to-One แล้วในชีต `Price List` ตามรูปด้านล่าง : ⬇︎
@@ -228,7 +230,8 @@ VLOOKUP(A2:A1863,'USA-SuperStore'!$M$2:$Y$9995,{9, 10, 11, 12, 13},0)
 
 ## Congratulation 🎉 Final Dataset
 
-USA SuperStore - Google Sheets : [Dataset](https://docs.google.com/spreadsheets/d/1W3uxB51xXKMRELejOsqFhjuyJ1SQRVzw5zptCLszZBs/edit?usp=sharing)
+[USA SuperStore - Google Sheets : Dataset](https://docs.google.com/spreadsheets/d/1W3uxB51xXKMRELejOsqFhjuyJ1SQRVzw5zptCLszZBs/edit?usp=sharing)
+(ข้อมูลที่พร้อมสร้างแดชบอร์ด)
 
 <p align="center">
   <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-usa-store-ggsheet.gif" alt="Looker Project">
