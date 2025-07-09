@@ -222,6 +222,10 @@ VLOOKUP(A2:A1863,'USA-SuperStore'!$M$2:$Y$9995,{9, 10, 11, 12, 13},0)
   <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-add-new-name-product.png" alt="Looker Project">
 </p>
 
+<p align="center">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-drop-old-name-product.png" alt="Looker Project">
+</p>
+
 ## Congratulation 🎉 Final Dataset
 
 USA SuperStore - Google Sheets : [Dataset](https://docs.google.com/spreadsheets/d/1W3uxB51xXKMRELejOsqFhjuyJ1SQRVzw5zptCLszZBs/edit?usp=sharing)
