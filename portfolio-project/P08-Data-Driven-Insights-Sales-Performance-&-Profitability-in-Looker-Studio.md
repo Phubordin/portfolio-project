@@ -45,16 +45,12 @@ $$
 \text{Sales} = \text{Price Per Unit} \times \text{Quantity} \times (1 - \text{Discount})
 $$
 
-<p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-usa-store-ggsheet.gif" alt="Titanic Project">
-</p>
-
 $$
 \text{Price Per Unit} = \frac{\text{Sales}}{\text{Quantity} \times (1 - \text{Discount})}
 $$
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/usa-store-ggsheet.gif" alt="Titanic Project">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-price.png" alt="Titanic Project">
 </p>
 
 สมการหาต้นทุนต่อชิ้น `Cost per Unit` :
@@ -68,7 +64,7 @@ $$
 $$
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/usa-store-ggsheet.gif" alt="Titanic Project">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-cost.png" alt="Titanic Project">
 </p>
 
 สมการหากำไรต่อชิ้น `Profit per Unit` :
@@ -78,7 +74,7 @@ $$
 $$
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/usa-store-ggsheet.gif" alt="Titanic Project">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-profit.png" alt="Titanic Project">
 </p>
 
 สมการหาสัดส่วนกำไรต่อต้นทุน `%NPM per Unit` :
@@ -88,7 +84,7 @@ $$
 $$
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/usa-store-ggsheet.gif" alt="Titanic Project">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-npm.png" alt="Titanic Project">
 </p>
 
 สมการหาสัดส่วนกำไรต่อราคา `%ROI per Unit` :
@@ -98,5 +94,5 @@ $$
 $$
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/usa-store-ggsheet.gif" alt="Titanic Project">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-roi.png" alt="Titanic Project">
 </p>
