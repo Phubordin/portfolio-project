@@ -23,15 +23,15 @@ Tableau, Power BI, Excel, SQL และ Python โดยมีโครงสร
 1. รู้ %NPM และ %ROI ต่อสินค้า 1 หน่วย เพื่อที่จะได้ make better decision กับรายสินค้าได้ต่อไป
 2. ❗️***ไว้พิจารณาการจัดการกับปัญหา Many-to-Many ของคอลัมน์ Product ID, Product Name*** 
 
-## USA Sales Explorer Dashboard
+## USA SuperStore 📊 Dashboard
 Dashboard with Looker Studio : [USA Sales Explorer Dashboard](https://lookerstudio.google.com/reporting/92339059-263d-4e78-85d6-803cdd1c70a4)
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-usa-store-ggsheet.gif" alt="Titanic Project" width="300">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-usa-store-ggsheet.gif" alt="Looker Project">
 </p>
 
-## USA Store Dataset
-USA Store - Google Sheets : [Dataset](https://docs.google.com/spreadsheets/d/1W3uxB51xXKMRELejOsqFhjuyJ1SQRVzw5zptCLszZBs/edit?usp=sharing)
+## USA SuperStore - 🔢 Dataset
+USA SuperStore - Google Sheets : [Dataset](https://docs.google.com/spreadsheets/d/1W3uxB51xXKMRELejOsqFhjuyJ1SQRVzw5zptCLszZBs/edit?usp=sharing)
 
 <p align="center">
   <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-usa-store-ggsheet.gif" alt="Projecr 8 - ggsheets dataset">
@@ -39,7 +39,7 @@ USA Store - Google Sheets : [Dataset](https://docs.google.com/spreadsheets/d/1W3
 
 ## Add Columns (Equation)
 
-สมการหาราคาขายต่อชิ้น `Price per Unit`:
+สมการหาราคาขายต่อชิ้น `Price per Unit`: ⬇︎
 
 $$
 \text{Sales} = \text{Price Per Unit} \times \text{Quantity} \times (1 - \text{Discount})
@@ -50,10 +50,12 @@ $$
 $$
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-price.png" alt="Titanic Project">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-price.png" alt="Looker Project">
 </p>
 
-สมการหาต้นทุนต่อชิ้น `Cost per Unit` :
+---
+
+สมการหาต้นทุนต่อชิ้น `Cost per Unit` : ⬇︎
 
 $$
 \text{Profit} = \text{Sales} - (\text{Cost per Unit} \times \text{Quantity})
@@ -64,45 +66,55 @@ $$
 $$
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-cost.png" alt="Titanic Project">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-cost.png" alt="Looker Project">
 </p>
 
-สมการหากำไรต่อชิ้น `Profit per Unit` :
+---
+
+สมการหากำไรต่อชิ้น `Profit per Unit` : ⬇︎
 
 $$
 \text{Profit per Unit} = \text{Price per Unit} - \text{Cost per Unit}
 $$
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-profit.png" alt="Titanic Project">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-profit.png" alt="Looker Project">
 </p>
 
-สมการหาสัดส่วนกำไรต่อต้นทุน `%NPM per Unit` :
+---
+
+สมการหาสัดส่วนกำไรต่อต้นทุน `%NPM per Unit` : ⬇︎
 
 $$
-\text{\%NPM per Unit} = \frac{\text{Profit per Unit}}{\text{Cost per Unit}} \times 100
+\text{Percent NPM per Unit} = \frac{\text{Profit per Unit}}{\text{Cost per Unit}} \times 100
 $$
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-npm.png" alt="Titanic Project">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-npm.png" alt="Looker Project">
 </p>
 
-สมการหาสัดส่วนกำไรต่อราคา `%ROI per Unit` :
+---
+
+สมการหาสัดส่วนกำไรต่อราคา `%ROI per Unit` : ⬇︎
 
 $$
-\text{\%ROI per Unit} = \frac{\text{Profit per Unit}}{\text{Price per Unit}} \times 100
+\text{Percent ROI per Unit} = \frac{\text{Profit per Unit}}{\text{Price per Unit}} \times 100
 $$
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-roi.png" alt="Titanic Project">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-roi.png" alt="Looker Project">
 </p>
+
+---
 
 ## Add New Product Name
 ก่อนที่เราจะสร้างคอลัมน์ New Product Name เราจะต้องสร้างตารางความสัมพันธ์แบบ One-to-One กับคอลัมน์ `Product Name` และ `Product ID`
 
 เริ่มต้น ผมจะเอา `Product ID` เป็นตัวตั้งต้นในการบอกว่า dataset ชุดนี้มีสินค้าที่ขายออกทั้งหมดกี่แบบ โดยที่
 
-**ขั้นตอนที่ 1** : ผมจะสร้างคอลัมน์ `Product ID` โดยใช้สูตร
+---
+
+**ขั้นตอนที่ 1** : ผมจะสร้างคอลัมน์ `Product ID` โดยใช้สูตร ⬇︎
 
 ```{excel}
 =UNIQUE(Product ID Range)
@@ -110,7 +122,7 @@ $$
 ```
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-many-product-Ids-1.png" alt="Titanic Project">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-many-product-Ids-1.png" alt="Looker Project">
 </p>
 
 จากรูป จะมีจำนวนสินค้าทั้งหมด 1,862 ชิ้น (ไม่รวมหัวตาราง)
@@ -118,9 +130,12 @@ $$
 📍 เหตุผลที่ยึดหมายเลข `Product ID` เป็นตัวกำหนดหลักว่า `Product Name` ต้องมีชื่อว่าอะไรเพราะ..?
 
 เพราะ จำนวน `UNIQUE(Product ID Range)` > `UNIQUE(Product Name Range)`
+
 (✅ ปล.จริงๆควรไปดูเลยว่า `Product Name` นี้มีเลข Product ID จริงๆอะไรกันแน่ที่ต้นทาง เราอาจจะเดินไปดูที่ โกดังสต๊อคเลยก็ได้ เป็นต้น)
 
-**ขั้นตอนที่ 2** : ผมจะสร้างคอลัมน์ `Product Name` โดยใช้สูตร
+---
+
+**ขั้นตอนที่ 2** : ผมจะสร้างคอลัมน์ `Product Name` โดยใช้สูตร ⬇︎
 
 ```{excel}
 =XLOOKUP(ที่อิงจาก Product ID ในขั้นตอนที่ 1 ไปหาจากตารางที่อยู่ในชีต USA-SuperStore)
@@ -128,20 +143,22 @@ $$
 ```
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-many-product-Ids-2.png" alt="Titanic Project">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-many-product-Ids-2.png" alt="Looker Project">
 </p>
 
 จากรูปเราก็จะได้คอลัมน์ `Product Name` ที่อิงจาก `Product ID` ซึ่งเราจะพบเลยว่ามีค่าซ้ำกัน (จากภาพให้ใช้กำหนด Highlight Conditional Formatting ให้เห็นภาพชัดขึ้น)
 ตรงที่เป็น **สีฟ้า** คือ `Product Name` ที่มีหลาย `Product ID` เราจะมาจัดการตรงนี้กัน❗️ 
 
-**ขั้นตอนที่ 3** : ผมจะเอาคอลัมน์ `price`, `cost`, `profit`, `npm`, `roi` มาใส่ไว้ในตารางนี้ด้วย โดยใช้สูตร
+---
+
+**ขั้นตอนที่ 3** : ผมจะเอาคอลัมน์ `price`, `cost`, `profit`, `npm`, `roi` มาใส่ไว้ในตารางนี้ด้วย โดยใช้สูตร ⬇︎
 
 ```{excel}
 VLOOKUP(A2:A1863,'USA-SuperStore'!$M$2:$Y$9995,{9, 10, 11, 12, 13},0)
 
 ```
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-many-product-Ids-3.png" alt="Titanic Project">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-many-product-Ids-3.png" alt="Looker Project">
 </p>
 
 จากรูปเราจะได้คอลัมน์ทั้งหมด 7 คอลัมน์แล้วคือ
@@ -156,16 +173,30 @@ VLOOKUP(A2:A1863,'USA-SuperStore'!$M$2:$Y$9995,{9, 10, 11, 12, 13},0)
 
 ขั้นตอนต่อไปเราจะมาพิจาณาว่าจะทำยังไงให้เป็น `One-to-One` สำหรับคอลัมน์ `Product ID` และ `Product Name`
 
-⭐️ **ขั้นตอนที่ 4** : จัดการกับ `Product Name`
+---
+
+⭐️ **ขั้นตอนที่ 4** : จัดการกับ `Product Name` ⬇︎
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-many-product-Ids-4.png" alt="Titanic Project">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-many-product-Ids-4.png" alt="Looker Project">
 </p>
 
 จากรูปเราจะเห็นได้ว่ามันจะมี แค่ 3 ส่วนที่เราต้อง Recheck ว่า `Product Name` นี้มี `Product ID` เป็นอะไรกันแน่
-เพราะ จากรูป "เราจะพิจารณาทุกคอลัมน์เลยไม่ให้แถวแต่ละแถวซ้ำกัน" ปรากฎว่ามันจะมี 3 ส่วนมีซ้ำกัน
+
+เพราะ จากรูป "**เราจะพิจารณาทุกคอลัมน์เลยไม่ให้แถวแต่ละแถวซ้ำกัน**" ปรากฎว่ามันจะมี 3 ส่วนมีซ้ำกัน
 เราจะต้องนำ `Product ID` ที่มันซ้ำกันไปดูว่ามันอาจจะมีหลาย `Product Name` ก็ได้ ดูจากรูป ด้านล่าง
 
+<p align="center">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-many-product-Ids-5.png" alt="Looker Project">
+</p>
+
+<p align="center">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-many-product-Ids-6.png" alt="Looker Project">
+</p>
+
+<p align="center">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-many-product-Ids-7.png" alt="Looker Project">
+</p>
 
 ผลปรากรากฎว่า ไม่ซ้ำกันเลยแสดงว่าสิ่งที่เราจะทำคือ 
 
@@ -174,10 +205,33 @@ VLOOKUP(A2:A1863,'USA-SuperStore'!$M$2:$Y$9995,{9, 10, 11, 12, 13},0)
 ```
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-price-list.gif" alt="Titanic Project">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-price-list.gif" alt="Looker Project">
 </p>
 
 จะอยู่ในชีต `Price List`
+
+🔥🔥**ขั้นตอนที่ 5** (สุดท้าย) : แทนที่ `Product Name` ด้วย `New Product Name` ⬇︎
+
+เพิ่มคอลัมน์ใหม่ชื่อ `New Product Name` จากนั้น `XLOOKUP()` จากตารางที่เราสร้างมาเป็น One-to-One แล้วในชีต `Price List` ตามรูปด้านล่าง : ⬇︎
+
+<p align="center">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-price-list.png" alt="Looker Project">
+</p>
+
+<p align="center">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-add-new-name-product.png" alt="Looker Project">
+</p>
+
+## Congratulation 🎉 Final Dataset
+
+USA SuperStore - Google Sheets : [Dataset](https://docs.google.com/spreadsheets/d/1W3uxB51xXKMRELejOsqFhjuyJ1SQRVzw5zptCLszZBs/edit?usp=sharing)
+
+<p align="center">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-usa-store-ggsheet.gif" alt="Looker Project">
+</p>
+
+
+
 
 
 
