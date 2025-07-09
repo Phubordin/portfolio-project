@@ -240,6 +240,16 @@ USA SuperStore - [Google Sheets : Dataset](https://docs.google.com/spreadsheets/
   <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-usa-store-ggsheet.gif" alt="Looker Project">
 </p>
 
+ต่อไป..
+
+เราจะมาเริ่มสร้างพร้อมตั้งคำถาม เพื่อที่จะนำไปสร้าง Dashboard บน Looker Studio กันนะครับ (โดยใช้ Dataset ที่พร้อมใช้งานแล้ว)
+
+สามารถดูได้ที่ : [My Portfolio Website - Project 8 Looker Studio](https://lookerstudio.google.com/reporting/92339059-263d-4e78-85d6-803cdd1c70a4)
+
+<p align="center">
+  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-usa-store-ggsheet.gif" alt="Looker Project">
+</p>
+
 
 
 
