@@ -28,14 +28,14 @@ Tableau, Power BI, Excel, SQL และ Python โดยมีโครงสร
 1. รู้ %NPM และ %ROI ต่อสินค้า 1 หน่วย เพื่อที่จะได้ make better decision กับรายสินค้าได้ต่อไป
 2. ❗️***ไว้พิจารณาการจัดการกับปัญหา Many-to-Many ของคอลัมน์ Product ID, Product Name*** 
 
-## USA SuperStore 📊 Dashboard
+## 📊 USA SuperStore Dashboard
 Dashboard with Looker Studio : [USA Sales Explorer Dashboard](https://lookerstudio.google.com/reporting/92339059-263d-4e78-85d6-803cdd1c70a4)
 
 <p align="center">
   <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-usa-store-ggsheet.gif" alt="Looker Project">
 </p>
 
-## USA SuperStore - 🔢 Dataset
+## 🔢 USA SuperStore - Dataset
 USA SuperStore - Google Sheets : [Dataset](https://docs.google.com/spreadsheets/d/1W3uxB51xXKMRELejOsqFhjuyJ1SQRVzw5zptCLszZBs/edit?usp=sharing)
 
 <p align="center">
