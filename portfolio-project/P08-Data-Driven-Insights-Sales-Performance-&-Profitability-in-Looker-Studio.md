@@ -103,7 +103,7 @@ $$
 สมการหาสัดส่วนกำไรต่อราคา `%ROI per Unit` : ⬇︎
 
 $$
-\text{Percent ROI per Unit} = \frac{\text{Profit per Unit}}{\text{Price per Unit}} \times 100
+\text{Percent ROI per Unit} = \frac{\text{Profit per Unit}}{\text{Cost per Unit}} \times 100
 $$
 
 <p align="center">
