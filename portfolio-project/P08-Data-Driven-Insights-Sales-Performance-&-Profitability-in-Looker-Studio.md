@@ -290,8 +290,8 @@ VLOOKUP(A2:A1863,'USA-SuperStore'!$M$2:$Y$9995,{9, 10, 11, 12, 13},0)
 
 - 1 SKU จะมีหลายเป็น Product Name ไม่ได้
 - 1 Product Name จะมีหลาย SKU ไม่ได้
-- ทั้ง SKU และ Product Name ส่วนใหญ่แล้วไม่ควรมีี ราคาขาย และ ต้นทุนขาย ที่มากมายหรือแตกต่างกัน (หากแต่เกิดเหตุการณ์ที่ราคาขาย และต้นทุนแตกต่างกันถึงแม้จะเป็นสินค้าเดียวกันก็
-  ต้องสอบถามคนคิดราคาขายและต้นทุนใหม่ ว่าเกิดขึ้นได้ยังไงเพราะอะไร
+- ทั้ง 1 SKU และ 1 Product Name ส่วนใหญ่แล้วไม่ควรมี ราคาขาย และ ต้นทุนขาย ที่มากมายหรือแตกต่างกัน (หากแต่เกิดเหตุการณ์ที่ราคาขาย และต้นทุนแตกต่างกันถึงแม้จะเป็นสินค้า
+  เดียวกัน ก็ต้องสอบถามคนคิดราคาขายและต้นทุนใหม่ ว่าเกิดขึ้นได้ยังไงเพราะอะไร
     - cost เพิ่มรึเปล่า ? ส่งผลให้ขายแพงขึ้นเพื่อคง %NPM เท่าเดิมหรือมากกว่า ไหม ?
     - ข้อมูลคีย์ผิด ?
     - มีการทุจริต ?
@@ -314,7 +314,7 @@ USA SuperStore - [Google Sheets : Dataset](https://docs.google.com/spreadsheets/
 
 เราจะมาเริ่มสร้างพร้อมตั้งคำถาม เพื่อที่จะนำไปสร้าง Dashboard บน Looker Studio กันนะครับ (โดยใช้ Dataset ที่พร้อมใช้งานแล้ว)
 
-สามารถดูได้ที่ : [My Portfolio Website - Project 8 Looker Studio](https://lookerstudio.google.com/reporting/92339059-263d-4e78-85d6-803cdd1c70a4)
+สามารถดูต่อได้ที่ : [My Portfolio Website - Project 8 Looker Studio](https://lookerstudio.google.com/reporting/92339059-263d-4e78-85d6-803cdd1c70a4)
 
 <p align="center">
   <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-usa-store-ggsheet.gif" alt="Looker Project">
