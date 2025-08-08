@@ -282,7 +282,7 @@ VLOOKUP(A2:A1863,'USA-SuperStore'!$M$2:$Y$9995,{9, 10, 11, 12, 13},0)
 ทำให้ผมอาจจะต้องใช้วิธีที่ผลลัพธ์ถูกหลักความเป็นจริงมากที่สุด โดยผมจะกำหนดไว้ว่า..
 
 ```
-1 Product ID = 1 Product Name = 1 Price = 1 Cost = 1 Profit = 1 %NPM = 1 %ROI ทั้งหมดนี้เมื่อเชื่อมคอลัมน์กันต้องเป็น Unique) 
+1 Product ID = 1 Product Name = 1 Price = 1 Cost = 1 Profit = 1 %NPM = 1 %ROI ทั้งหมดนี้เมื่อเชื่อมคอลัมน์กันต้องเป็น (Unique) 
 
 ```
 
