@@ -3,7 +3,7 @@
 [My Portfolio Website (Project 8)](https://phubordin.github.io/My-Portfolio-Website/project_looker_dsb10.html)
 
 ## Project Introduction
-โปรเจกต์นี้ใช้ชุดข้อมูลจาก [Tableau](https://community.tableau.com/s/question/0D54T00000CWeX8SAL/sample-superstore-sales-excelxls?_gl=1*6jtjnc*_ga*MzUyOTA0ODIyLjE3NTE5NjQxMzE.*_ga_8YLN0SNXVS*czE3NTE5NjQxMjkkbzEkZzEkdDE3NTE5NjQyMDMkajQ2JGwwJGgw*_gcl_au*NTkxNDEyNzk2LjE3NTE5NjQxMzE.)
+โปรเจกต์นี้ใช้ชุดข้อมูลจาก [Tableau - Sample USA SuperStore](https://community.tableau.com/s/question/0D54T00000CWeX8SAL/sample-superstore-sales-excelxls?_gl=1*6jtjnc*_ga*MzUyOTA0ODIyLjE3NTE5NjQxMzE.*_ga_8YLN0SNXVS*czE3NTE5NjQxMjkkbzEkZzEkdDE3NTE5NjQyMDMkajQ2JGwwJGgw*_gcl_au*NTkxNDEyNzk2LjE3NTE5NjQxMzE.)
 ซึ่งเคยใช้ไปแล้วใน [Project 3 : RFM Analysis](https://phubordin.github.io/My-Portfolio-Website/project_rfm_py_dsb10.html) 
 ซึ่งแน่นอนว่า เป็นข้อมูลการขายสินค้าใน Superstore ในสหรัฐอเมริกา (ไม่ใช่ข้อมูลจริงนะครับ) ข้อมูลนี้ถูกออกแบบขึ้นมาเพื่อใช้ประกอบการฝึกวิเคราะห์ด้วยเครื่องมือเช่น 
 Tableau, Power BI, Excel, SQL และ Python โดยมีโครงสร้างและบริบทใกล้เคียงกับข้อมูลจริง
