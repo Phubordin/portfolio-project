@@ -15,4 +15,4 @@ The following are projects featured on [My Profolio Website](https://phubordin.g
 - [P9 : Chatbot Development for a Pizza Business Using R Programming](portfolio-project/P09-Chatbot-Development-for-a-Pizza-Business-Using-R-Programming.ipynb)
 - [P10 : Object-Oriented ATM System: Financial Transactions with Python OOP](portfolio-project/P10-Object-Oriented-ATM-System-Financial-Transactions-with-Python-OOP.ipynb)
 - [P11 mini : Extracting Public API Data with Python: Air Quality Analytics](portfolio-project/P11-Extracting-Public-API-Data-with-Python-Air-Quality-Analytics.ipynb)
-- [P12 mini : Cafe Menu Data Structure with XML](P12-Cafe-Menu-Data-Structure-with-XML.md)
+- [P12 mini : Cafe Menu Data Structure with XML](portfolio-project/P12-Cafe-Menu-Data-Structure-with-XML.md)
