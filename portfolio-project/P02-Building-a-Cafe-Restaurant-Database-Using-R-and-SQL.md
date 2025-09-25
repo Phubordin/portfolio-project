@@ -1,6 +1,6 @@
 # Project 2 : Building a Café Restaurant Database Using R and SQL
 
-[My Portfolio Website (Project 2)](https://phubordin.github.io/My-Portfolio-Website/project_cafe_r_sql_dsb10.html)
+[My Portfolio Website (Project 2)](https://phubordin.github.io/project_cafe_r_sql_dsb10.html)
 
 ## 📌 Table of Contents
 1. [Create Tables and Perform SQL INSERT with Basic Queries and Aggregation](#1-create-tables-and-perform-sql-insert-with-basic-queries-and-aggregation)
@@ -486,11 +486,11 @@ Ref: Feedback.CommentId < Transactions.CommentId    // ความสัมพ�
 
 ## Relevant data
 
-[cafe-restaurant.db](https://drive.google.com/file/d/1WIf2r0WLv4aunssDXNmmDyOsM3TrpFRO/view?usp=sharing)
+[cafe-restaurant.db](https://drive.google.com/file/d/1WIf2r0WLv4aunssDXNmmDyOsM3TrpFRO/view?usp=sharing) Open with Google Drive
 
-[cafe-restaurant.R](https://drive.google.com/file/d/16yxWyb9vvSJ0eDwRdaUCqAvuuxYhiUz8/view?usp=sharing)
+[cafe-restaurant.R](https://drive.google.com/file/d/16yxWyb9vvSJ0eDwRdaUCqAvuuxYhiUz8/view?usp=sharing) Open with Google Drive
 
-[ER Diagram](https://drive.google.com/file/d/1aA7XziO9fjJVDbfFRbmLHoSPsF8ahDFb/view?usp=sharing)
+[ER Diagram](https://drive.google.com/file/d/1aA7XziO9fjJVDbfFRbmLHoSPsF8ahDFb/view?usp=sharing) Open with Google Drive
 
 
 
