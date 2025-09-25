@@ -9,7 +9,7 @@
 ## 🔠 Focus Code
 📍 ผมสร้างโปรเจกต์(✅ เน้นอธิบายโค้ด) ไว้ที่นี่ : (ใช้เวลาเปิดประมาณ ~40-60 วินาที หลังจากนั้นจะดูหน้าเว็บได้อย่างไม่กระตุก)
 
-[Project 7 : Titanic Survival Prediction: A Comparative Analysis of Classification Models](https://phubordin.github.io/phubordin.github.io/P07-Titanic-Survival-Prediction-A-Comparative-Analysis-of-Classification-Models.html)  
+[Project 7 : Titanic Survival Prediction: A Comparative Analysis of Classification Models](https://phubordin.github.io/P07-Titanic-Survival-Prediction-A-Comparative-Analysis-of-Classification-Models.html)  
 
 ปล. 🔥 กด Ctrl+F ที่ได้รับมาจากหน้าเว็บ
 
