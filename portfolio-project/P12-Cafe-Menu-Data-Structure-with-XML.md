@@ -1,6 +1,6 @@
 # Project 12 : Cafe Menu Data Structure with XML
 
-[My Portfolio Website (Project 12)](https://phubordin.github.io/My-Portfolio-Website/project_mini_xml_cafe.html)
+[My Portfolio Website (Project 12)](https://phubordin.github.io/project_mini_xml_cafe.html)
 
 ---
 
