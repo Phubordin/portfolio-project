@@ -32,7 +32,7 @@ Tableau, Power BI, Excel, SQL และ Python โดยมีโครงสร
 Dashboard with Looker Studio : [USA Sales Explorer Dashboard](https://lookerstudio.google.com/reporting/92339059-263d-4e78-85d6-803cdd1c70a4)
 
 <p align="center">
-  <img src="https://github.com/Phubordin/raw/main/p8-looker-overview.gif" alt="Looker Project">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/p8-looker-overview.gif" alt="Looker Project">
 </p>
 
 ## 🔢 USA SuperStore - Dataset
