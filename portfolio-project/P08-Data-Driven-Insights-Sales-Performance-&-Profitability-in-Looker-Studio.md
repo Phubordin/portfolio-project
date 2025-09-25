@@ -32,14 +32,14 @@ Tableau, Power BI, Excel, SQL และ Python โดยมีโครงสร
 Dashboard with Looker Studio : [USA Sales Explorer Dashboard](https://lookerstudio.google.com/reporting/92339059-263d-4e78-85d6-803cdd1c70a4)
 
 <p align="center">
-  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/p8-looker-overview.gif" alt="Looker Project">
+  <img src="https://github.com/Phubordin/phubordin.github.io/phubordin.github.io/raw/main/p8-looker-overview.gif" alt="Looker Project">
 </p>
 
 ## 🔢 USA SuperStore - Dataset
 USA SuperStore - Google Sheets : [Dataset](https://docs.google.com/spreadsheets/d/1W3uxB51xXKMRELejOsqFhjuyJ1SQRVzw5zptCLszZBs/edit?usp=sharing)
 
 <p align="center">
-  <img src="https://github.com/Phubordin/raw/main/p8-usa-store-ggsheet.gif" alt="Projecr 8 - ggsheets dataset">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/p8-usa-store-ggsheet.gif" alt="Projecr 8 - ggsheets dataset">
 </p>
 
 ## Add Columns (Equation)
@@ -55,7 +55,7 @@ $$
 $$
 
 <p align="center">
-  <img src="https://github.com/Phubordin/raw/main/p8-price.png" alt="Looker Project">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/p8-price.png" alt="Looker Project">
 </p>
 
 ---
@@ -71,7 +71,7 @@ $$
 $$
 
 <p align="center">
-  <img src="https://github.com/Phubordin/raw/main/p8-cost.png" alt="Looker Project">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/p8-cost.png" alt="Looker Project">
 </p>
 
 ---
@@ -83,7 +83,7 @@ $$
 $$
 
 <p align="center">
-  <img src="https://github.com/Phubordin/raw/main/p8-profit.png" alt="Looker Project">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/p8-profit.png" alt="Looker Project">
 </p>
 
 ---
@@ -95,7 +95,7 @@ $$
 $$
 
 <p align="center">
-  <img src="https://github.com/Phubordin/raw/main/p8-npm.png" alt="Looker Project">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/p8-npm.png" alt="Looker Project">
 </p>
 
 ---
@@ -107,7 +107,7 @@ $$
 $$
 
 <p align="center">
-  <img src="https://github.com/Phubordin/raw/main/p8-roi.png" alt="Looker Project">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/p8-roi.png" alt="Looker Project">
 </p>
 
 ---
@@ -127,7 +127,7 @@ $$
 ```
 
 <p align="center">
-  <img src="https://github.com/Phubordin/raw/main/p8-many-product-Ids-1.png" alt="Looker Project">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/p8-many-product-Ids-1.png" alt="Looker Project">
 </p>
 
 จากรูป จะมีจำนวนสินค้าทั้งหมด 1,862 ชิ้น (ไม่รวมหัวตาราง)
@@ -148,7 +148,7 @@ $$
 ```
 
 <p align="center">
-  <img src="https://github.com/Phubordin/raw/main/p8-many-product-Ids-2.png" alt="Looker Project">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/p8-many-product-Ids-2.png" alt="Looker Project">
 </p>
 
 จากรูปเราก็จะได้คอลัมน์ `Product Name` ที่อิงจาก `Product ID` ซึ่งเราจะพบเลยว่ามีค่าซ้ำกัน (จากภาพให้ใช้กำหนด Highlight Conditional Formatting ให้เห็นภาพชัดขึ้น)
@@ -163,7 +163,7 @@ VLOOKUP(A2:A1863,'USA-SuperStore'!$M$2:$Y$9995,{9, 10, 11, 12, 13},0)
 
 ```
 <p align="center">
-  <img src="https://github.com/Phubordin/raw/main/p8-many-product-Ids-3.png" alt="Looker Project">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/p8-many-product-Ids-3.png" alt="Looker Project">
 </p>
 
 จากรูปเราจะได้คอลัมน์ทั้งหมด 7 คอลัมน์แล้วคือ
@@ -183,7 +183,7 @@ VLOOKUP(A2:A1863,'USA-SuperStore'!$M$2:$Y$9995,{9, 10, 11, 12, 13},0)
 ⭐️ **ขั้นตอนที่ 4** : จัดการกับ `Product Name` ⬇︎
 
 <p align="center">
-  <img src="https://github.com/Phubordin/raw/main/p8-many-product-Ids-4.png" alt="Looker Project">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/p8-many-product-Ids-4.png" alt="Looker Project">
 </p>
 
 จากรูปเราจะเห็นได้ว่ามันจะมี แค่ 3 ส่วนที่เราต้อง Recheck ว่า `Product Name` นี้มี `Product ID` เป็นอะไรกันแน่
@@ -192,15 +192,15 @@ VLOOKUP(A2:A1863,'USA-SuperStore'!$M$2:$Y$9995,{9, 10, 11, 12, 13},0)
 เราจะต้องนำ `Product ID` ที่มันซ้ำกันไปดูว่ามันอาจจะมีหลาย `Product Name` ก็ได้ ดูจากรูป ด้านล่าง
 
 <p align="center">
-  <img src="https://github.com/Phubordin/raw/main/p8-many-product-Ids-5.png" alt="Looker Project">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/p8-many-product-Ids-5.png" alt="Looker Project">
 </p>
 
 <p align="center">
-  <img src="https://github.com/Phubordin/raw/main/p8-many-product-Ids-6.png" alt="Looker Project">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/p8-many-product-Ids-6.png" alt="Looker Project">
 </p>
 
 <p align="center">
-  <img src="https://github.com/Phubordin/raw/main/p8-many-product-Ids-7.png" alt="Looker Project">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/p8-many-product-Ids-7.png" alt="Looker Project">
 </p>
 
 ผลปรากรากฎว่า ไม่ซ้ำกันเลยแสดงว่าสิ่งที่เราจะทำคือ 
@@ -210,7 +210,7 @@ VLOOKUP(A2:A1863,'USA-SuperStore'!$M$2:$Y$9995,{9, 10, 11, 12, 13},0)
 ```
 
 <p align="center">
-  <img src="https://github.com/Phubordin/raw/main/p8-price-list.gif" alt="Looker Project">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/p8-price-list.gif" alt="Looker Project">
 </p>
 
 จะอยู่ในชีต `Price List`
@@ -222,15 +222,15 @@ VLOOKUP(A2:A1863,'USA-SuperStore'!$M$2:$Y$9995,{9, 10, 11, 12, 13},0)
 เพิ่มคอลัมน์ใหม่ชื่อ `New Product Name` จากนั้น `XLOOKUP()` จากตารางที่เราสร้างมาเป็น `One-to-One` แล้วในชีต `Price List` ตามรูปด้านล่าง : ⬇︎
 
 <p align="center">
-  <img src="https://github.com/Phubordin/raw/main/p8-price-list.png" alt="Looker Project">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/p8-price-list.png" alt="Looker Project">
 </p>
 
 <p align="center">
-  <img src="https://github.com/Phubordin/raw/main/p8-add-new-name-product.png" alt="Looker Project">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/p8-add-new-name-product.png" alt="Looker Project">
 </p>
 
 <p align="center">
-  <img src="https://github.com/Phubordin/raw/main/p8-drop-old-name-product.png" alt="Looker Project">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/p8-drop-old-name-product.png" alt="Looker Project">
 </p>
 
 ## Update Columns
@@ -240,11 +240,11 @@ VLOOKUP(A2:A1863,'USA-SuperStore'!$M$2:$Y$9995,{9, 10, 11, 12, 13},0)
 โดยใช้ `VLOOKUP()`
 
 <p align="center">
-  <img src="https://github.com/Phubordin/raw/main/p8-update-pcpnr-1.png" alt="Looker Project">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/p8-update-pcpnr-1.png" alt="Looker Project">
 </p>
 
 <p align="center">
-  <img src="https://github.com/Phubordin/raw/main/p8-update-pcpnr-2.png" alt="Looker Project">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/p8-update-pcpnr-2.png" alt="Looker Project">
 </p>
 
 🔥🔥**ขั้นตอนที่ 2** : เมื่อเราอัพเดทตามขั้นตอนที่ 1 แล้ว แน่นอนว่าต้องอัพเดท `Sales` และ `Profit` ด้วยเพราะ `Price per Unit` เปลี่ยนไปแล้ว
@@ -257,7 +257,7 @@ VLOOKUP(A2:A1863,'USA-SuperStore'!$M$2:$Y$9995,{9, 10, 11, 12, 13},0)
 ```
 
 <p align="center">
-  <img src="https://github.com/Phubordin/raw/main/p8-update-sales.png" alt="Looker Project">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/p8-update-sales.png" alt="Looker Project">
 </p>
 
 โดยใช้สูตร Excel ต่อไปนี้เพื่ออัพเดทคอลัมน์ : `Profit`
@@ -268,7 +268,7 @@ VLOOKUP(A2:A1863,'USA-SuperStore'!$M$2:$Y$9995,{9, 10, 11, 12, 13},0)
 ```
 
 <p align="center">
-  <img src="https://github.com/Phubordin/raw/main/p8-update-profit.png" alt="Looker Project">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/p8-update-profit.png" alt="Looker Project">
 </p>
 
 ## Conclusion
@@ -307,7 +307,7 @@ USA SuperStore - [Google Sheets : Dataset](https://docs.google.com/spreadsheets/
 (ข้อมูลที่พร้อมสร้างแดชบอร์ด)
 
 <p align="center">
-  <img src="https://github.com/Phubordin/raw/main/p8-usa-store-ggsheet.gif" alt="Looker Project">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/p8-usa-store-ggsheet.gif" alt="Looker Project">
 </p>
 
 ต่อไป..
@@ -317,7 +317,7 @@ USA SuperStore - [Google Sheets : Dataset](https://docs.google.com/spreadsheets/
 สามารถดูต่อได้ที่ : [My Portfolio Website - Project 8 Looker Studio](https://phubordin.github.io/project_looker_dsb10.html)
 
 <p align="center">
-  <img src="https://github.com/Phubordin/raw/main/p8-web-overview.gif" alt="Looker Project">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/p8-web-overview.gif" alt="Looker Project">
 </p>
 
 
