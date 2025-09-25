@@ -1,6 +1,6 @@
 # Project 1 : Data Exploration and Transformation with Google Sheets
 
-[My Portfolio Website (Project 1)](https://phubordin.github.io/My-Portfolio-Website/project_ggsheet_dsb10.html)
+[My Portfolio Website (Project 1)](https://phubordin.github.io/phubordin.github.io/project_ggsheet_dsb10.html)
 
 ## 📌 Table of Contents
 1. [Filter & Sort Dynamic](#1-filter-and-sort-dynamic)
@@ -61,14 +61,14 @@
 
      นั้นหมายความว่าไม่มีค่า filter ที่ต้องการดังนั้นผลลัพธ์จึงแสดง `NO DATA` นั่นเอง !
 
-📌 **ตัวอย่าง:** [แนะนำให้ลองดูใน Sheet: Click](https://docs.google.com/spreadsheets/d/1a3l_9Lgr_G6m5DkfvEdUg4a3fpwKmLog1oEyewA8Zg4/edit?usp=sharing)
+📌 **ตัวอย่าง:** [แนะนำให้ลองดูใน Sheet: Click](https://docs.google.com/spreadsheets/d/1a3l_9Lgr_G6m5DkfvEdUg4a3fpwKmLog1oEyewA8Zg4/edit?gid=1590154876#gid=1590154876)
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-1-6.gif" alt="Highlight Row">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/p1-1-6.gif" alt="Highlight Row">
 </p>
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-1-6.png" alt="Highlight Row">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/p1-1-6.png" alt="Highlight Row">
 </p>
 
 ---
@@ -95,15 +95,15 @@
           ไล่เช็คทุก cell ที่อยู่ในเฉพาะคอลัมน์ G สำหรับแถวที่อยู่ในช่วง แถวที่ 1 - แถวที่ 26 ในคอลัมน์ ถ้าหากเจอค่าที่ตรงกับค่าเฉพาะใน `$H$1`
           ให้ Highlight เฉพาะ data point นั้นๆ
 
-📌 **ตัวอย่าง:** [แนะนำให้ลองดูใน Sheet: Click](https://docs.google.com/spreadsheets/d/1a3l_9Lgr_G6m5DkfvEdUg4a3fpwKmLog1oEyewA8Zg4/edit?usp=sharing)
+📌 **ตัวอย่าง:** [แนะนำให้ลองดูใน Sheet: Click](https://docs.google.com/spreadsheets/d/1a3l_9Lgr_G6m5DkfvEdUg4a3fpwKmLog1oEyewA8Zg4/edit?gid=1932301649#gid=1932301649)
 
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/hcf-filter.gif" alt="Highlight Row">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/hcf-filter.gif" alt="Highlight Row">
 </p>
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/hcf-filter.png" alt="Highlight Row">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/hcf-filter.png" alt="Highlight Row">
 </p>
 
 ---
@@ -126,14 +126,14 @@ female
 
 ถ้าเข้าเงื่อนไขใด เงื่อนไขนึงจะแสดงตามรูปตัวอย่าง
 
-📌 **ตัวอย่าง:** [แนะนำให้ลองดูใน Sheet: Click](https://docs.google.com/spreadsheets/d/1a3l_9Lgr_G6m5DkfvEdUg4a3fpwKmLog1oEyewA8Zg4/edit?usp=sharing)
+📌 **ตัวอย่าง:** [แนะนำให้ลองดูใน Sheet: Click](https://docs.google.com/spreadsheets/d/1a3l_9Lgr_G6m5DkfvEdUg4a3fpwKmLog1oEyewA8Zg4/edit?gid=1932301649#gid=1932301649)
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/hcf-filter1.gif" alt="Highlight Row">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/hcf-filter1.gif" alt="Highlight Row">
 </p>
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/hcf-filter1.png" alt="Highlight Row">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/hcf-filter1.png" alt="Highlight Row">
 </p>
 
 ---
@@ -146,14 +146,14 @@ female
 จากนั้นเลือก color scale ระบบก็จะทำการ default setting ให้เลยอัตโนมัติ
 หรือเราก็อาจจะปรับตามสีที่เราต้องการ เพื่อให้เหมาะสมกับความเข้าใจของ users
 
-📌 **ตัวอย่าง:** [แนะนำให้ลองดูใน Sheet: Click](https://docs.google.com/spreadsheets/d/1a3l_9Lgr_G6m5DkfvEdUg4a3fpwKmLog1oEyewA8Zg4/edit?usp=sharing)
+📌 **ตัวอย่าง:** [แนะนำให้ลองดูใน Sheet: Click](https://docs.google.com/spreadsheets/d/1a3l_9Lgr_G6m5DkfvEdUg4a3fpwKmLog1oEyewA8Zg4/edit?gid=1932301649#gid=1932301649)
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/hcf-filter2.png" alt="Highlight Row">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/hcf-filter2.png" alt="Highlight Row">
 </p>
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/hcf-filter2.png" alt="Highlight Row">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/hcf-filter2.png" alt="Highlight Row">
 </p>
 
 ---
@@ -176,15 +176,14 @@ female
    - ถ้าเท่ากับ 0 ให้ดำเนินการให้ Highlight Color Scale ที่เรา setting
    - ถ้าไม่ ก็ไม่ต้อง action ใดๆ
 
-📌 **ตัวอย่าง:**
-
+📌 **ตัวอย่าง:** [แนะนำให้ลองดูใน Sheet: Click](https://docs.google.com/spreadsheets/d/1a3l_9Lgr_G6m5DkfvEdUg4a3fpwKmLog1oEyewA8Zg4/edit?gid=1932301649#gid=1932301649)
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/hcf-filter3.png" alt="Highlight Row">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/hcf-filter3.png" alt="Highlight Row">
 </p>
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/hcf-filter3.png" alt="Highlight Row">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/hcf-filter3.png" alt="Highlight Row">
 </p>
 
 ---
@@ -192,7 +191,7 @@ female
 ## 3 Dynamic Query
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-3-6-0.png" alt="Highlight Row">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/p1-3-6-0.png" alt="Highlight Row">
 </p>
 
 ```excel
@@ -336,20 +335,20 @@ IF(B2="All","1=1","N='" & B2 & "'") &
   "And " & IF(B4="All","1=1","L <= date'"& Text(B4,"yyyy-mm-dd") & "'"))
   ```
   
-📌 **ตัวอย่าง:** [แนะนำให้ลองดูใน Sheet: Click](https://docs.google.com/spreadsheets/d/1a3l_9Lgr_G6m5DkfvEdUg4a3fpwKmLog1oEyewA8Zg4/edit?usp=sharing)
+📌 **ตัวอย่าง:** [แนะนำให้ลองดูใน Sheet: Click](https://docs.google.com/spreadsheets/d/1a3l_9Lgr_G6m5DkfvEdUg4a3fpwKmLog1oEyewA8Zg4/edit?gid=92440600#gid=92440600)
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-3-6.gif" alt="Highlight Row">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/p1-3-6.gif" alt="Highlight Row">
 </p>
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-3-6.png" alt="Highlight Row">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/p1-3-6.png" alt="Highlight Row">
 </p>
 
 ## 4 Vlookup
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-4-6.png" alt="Highlight Row">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/p1-4-6.png" alt="Highlight Row">
 </p>
 
 ```excel
@@ -383,16 +382,16 @@ IF(B2="All","1=1","N='" & B2 & "'") &
    คล้ายกับข้อ 1 แค่เปลี่ยน parameter 1 กับ 2 และช่วงที่อยากได้ค่านั้นว่าอยู่ที่คอลัมน์ 2, 3, 4, 5 การทำให้เป็น FALSE หรือ 0 บ่งบอกถึงคืนค่านั้นตรงๆ ไม่ต้องไปเอา
    ค่าที่รองลงมาจากแถว หรือค่าที่ถัดไปจากแถว return กลับมา ต่อไปเราจะลองใช้ `Vlookup` กับการแปลงวันที่ (Convert Date) ในตัวอย่างถัดไป
     
-📌 **ตัวอย่าง:** [แนะนำให้ลองดูใน Sheet: Click](https://docs.google.com/spreadsheets/d/1a3l_9Lgr_G6m5DkfvEdUg4a3fpwKmLog1oEyewA8Zg4/edit?usp=sharing)
+📌 **ตัวอย่าง:** [แนะนำให้ลองดูใน Sheet: Click](https://docs.google.com/spreadsheets/d/1a3l_9Lgr_G6m5DkfvEdUg4a3fpwKmLog1oEyewA8Zg4/edit?gid=1910676290#gid=1910676290)
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-4-6.gif" alt="Highlight Row">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/p1-4-6.gif" alt="Highlight Row">
 </p>
 
 ## 5 Convert Date
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-5-6.png" alt="Highlight Row">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/p1-5-6.png" alt="Highlight Row">
 </p>
 
 📌 **อธิบายสูตร:**
@@ -442,16 +441,16 @@ IF(B2="All","1=1","N='" & B2 & "'") &
 
 จากนั้นเราจะรวม ปี-เดือน-วัน เข้าด้วยกันด้วยคำสั่ง `DATE(ปี, เดือน, วัน)` ก็จะได้วันที่มาตรฐานสากล ISO 
 
-📌 **ตัวอย่าง:** [แนะนำให้ลองดูใน Sheet: Click](https://docs.google.com/spreadsheets/d/1a3l_9Lgr_G6m5DkfvEdUg4a3fpwKmLog1oEyewA8Zg4/edit?usp=sharing)
+📌 **ตัวอย่าง:** [แนะนำให้ลองดูใน Sheet: Click](https://docs.google.com/spreadsheets/d/1a3l_9Lgr_G6m5DkfvEdUg4a3fpwKmLog1oEyewA8Zg4/edit?gid=134502718#gid=134502718)
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-5-6.gif" alt="Highlight Row">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/p1-5-6.gif" alt="Highlight Row">
 </p>
 
 ## 6 Regular Expression
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-6-6.png" alt="Highlight Row">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/p1-6-6.png" alt="Highlight Row">
 </p>
 
 สำหรับตัวอย่างนี้คือการใช้งานสูตรตระกูล Regular Expression ซึ่งในตัวอย่างนี้ผมจะใช้อยู่ 2 สูตร คือ
@@ -794,10 +793,10 @@ IF(B2="All","1=1","N='" & B2 & "'") &
 
      สำหรับลูกค้า `B5` ขึ้น `TRUE` แสดงว่าหมดอายุแล้ว สามารถ copy สูตรไปวางทับเซลล์ `L3` ได้เลย
 
-📌 **ตัวอย่าง:** [แนะนำให้ลองดูใน Sheet: Click](https://docs.google.com/spreadsheets/d/1a3l_9Lgr_G6m5DkfvEdUg4a3fpwKmLog1oEyewA8Zg4/edit?usp=sharing)
+📌 **ตัวอย่าง:** [แนะนำให้ลองดูใน Sheet: Click](https://docs.google.com/spreadsheets/d/1a3l_9Lgr_G6m5DkfvEdUg4a3fpwKmLog1oEyewA8Zg4/edit?gid=1892926046#gid=1892926046)
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p1-6-6.gif" alt="Highlight Row">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/p1-6-6.gif" alt="Highlight Row">
 </p>
 
 ## Project Summary
