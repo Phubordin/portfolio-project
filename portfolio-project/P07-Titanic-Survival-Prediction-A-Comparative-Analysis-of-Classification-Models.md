@@ -24,5 +24,5 @@
 **Preview 📸 :**
 
 <p align="center">
-  <img src="https://github.com/Phubordin/raw/main/p7-preview-html.gif" alt="Titanic Project">
+  <img src="https://github.com/Phubordin/phubordin.github.io/raw/main/p7-preview-html.gif" alt="Titanic Project">
 </p>
