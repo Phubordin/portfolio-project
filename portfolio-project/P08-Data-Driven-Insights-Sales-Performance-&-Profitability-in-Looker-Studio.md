@@ -1,14 +1,14 @@
 # Project 8 : Data-Driven Insights: Sales Performance & Profitability in Looker Studio
 
-[My Portfolio Website (Project 8)](https://phubordin.github.io/My-Portfolio-Website/project_looker_dsb10.html)
+[My Portfolio Website (Project 8)](https://phubordin.github.io/project_looker_dsb10.html)
 
 ## Project Introduction
 โปรเจกต์นี้ใช้ชุดข้อมูลจาก [Tableau - Sample USA SuperStore](https://community.tableau.com/s/question/0D54T00000CWeX8SAL/sample-superstore-sales-excelxls?_gl=1*6jtjnc*_ga*MzUyOTA0ODIyLjE3NTE5NjQxMzE.*_ga_8YLN0SNXVS*czE3NTE5NjQxMjkkbzEkZzEkdDE3NTE5NjQyMDMkajQ2JGwwJGgw*_gcl_au*NTkxNDEyNzk2LjE3NTE5NjQxMzE.)
-ซึ่งเคยใช้ไปแล้วใน [Project 3 : RFM Analysis](https://phubordin.github.io/My-Portfolio-Website/project_rfm_py_dsb10.html) 
+ซึ่งเคยใช้ไปแล้วใน [Project 3 : RFM Analysis](https://phubordin.github.io/project_rfm_py_dsb10.html) 
 ซึ่งแน่นอนว่า เป็นข้อมูลการขายสินค้าใน Superstore ในสหรัฐอเมริกา (ไม่ใช่ข้อมูลจริงนะครับ) ข้อมูลนี้ถูกออกแบบขึ้นมาเพื่อใช้ประกอบการฝึกวิเคราะห์ด้วยเครื่องมือเช่น 
 Tableau, Power BI, Excel, SQL และ Python โดยมีโครงสร้างและบริบทใกล้เคียงกับข้อมูลจริง
 
-และผ่านการ Clean มาแล้วในระดับนึงจากภายใน [Project 3 : RFM Analysis - 6.4 Clean Data](https://phubordin.github.io/My-Portfolio-Website/project_rfm_py_dsb10.html#64-clean-data) ที่กล่าวไว้ตอนท้ายหัวข้อว่าจะมา Clean ต่อภายในโปรเจกต์นี้โดยการที่..
+และผ่านการ Clean มาแล้วในระดับนึงจากภายใน [Project 3 : RFM Analysis - 6.4 Clean Data](https://phubordin.github.io/project_rfm_py_dsb10.html#64-clean-data) ที่กล่าวไว้ตอนท้ายหัวข้อว่าจะมา Clean ต่อภายในโปรเจกต์นี้โดยการที่..
 
 ผมจะนำมาเพิ่มคอลัมน์เหล่านี้ลงไปด้วย :
 
@@ -32,14 +32,14 @@ Tableau, Power BI, Excel, SQL และ Python โดยมีโครงสร
 Dashboard with Looker Studio : [USA Sales Explorer Dashboard](https://lookerstudio.google.com/reporting/92339059-263d-4e78-85d6-803cdd1c70a4)
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-looker-overview.gif" alt="Looker Project">
+  <img src="https://github.com/Phubordin/raw/main/p8-looker-overview.gif" alt="Looker Project">
 </p>
 
 ## 🔢 USA SuperStore - Dataset
 USA SuperStore - Google Sheets : [Dataset](https://docs.google.com/spreadsheets/d/1W3uxB51xXKMRELejOsqFhjuyJ1SQRVzw5zptCLszZBs/edit?usp=sharing)
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-usa-store-ggsheet.gif" alt="Projecr 8 - ggsheets dataset">
+  <img src="https://github.com/Phubordin/raw/main/p8-usa-store-ggsheet.gif" alt="Projecr 8 - ggsheets dataset">
 </p>
 
 ## Add Columns (Equation)
@@ -55,7 +55,7 @@ $$
 $$
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-price.png" alt="Looker Project">
+  <img src="https://github.com/Phubordin/raw/main/p8-price.png" alt="Looker Project">
 </p>
 
 ---
@@ -71,7 +71,7 @@ $$
 $$
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-cost.png" alt="Looker Project">
+  <img src="https://github.com/Phubordin/raw/main/p8-cost.png" alt="Looker Project">
 </p>
 
 ---
@@ -83,7 +83,7 @@ $$
 $$
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-profit.png" alt="Looker Project">
+  <img src="https://github.com/Phubordin/raw/main/p8-profit.png" alt="Looker Project">
 </p>
 
 ---
@@ -95,7 +95,7 @@ $$
 $$
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-npm.png" alt="Looker Project">
+  <img src="https://github.com/Phubordin/raw/main/p8-npm.png" alt="Looker Project">
 </p>
 
 ---
@@ -107,7 +107,7 @@ $$
 $$
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-roi.png" alt="Looker Project">
+  <img src="https://github.com/Phubordin/raw/main/p8-roi.png" alt="Looker Project">
 </p>
 
 ---
@@ -127,7 +127,7 @@ $$
 ```
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-many-product-Ids-1.png" alt="Looker Project">
+  <img src="https://github.com/Phubordin/raw/main/p8-many-product-Ids-1.png" alt="Looker Project">
 </p>
 
 จากรูป จะมีจำนวนสินค้าทั้งหมด 1,862 ชิ้น (ไม่รวมหัวตาราง)
@@ -148,7 +148,7 @@ $$
 ```
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-many-product-Ids-2.png" alt="Looker Project">
+  <img src="https://github.com/Phubordin/raw/main/p8-many-product-Ids-2.png" alt="Looker Project">
 </p>
 
 จากรูปเราก็จะได้คอลัมน์ `Product Name` ที่อิงจาก `Product ID` ซึ่งเราจะพบเลยว่ามีค่าซ้ำกัน (จากภาพให้ใช้กำหนด Highlight Conditional Formatting ให้เห็นภาพชัดขึ้น)
@@ -163,7 +163,7 @@ VLOOKUP(A2:A1863,'USA-SuperStore'!$M$2:$Y$9995,{9, 10, 11, 12, 13},0)
 
 ```
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-many-product-Ids-3.png" alt="Looker Project">
+  <img src="https://github.com/Phubordin/raw/main/p8-many-product-Ids-3.png" alt="Looker Project">
 </p>
 
 จากรูปเราจะได้คอลัมน์ทั้งหมด 7 คอลัมน์แล้วคือ
@@ -183,7 +183,7 @@ VLOOKUP(A2:A1863,'USA-SuperStore'!$M$2:$Y$9995,{9, 10, 11, 12, 13},0)
 ⭐️ **ขั้นตอนที่ 4** : จัดการกับ `Product Name` ⬇︎
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-many-product-Ids-4.png" alt="Looker Project">
+  <img src="https://github.com/Phubordin/raw/main/p8-many-product-Ids-4.png" alt="Looker Project">
 </p>
 
 จากรูปเราจะเห็นได้ว่ามันจะมี แค่ 3 ส่วนที่เราต้อง Recheck ว่า `Product Name` นี้มี `Product ID` เป็นอะไรกันแน่
@@ -192,15 +192,15 @@ VLOOKUP(A2:A1863,'USA-SuperStore'!$M$2:$Y$9995,{9, 10, 11, 12, 13},0)
 เราจะต้องนำ `Product ID` ที่มันซ้ำกันไปดูว่ามันอาจจะมีหลาย `Product Name` ก็ได้ ดูจากรูป ด้านล่าง
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-many-product-Ids-5.png" alt="Looker Project">
+  <img src="https://github.com/Phubordin/raw/main/p8-many-product-Ids-5.png" alt="Looker Project">
 </p>
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-many-product-Ids-6.png" alt="Looker Project">
+  <img src="https://github.com/Phubordin/raw/main/p8-many-product-Ids-6.png" alt="Looker Project">
 </p>
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-many-product-Ids-7.png" alt="Looker Project">
+  <img src="https://github.com/Phubordin/raw/main/p8-many-product-Ids-7.png" alt="Looker Project">
 </p>
 
 ผลปรากรากฎว่า ไม่ซ้ำกันเลยแสดงว่าสิ่งที่เราจะทำคือ 
@@ -210,7 +210,7 @@ VLOOKUP(A2:A1863,'USA-SuperStore'!$M$2:$Y$9995,{9, 10, 11, 12, 13},0)
 ```
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-price-list.gif" alt="Looker Project">
+  <img src="https://github.com/Phubordin/raw/main/p8-price-list.gif" alt="Looker Project">
 </p>
 
 จะอยู่ในชีต `Price List`
@@ -222,15 +222,15 @@ VLOOKUP(A2:A1863,'USA-SuperStore'!$M$2:$Y$9995,{9, 10, 11, 12, 13},0)
 เพิ่มคอลัมน์ใหม่ชื่อ `New Product Name` จากนั้น `XLOOKUP()` จากตารางที่เราสร้างมาเป็น `One-to-One` แล้วในชีต `Price List` ตามรูปด้านล่าง : ⬇︎
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-price-list.png" alt="Looker Project">
+  <img src="https://github.com/Phubordin/raw/main/p8-price-list.png" alt="Looker Project">
 </p>
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-add-new-name-product.png" alt="Looker Project">
+  <img src="https://github.com/Phubordin/raw/main/p8-add-new-name-product.png" alt="Looker Project">
 </p>
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-drop-old-name-product.png" alt="Looker Project">
+  <img src="https://github.com/Phubordin/raw/main/p8-drop-old-name-product.png" alt="Looker Project">
 </p>
 
 ## Update Columns
@@ -240,11 +240,11 @@ VLOOKUP(A2:A1863,'USA-SuperStore'!$M$2:$Y$9995,{9, 10, 11, 12, 13},0)
 โดยใช้ `VLOOKUP()`
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-update-pcpnr-1.png" alt="Looker Project">
+  <img src="https://github.com/Phubordin/raw/main/p8-update-pcpnr-1.png" alt="Looker Project">
 </p>
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-update-pcpnr-2.png" alt="Looker Project">
+  <img src="https://github.com/Phubordin/raw/main/p8-update-pcpnr-2.png" alt="Looker Project">
 </p>
 
 🔥🔥**ขั้นตอนที่ 2** : เมื่อเราอัพเดทตามขั้นตอนที่ 1 แล้ว แน่นอนว่าต้องอัพเดท `Sales` และ `Profit` ด้วยเพราะ `Price per Unit` เปลี่ยนไปแล้ว
@@ -257,7 +257,7 @@ VLOOKUP(A2:A1863,'USA-SuperStore'!$M$2:$Y$9995,{9, 10, 11, 12, 13},0)
 ```
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-update-sales.png" alt="Looker Project">
+  <img src="https://github.com/Phubordin/raw/main/p8-update-sales.png" alt="Looker Project">
 </p>
 
 โดยใช้สูตร Excel ต่อไปนี้เพื่ออัพเดทคอลัมน์ : `Profit`
@@ -268,7 +268,7 @@ VLOOKUP(A2:A1863,'USA-SuperStore'!$M$2:$Y$9995,{9, 10, 11, 12, 13},0)
 ```
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-update-profit.png" alt="Looker Project">
+  <img src="https://github.com/Phubordin/raw/main/p8-update-profit.png" alt="Looker Project">
 </p>
 
 ## Conclusion
@@ -297,7 +297,7 @@ VLOOKUP(A2:A1863,'USA-SuperStore'!$M$2:$Y$9995,{9, 10, 11, 12, 13},0)
     - มีการทุจริต ?
 
 ดังนั้น ผมขออนุญาตที่โปรเจกต์ 8 นี้เราจะเชื่อเลยว่า ทุกๆ Product ID, Product Name, Price, Cost ต้องมีความสัมพันธ์แบบ One-to-One
-อย่างน้อยโปรเจกต์นี้ก็ไม่ใช่ข้อมูลจริงแต่อย่างใดๆ ไม่เหมือนกับ [Project 7 - Titanic ของผม](https://phubordin.github.io/My-Portfolio-Website/project_titanic_glm_dsb10.html) ที่ต่อให้ข้อมูลจะหายไปมากแค่ไหน Age, Survived หรือข้อมูลอื่นๆของผู้โดยสาร
+อย่างน้อยโปรเจกต์นี้ก็ไม่ใช่ข้อมูลจริงแต่อย่างใดๆ ไม่เหมือนกับ [Project 7 - Titanic ของผม](https://phubordin.github.io/project_titanic_glm_dsb10.html) ที่ต่อให้ข้อมูลจะหายไปมากแค่ไหน Age, Survived หรือข้อมูลอื่นๆของผู้โดยสาร
 แต่มันเป็นเหตุการณ์ที่เกิดขึ้นจริง และมีการบันทึกข้อมูลของผู้โดยสารจริงๆเราสามารถนำข้อมูลจริงนั้นมา แทนค่า ทำให้ข้อมูลของเราถูกต้องมากที่สุดได้ แต่สำหรับโปรเจกต์นี้ผมขอใช้วิธีสมมติข้อมูล
 บนพื้นฐานตามหลักความเป็นจริงที่ควรจะเป็น ตามที่ผมกล่าวไปนะครับ ขอบคุณครับ
 
@@ -307,17 +307,17 @@ USA SuperStore - [Google Sheets : Dataset](https://docs.google.com/spreadsheets/
 (ข้อมูลที่พร้อมสร้างแดชบอร์ด)
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-usa-store-ggsheet.gif" alt="Looker Project">
+  <img src="https://github.com/Phubordin/raw/main/p8-usa-store-ggsheet.gif" alt="Looker Project">
 </p>
 
 ต่อไป..
 
 เราจะมาเริ่มสร้างพร้อมตั้งคำถาม เพื่อที่จะนำไปสร้าง Dashboard บน Looker Studio กันนะครับ (โดยใช้ Dataset ที่พร้อมใช้งานแล้ว)
 
-สามารถดูต่อได้ที่ : [My Portfolio Website - Project 8 Looker Studio](https://phubordin.github.io/My-Portfolio-Website/project_looker_dsb10.html)
+สามารถดูต่อได้ที่ : [My Portfolio Website - Project 8 Looker Studio](https://phubordin.github.io/project_looker_dsb10.html)
 
 <p align="center">
-  <img src="https://github.com/Phubordin/My-Portfolio-Website/raw/main/p8-web-overview.gif" alt="Looker Project">
+  <img src="https://github.com/Phubordin/raw/main/p8-web-overview.gif" alt="Looker Project">
 </p>
 
 
