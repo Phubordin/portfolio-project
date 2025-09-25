@@ -1,6 +1,7 @@
 # Project 7 : Titanic Survival Prediction: A Comparative Analysis of Classification Models
 
 [My Portfolio Website (Project 7)](https://phubordin.github.io/project_titanic_glm_dsb10.html)
+
 เหตุการณ์เรือไททานิกชนภูเขาน้ำแข็งทำให้เรืออับปาง ในวันที่ 15 เมษายน 1912 ส่งผลให้มีผู้โดยสารบางคนเสียชีวิต โปรเจกต์นี้เราจะมาสำรวจและ Train Model เพื่อวิเคราะห์ข้อมูลชุดนี้กัน
 อายุเท่าไร, เพศไหน, พักอาศัยอยู่บนชั้นโดยสารไหน, เดินทางคนเดียวหรือเป็นครอบครัว เราจะมาสำรวจดูในโปรเจกต์นี้กัน รวมถึงทำนายโอกาสรอดชีวิต และ Evaluate Model กันครับ
 
